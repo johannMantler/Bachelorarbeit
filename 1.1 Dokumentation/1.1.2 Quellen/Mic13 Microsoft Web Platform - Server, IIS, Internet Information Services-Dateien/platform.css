@@ -1,0 +1,1226 @@
+﻿/******************************
+Platform Home
+******************************/
+.platform-banner 
+{
+    padding: 0px 0px 20px 0px;
+}
+
+.platform-banner .main-intro 
+{
+    float: left;
+    width: 383px;
+    padding: 70px 0px 0px 20px;
+}
+
+.platform-banner .main-intro img 
+{
+    margin: 0px 0px 7px 0px;
+}
+
+.platform-banner .main-image 
+{
+    float: right;
+    width: 500px;
+    text-align: right;
+}
+
+.platform-overview 
+{
+    position: relative;
+}
+
+.platform-overview .puzzle-framework 
+{
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    width: 28px;
+    height: 42px;
+	background: transparent url('../media/left-puzzle-piece.png') no-repeat center top;
+}
+
+
+.platform-overview .puzzle-server 
+{
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    width: 28px;
+    height: 42px;
+	background: transparent url('../media/right-puzzle-piece.png') no-repeat center top;    
+}
+
+.platform-overview .puzzle-database {}
+.platform-overview .puzzle-tools 
+{
+    position: absolute;
+    top: 70px;
+    left: 650px;
+    width: 28px;
+    height: 42px;
+	background: transparent url('../media/left-puzzle-piece.png') no-repeat center top;     
+}
+
+.platform-overview h2
+{
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.platform-overview .dotnet {}
+.platform-overview .webserver {}
+.platform-overview .database {}
+.platform-overview .tools {}
+.platform-overview .enterprise {}
+.platform-overview .webapps {}
+
+.platform-overview .dotnet a:first-child
+{
+    float: left;
+    padding: 15px 7px 3px 0px;
+}
+.platform-overview .webserver a:first-child
+{
+     float: left;
+     padding: 12px 10px 3px 0px;
+}
+.platform-overview .database a:first-child
+{
+     float: left;
+     padding: 10px 10px 4px 0px;
+}
+.platform-overview .tools a:first-child
+{
+     float: left;
+     padding: 15px 10px 5px 0px;
+}
+.platform-overview .enterprise a:first-child
+{
+
+}
+.platform-overview .webapps a:first-child
+{
+
+}
+
+ul.platform-headings 
+{
+    margin: 0px;
+    padding: 0px;
+    background: transparent url('../App_Themes/Spring/4x4-box-top-divider.jpg') no-repeat center bottom;
+}
+
+ul.platform-headings li 
+{
+    float: left;
+    list-style: none;
+    margin: 0px;
+    width: 225px;
+}
+
+ul.platform-headings li h3
+{
+    padding: 0px 0px 5px 20px;
+    margin: 0px;
+    color: #BBBBBB;
+    font-size: 1.2em;
+}
+
+/******************************
+Platform Components
+******************************/
+
+.component-banner-full 
+{
+    padding: 20px;
+}
+
+.component-banner-full .component-intro 
+{
+    padding: 0px 0px 0px 0px;
+}
+
+.component-banner-full .component-intro img 
+{
+    margin: 0px 0px 7px 0px;
+}
+
+.component-banner-right 
+{
+    padding: 20px;
+}
+
+.component-banner-right .component-intro 
+{
+    float: right;
+    width: 380px;
+    padding: 15px 0px 5px 0px;
+}
+
+.component-banner-right .component-intro img 
+{
+    margin: 0px 0px 7px 0px;
+}
+
+.component-banner-right .component-img 
+{
+    float: left;
+    width: 480px;
+}
+
+.component-banner-left 
+{
+    padding: 20px;
+}
+
+.component-banner-left .component-intro 
+{
+    float: left;
+    width: 380px;
+    padding: 20px 0px 0px 0px;
+}
+
+.component-banner-left .component-intro img 
+{
+    margin: 0px 0px 7px 0px;
+}
+
+.component-banner-left .component-img 
+{
+    float: right;
+    width: 480px;
+}
+
+/******************************
+Platform Framework
+******************************/
+
+/* Original version for VS2008 and .Net3.5 */
+
+.section-main img.asp-net 
+{
+    padding: 20px 20px 0px 0px;
+}
+
+.section-main img.asp-ajax 
+{
+    padding: 20px 10px 0px 20px;    
+}
+
+.section-main img.asp-data 
+{
+    padding: 0px 20px 0px 10px;    
+}
+
+.section-main img.asp-controls 
+{
+    padding: 30px 5px 0px 20px;     
+}
+
+.section-main img.asp-mvc 
+{
+    padding: 30px 0px 0px 20px;      
+}
+
+.section-main img.asp-templates 
+{
+    padding: 30px 0px 0px 20px;   
+}
+
+.section-main img.asp-local
+{
+    padding: 40px 5px 10px 20px;    
+}
+
+.section-main img.asp-dynamic 
+{
+    padding: 20px 20px 0px 0px;      
+}
+
+.section-main img.asp-tools 
+{
+    padding: 50px 0px 30px 20px;      
+}
+
+.section-main img.installer-icon 
+{
+    padding: 10px 40px 0px 30px;    
+}
+
+
+/* Version for VS2010 and .Net4 built on April 7, 2010 */
+
+.v2-04072010 .section-main img.installer-icon 
+{
+    padding: 10px 40px 0px 30px;    
+}
+
+.v2-04072010 .section-main img.fully-supported
+{
+    padding: 10px 20px 0px 0px;
+}
+
+.v2-04072010 .section-main img.asp-net 
+{
+    padding: 20px 0px 0px 20px;    
+}
+
+.v2-04072010 .section-main img.webforms-mvc
+{
+    padding: 20px 40px 0px 20px;    
+}
+
+.v2-04072010 .section-main img.search-engine-friendly 
+{
+    padding: 40px 0px 20px 0px;    
+}
+
+.v2-04072010 .section-main img.asp-ajax 
+{
+    padding: 40px 0px 50px 0px;    
+}
+
+.v2-04072010 .section-main img.asp-data 
+{
+    padding: 30px 0px 0px 10px;     
+}
+
+.v2-04072010 .section-main img.asp-templates 
+{
+    padding: 30px 40px 30px 40px;   
+}
+
+.v2-04072010 .section-main img.asp-dynamic 
+{
+    padding: 20px 0px 0px 10px;      
+}
+
+.v2-04072010 .section-main img.asp-tools 
+{
+    padding: 20px 0px 50px 0px;      
+}
+
+/******************************
+Platform Server
+******************************/
+
+.section-main img.iis-aspphp 
+{
+    padding: 25px 20px 10px 0px;    
+}
+.section-main img.iis-streaming 
+{
+   padding: 5px 10px 0px 20px;     
+}
+.section-main img.iis-control 
+{
+   padding: 5px 20px 0px 10px;    
+}
+
+.section-main img.iis-fast
+{
+   padding: 25px 0px 0px 20px;     
+}
+
+.section-main img.iis-secure 
+{
+   padding: 15px 0px 0px 20px;    
+}
+
+/******************************
+Platform PHP on Windows
+******************************/
+
+.php-intro 
+{
+   
+}
+
+.php-intro .component-intro
+{
+    float: left;
+    width: 45%;
+    padding-right: 5%
+}
+
+.php-intro .php-install-container 
+{
+    float: right;
+    width: 50%;
+    margin: 20px 0px 0px 0px;
+}
+
+.php-intro .php-install-container h2 
+{
+    padding: 7px 0px 0px 0px;
+    font-size: 1.5em;
+}
+
+.php-intro .php-install-container a
+{
+    padding: 7px 0px 10px 0px;
+    display: block;
+}
+
+.section-main img.php-ws 
+{
+   padding: 0px 20px 0px 0px;    
+}
+
+.section-main img.php-apps 
+{
+   padding: 0px 0px 0px 20px;    
+}
+.section-main img.php-sql 
+{
+   padding: 15px 0px 0px 20px;
+}
+
+.section-main img.php-tools 
+{
+   padding: 25px 0px 0px 20px;    
+}
+
+.section-main img.php-fastcgi 
+{
+   padding: 15px 0px 0px 20px;
+}
+
+
+/******************************
+Platform SQL Server
+******************************/
+
+.section-main img.sql-gui 
+{
+   padding: 15px 20px 0px 0px;
+}
+
+.section-main img.sql-mba 
+{
+   padding: 15px 0px 0px 20px;
+}
+
+.section-main img.sql-integrated 
+{
+   padding: 0px 20px 0px 0px;
+}
+
+.section-main img.sql-speed 
+{
+   padding: 15px 0px 0px 20px;
+}
+
+.section-main img.sql-secure 
+{
+   padding: 10px 0px 0px 20px;
+}
+
+.section-main img.sql-version 
+{
+   padding: 10px 30px 0px 20px;
+}
+
+/******************************
+Platform Tools
+******************************/
+
+.section-main a.tools-vs
+{
+   padding: 0px 0px 0px 0px;
+   display: block;
+   text-align: center;
+}
+
+.section-main a.tools-xweb 
+{
+   padding: 0px 0px 0px 0px;
+   display: block;
+   text-align: center;
+}
+
+.section-main a.vs-link 
+{
+   display: block;
+   text-align:center;
+}
+
+.section-main a.xweb-link
+{
+   display: block;
+   text-align:center;
+}
+
+.three-box .xweb-highlights {width: 249px; padding: 0px 28px 0px 0px;}
+.three-box .vs-highlights {width: 249px; padding: 0px 28px 0px 28px; border-left: dotted 1px #CCC; border-right: dotted 1px #CCC;}
+.three-box .ie-highlights {width: 249px; padding: 0px 0px 0px 28px;}
+
+.three-box a.logo-link {text-align: center; display: block; padding: 0px 0px 7px 0px;}
+
+.three-box ul 
+{
+    padding: 7px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.three-box ul li
+{
+    padding: 4px 0px 4px 28px;
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+    background: transparent url('../media/icons/check-mark.png') no-repeat left 5px;
+}
+
+.three-box .learn-more {float: right; display: block; margin: 14px 0px 0px 0px;}
+
+.three-box .ie-feature1 {width: 249px; padding: 0px 28px 0px 0px;}
+.three-box .ie-feature2 {width: 249px; padding: 0px 28px 0px 28px; border-left: dotted 1px #CCC; border-right: dotted 1px #CCC;}
+.three-box .ie-feature3 {width: 249px; padding: 0px 0px 0px 28px;}
+
+.three-box h3 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 123.1%;
+    font-weight: bold;
+}
+
+div.tools-feature-wide 
+{    
+    background: transparent url('../media/platform/horizontal_dot_divider.png') no-repeat center top;
+    padding: 28px 20px 28px 20px;   
+    line-height: 1.6em;
+}
+
+div.tools-comparison 
+{
+    background: transparent url('../media/platform/shadow-line.jpg') no-repeat center top;
+    padding: 40px 0px 40px 0px;
+    position: relative; top:-17px;
+}
+
+div.tools-comparison h2
+{
+    padding-left:20px;
+    color: #000000;
+}
+
+.tools-download-learnmore
+{
+    width:100%;
+    text-align:center;
+    padding:15px 0px 0px 0px;    
+}
+
+.download-button-v2 
+{
+    padding: 0px 3px 0px 0px;
+    margin: 0px 0px 15px 28px;
+    display:block;
+    width: 187px;
+    font-size: 13pt;
+    color: #333333;
+    font-family: Segoe UI, Tahoma, Verdana, Helvetica, Verdana, Sans-Serif;
+    background: transparent url('../media/btn_downloadnow_longTxt.png') no-repeat right top;
+    font-weight:normal;
+}
+
+.download-button-v2:hover 
+{
+    text-decoration: none;
+    color: #333333;
+}
+
+.download-button-v2 .download-button-inner 
+{
+    padding: 9px 30px 0px 30px;
+    margin: 0px 0px 0px -3px;
+    max-height: 37px;
+    min-height: 37px;
+    height: 37px;
+    text-align: center;    
+    display:block;
+}
+
+/******************************
+Platform Tools Developer
+******************************/
+
+.section-main img.vs-standards 
+{
+    padding: 10px 20px 0px 0px;
+}
+
+.section-main img.vs-javascript
+{
+    padding: 20px 10px 0px 20px;    
+}
+
+.section-main img.vs-intellisense 
+{
+    padding: 0px 20px 0px 10px;    
+}
+
+.section-main img.vs-design 
+{
+    padding: 30px 5px 0px 20px;     
+}
+
+.section-main img.vs-manager
+{
+    padding: 30px 0px 0px 20px;      
+}
+
+.section-main img.vs-debugger
+{
+    padding: 30px 0px 20px 20px;   
+}
+
+.section-main img.vs-versions
+{
+    padding: 30px 5px 0px 20px;    
+}
+
+
+/******************************
+Platform Tools Designer
+******************************/
+
+.section-main img.xweb-standards 
+{
+    padding: 10px 20px 0px 0px;
+}
+
+.section-main img.xweb-visual
+{
+    padding: 10px 10px 0px 20px;    
+}
+
+.section-main img.xweb-design 
+{
+    padding: 20px 0px 20px 10px;    
+}
+
+.section-main img.xweb-media 
+{
+    padding: 30px 5px 40px 20px;     
+}
+
+.section-main img.xweb-import
+{
+    padding: 30px 0px 0px 20px;      
+}
+
+.section-main img.xweb-php
+{
+    padding: 30px 0px 20px 20px;   
+}
+
+.section-main img.xweb-server
+{
+    padding: 30px 5px 0px 20px;    
+}
+
+.section-main img.xweb-free
+{
+    padding: 15px 5px 0px 20px;    
+}
+
+/******************************
+Platform Tools IE
+******************************/
+
+.papercutout 
+{
+    background: transparent url('../media/paper-cutout.png') no-repeat left top;
+    height: 87px;
+    width: 300px;
+    position: relative;
+    margin: 7px 0px 0px 0px;
+}
+
+.papercutout .ie-button
+{
+    background: transparent url('../media/generic-button.png') no-repeat left top;
+    height: 34px;
+    width: 173px;
+    display: block;
+    color: White;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 12px;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+}
+
+.ie-highlight-left 
+{
+background: transparent url('../media/icons/section-head-bkg.jpg') no-repeat left 50%;
+padding: 0px 0px 7px 0px;
+}
+
+.ie-highlight-left  h3 
+{
+    padding: 3px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.4em;
+}
+
+.ie-highlight-left .ie-highlight-image 
+{
+    float: left;
+    width: 212px;
+    margin: 0px 20px 0px 0px;
+}
+
+.ie-highlight-left .ie-highlight-content
+{
+    float: left;
+    width: 630px;
+}
+
+.ie-highlight-left .ie-highlight-content ul 
+{
+    margin: 7px 0px 0px 0px;
+}
+
+.ie-highlight-left .ie-highlight-content ul li
+{
+    list-style: none;
+    padding: 5px 0px 5px 34px;
+    display: block;
+}
+
+.ie-highlight-content ul li.ie-slices {background: transparent url('../media/icons/ie-webslices.png') no-repeat left 50%;}
+.ie-highlight-content ul li.ie-accel {background: transparent url('../media/icons/ie-accelerators.png') no-repeat left 50%;}
+.ie-highlight-content ul li.ie-search {background: transparent url('../media/icons/ie-search.png') no-repeat left 50%;}
+
+
+.ie-section-main-link
+{
+    padding-top: 28px;
+}
+
+.ie-resources 
+{
+    width: 100%;
+    padding-bottom: 7px;
+}
+
+.ie-resources h3 
+{
+    font-size: 1.4em;
+}
+
+.ie-resources h4 
+{
+    padding: 14px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.ie-resources p 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.ie-resources-main 
+{
+    width: 382px;
+    float: left;
+    padding-right: 28px;
+}
+
+.ie-resources-other 
+{
+    width: 382px;
+    float: left;
+    padding-left: 28px;
+}
+
+/**********************************************************
+New Version - platform-overview-v2
+**********************************************************/
+
+#platform-overview-v2 
+{
+    
+}
+
+#platform-overview-v2 .platform-banner 
+{
+    padding: 0px 0px 0px 0px;
+    height: 282px;
+    background: transparent url('../media/headers/platform-blk.jpg') no-repeat left top;
+    color: #FFFFFF;
+}
+
+#platform-overview-v2 .platform-banner .main-intro 
+{
+    float: left;
+    width: 402px;
+    padding: 42px 0px 0px 43px;
+}
+
+#platform-overview-v2 .platform-banner .try-it-now 
+{
+    
+}
+
+#platform-overview-v2 .platform-banner .try-it-now h3
+{
+    float: left;
+    font-size: 160.1%;
+    font-style:italic;
+}
+
+#platform-overview-v2 .platform-banner .try-it-now a
+{
+    float: left;
+    padding: 10px 0px 0px 10px;
+}
+
+#platform-overview-v2 .four-box-row-platform
+{
+    padding: 1px 0px 0px 0px;
+    background: transparent url('../App_Themes/Spring/4x1-box-bottom.jpg') no-repeat right bottom;
+}
+
+#platform-overview-v2 .platform-overview .puzzle-server 
+{
+    position: absolute;
+    top: 180px;
+    left: 424px;
+    width: 28px;
+    height: 42px;
+	background: transparent url('../media/left-puzzle-piece.png') no-repeat center top;    
+}
+
+#platform-overview-v2 .platform-overview .puzzle-tools 
+{
+    position: absolute;
+    top: 50px;
+    left: 650px;
+    width: 28px;
+    height: 42px;
+	background: transparent url('../media/left-puzzle-piece.png') no-repeat center top;     
+}
+
+#platform-overview-v2 .platform-overview .tools a:first-child
+{
+     float: left;
+     padding: 10px 10px 5px 0px;
+}
+
+#platform-overview-v2 .component-banner-wide 
+{
+    padding: 5px 20px 0px 20px;
+    margin: 0px 0px -1px 0px;
+}
+
+#platform-overview-v2 .component-banner-wide .component-intro 
+{
+    padding: 12px 0px 20px 0px;
+}
+
+#platform-overview-v2 .component-banner-wide .component-intro p 
+{
+    float: right;
+    width: 500px;
+}
+
+#platform-overview-v2 .component-banner-wide .component-intro img 
+{
+    margin: 0px 0px 7px 0px;
+    padding: 18px 0px 0px 0px;
+    float: left;
+}
+
+#platform-overview-v2 .component-banner-wide .component-img 
+{
+    text-align: center;
+}
+
+/**********************************************************
+Styles for new versions of content areas starts here.
+**********************************************************/
+
+/**********************************************************
+New Version - platform-tools-v2
+**********************************************************/
+
+.three-box .xweb-highlights {width: 249px; padding: 0px 28px 0px 0px;}
+.three-box .vs-highlights {width: 249px; padding: 0px 28px 0px 28px; border-left: dotted 1px #CCC; border-right: dotted 1px #CCC;}
+.three-box .ie-highlights {width: 249px; padding: 0px 0px 0px 28px;}
+
+.three-box a.logo-link {text-align: center; display: block; padding: 0px 0px 7px 0px;}
+
+.three-box ul 
+{
+    padding: 7px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.three-box ul li
+{
+    padding: 4px 0px 4px 28px;
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+    background: transparent url('../media/icons/check-mark.png') no-repeat left 5px;
+}
+
+.three-box .learn-more {float: right; display: block; margin: 14px 0px 0px 0px;}
+
+.three-box .ie-feature1 {width: 249px; padding: 0px 28px 0px 0px;}
+.three-box .ie-feature2 {width: 249px; padding: 0px 28px 0px 28px; border-left: dotted 1px #CCC; border-right: dotted 1px #CCC;}
+.three-box .ie-feature3 {width: 249px; padding: 0px 0px 0px 28px;}
+
+.three-box h3 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 123.1%;
+    font-weight: bold;
+}
+
+#platform-tools-v2 .component-banner-wide 
+{
+    padding: 5px 20px 0px 20px;
+    margin: 0px 0px -1px 0px;
+}
+
+#platform-tools-v2 .component-banner-wide .component-intro 
+{
+    padding: 12px 0px 20px 0px;
+}
+
+#platform-tools-v2 .component-banner-wide .component-intro p 
+{
+    float: right;
+    width: 500px;
+}
+
+#platform-tools-v2 .component-banner-wide .component-intro img 
+{
+    margin: 0px 0px 7px 0px;
+    padding: 18px 0px 0px 0px;
+    float: left;
+}
+
+#platform-tools-v2 .component-banner-wide .component-img 
+{
+    text-align: center;
+}
+div.productdownloadv2 
+{
+    padding-left:35px;
+}
+div.productdownloadv2 a
+{
+    display: block;
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 10px 5px 10px 20px;
+    margin: 0px 0px 0px 0px;
+    color: #FFFFFF;
+    border-left: 1px solid #728c2a;
+    border-top: 1px solid #728c2a;
+    border-right: 1px solid #414c2a;
+    border-bottom: 1px solid #414c2a;
+    background: #78a117 url(/web/media/grn-btn-bkg.png) no-repeat left top;
+    font-family: "Segoe UI", Tahoma, san-serif;
+    width:130px;
+    white-space:nowrap;
+}
+div.productdownloadv2 a:hover 
+{
+    color:#333;
+}
+div.productdownloadv2 a.downloadLrg:hover 
+{
+    color:#333;
+}
+div.productdownloadv2 a.downloadLrg
+{
+    display: block;
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 10px 5px 10px 20px;
+    margin: 0px 0px 0px 0px;
+    color: #FFFFFF;
+    border-left: 1px solid #728c2a;
+    border-top: 1px solid #728c2a;
+    border-right: 1px solid #414c2a;
+    border-bottom: 1px solid #414c2a;
+    background: #78a117 url(/web/media/grn-btn-bkg.png) no-repeat left top;
+    font-family: "Segoe UI", Tahoma, san-serif;
+    width:128px;
+    white-space:nowrap;
+}
+/**********************************************************
+New Version - Platform Tools Designer v2
+**********************************************************/
+
+.section-main img.xweb-superpreview
+{
+    padding: 0px 20px 0px 0px;    
+}
+
+/**********************************************************
+New Version - Platform Database
+**********************************************************/
+.tabs { background: url(../media/platform/bg_tabs.jpg) no-repeat 0 0; height: 31px; padding-top: 10px; margin-left: 42px; }
+.tab { background: url(../media/platform/bg_tab_mid.gif) repeat-x; min-width: 108px; height: 21px; font-size: 13px; text-align: center; float: left; padding: 7px 10px 3px 10px; }
+.tab_l { background: url(../media/platform/bg_tab_l.gif) no-repeat; width: 4px; height: 31px; float: left; }
+.tab_r { background: url(../media/platform/bg_tab_r.gif) no-repeat; width: 4px; height: 31px; float: left; }
+.tab_off { min-width: 115px; font-size: 11px; text-align: center; float: left; padding: 7px 10px 3px 10px; }
+
+.viewmore-holder .viewmore 
+{
+    text-align: right;
+    background: #a60000 url(../media/platform/bg-viewmore.gif) repeat-x left bottom;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    color: #fff;
+}
+.viewmore-holder .viewmore a 
+{
+    font-weight: bold;
+    color: #fff;
+    padding: 1px 20px 1px 10px;
+    background: url(../media/platform/btn-viewmore.png) no-repeat right center;
+}
+.viewmore-holder .viewmore-content 
+{
+    display: none;
+    background: url('../media/headers/platform-hero-ad.jpg') no-repeat 0 0;
+    height: 350px;
+    position: relative;
+}
+
+
+
+
+.header-section.database .component-banner-left
+{
+    height: 359px;
+    padding-bottom: 0;
+}
+.header-section.database .component-banner-left.database-sql {
+    background: url('../media/headers/platform-hero-db.jpg') no-repeat 0 0;
+}
+.header-section.database .component-banner-left.free-database {
+    background: url('../media/headers/platform-hero-db-free.jpg') no-repeat 0 0;
+}
+.header-section.database .component-banner-left.migrate {
+    background: url('../media/headers/platform-hero-db-migrate.jpg') no-repeat 0 0;
+}
+.header-section.database .component-banner-left.developer-tools {
+    background: url('../media/headers/platform-hero-db-developer.jpg') no-repeat 0 0;
+}
+
+
+
+.header-section.database .component-banner-left h1 { text-indent: -2000px; height: 20px; }
+.header-section.database .component-banner-left.database-sql h1 {
+    background: url(../media/headers/database-sql.png) no-repeat;
+}
+.header-section.database .component-banner-left.free-database h1 {
+    background: url(../media/headers/database-free.png) no-repeat;
+}
+.header-section.database .component-banner-left.migrate h1 {
+    background: url(../media/headers/database-migrate.png) no-repeat;
+}
+.header-section.database .component-banner-left.developer-tools h1 {
+    background: url(../media/headers/database-developer.png) no-repeat;
+}
+
+
+.header-section.database .component-banner-left h2
+{
+    padding-top: 0;
+    font-size: 1.7em; 
+}
+.header-section.database .component-banner-left .component-intro 
+{
+    padding: 40px 0 0 20px;
+    width: 420px;
+}
+.header-section.database .component-banner-left .component-img 
+{
+    width: 400px;
+}
+.header-section.database .component-banner-left .component-intro p 
+{
+    padding-right: 100px;
+}
+.header-section.database .component-banner-left .cta 
+{
+    float: left;
+    padding-left: 20px;
+    background: url(../media/platform/btn-green-left.png) no-repeat center left;   
+}
+.header-section.database .component-banner-left .cta a {
+    display: block;
+    line-height: 38px;
+    padding-right: 38px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../media/platform/btn-green-right.png) no-repeat center right;
+}
+
+.database .small-button 
+{
+    margin: 10px 0 0 225px;
+    line-height: 10px;
+    cursor: pointer;
+}
+.content-section.database .section-sidebar .section2x1-2 .small-button { margin: 10px 0 0; }
+.content-section.database .small-button.wide { width: 205px; }
+.content-section.database .small-button.small { width: 190px; }
+.header-section.database .viewmore-content .small-button.small { width: 150px; }
+.header-section.database .viewmore-content .small-button 
+{
+    position: relative;
+    top: 245px;
+    left: 90px;
+}
+.header-section.database .viewmore-content .small-button .small-button-inner
+{
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.content-section.database { padding: 0 20px;}
+.content-section.database .dot-bottom 
+{
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.content-section.database .top 
+{
+    float: right;
+    background: url(../media/platform/btn-up-arrow.png) no-repeat left center;
+    padding-left: 15px;
+}
+
+.content-section.database .section-copy.lg 
+{
+    padding-bottom: 20px;
+}
+.content-section.database .section-copy.lg h2 {
+    font-size: 2.12em;
+    padding: 0;
+}
+.content-section.database .section-copy.lg p 
+{
+    font-size: 1.1em;
+}
+.content-section.database .section-copy .map-your-data
+{
+    padding-bottom: 40px;
+}
+.content-section.database .three-box .section-copy 
+{
+    padding: 0 20px;   
+}
+.content-section.database .box-style .section-copy
+{
+    width: 100%;
+}
+.content-section.database .box-style .section-img {
+    width: 200px;
+    text-align: center;
+}
+.content-section.database .box-style.small .section-img 
+{
+    width: 95px;
+}
+.content-section.database .section2x1 
+{
+    padding-bottom: 0;
+}
+.content-section.database .section2x1-1 .section-img.b50 
+{
+    padding-bottom: 50px;
+}
+.content-section.database .section2x1-1 .section-box-left,
+.content-section.database .section2x1-1 .section-box-right
+{
+    padding-right: 40px;  
+}
+.content-section.database .section2x1-2 .section-box-left,
+.content-section.database .section2x1-2 .section-box-right
+{
+    padding-left: 30px;  
+}
+
+.section-sidebar .section2x1 { padding-bottom: 0; }
+
+.section-main.section-sidebar { padding: 30px 0 0; }
+
+
+.section-sidebar .section2x1-1 { width: 73%; }
+.section-sidebar .section2x1-2 { width: 25%; /*background: url(../media/platform/bg_sidebar.png) no-repeat 0 0;*/ }
+.section-sidebar .section2x1-2 .section-box-right { padding-left: 20px; }
+.section-sidebar .section2x1-2 .video-img { margin: 10px 0; width: 100%; }
+
+
+/**********************************************************
+Video Overlay
+**********************************************************/
+#navigation,
+#container-content .content 
+{
+    position: relative;
+}
+
+.modalBackground
+{
+    background: #333;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    zoom: 1;
+}
+a.cancel-btn
+{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    display: block;
+    width: 27px;
+    height: 26px;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+    z-index: 1000;
+}
+a.cancel-btn:hover
+{
+    color: #6DAB00;
+    text-decoration: none;
+}
+.player-popup
+{
+    position: relative;
+    width: 820px;
+    height: 653px;
+    background: #EEE;   
+}
+
+#PlayerContainer
+{
+    position: relative;
+    top: 43px;
+    left: 10px;
+}
+#ctl00_MainContent_PlayerTrigger.player-trigger 
+{
+    display: none;
+}

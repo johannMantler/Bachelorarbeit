@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="jmcconnell">
+    <meta name="keywords" content="Jetty, Servlets, Async, SPDY, Web Server, Web Client, Eclipse RT, Eclipse Runtime">
+    <link href="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/css.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="http://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/favicon.ico">
+    <title>Jetty - Servlet Engine and Http Server</title>
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Jetty is a highly scalable modular servlet engine and http server that natively supports many modern protocols like SPDY and WebSockets.">
+    <meta property="og:image" content="http://www.eclipse.org/jetty/images/jetty-logo-80x22.png">
+
+    <link rel="stylesheet" href="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/jetty.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="" id="body_solstice">
+	  <a class="sr-only" href="#content">Skip to main content</a>
+		<header role="banner">
+		  <div class="container">
+		    <div id="row-toolbar" class="text-right hidden-print">
+		      <div id="row-toolbar-col" class="col-md-24">
+		        <ul class="list-inline">
+		          <li><a href="https://dev.eclipse.org/site_login/createaccount.php"><i class="fa fa-user fa-fw"></i> Create account</a></li>
+		          <li><a href="https://dev.eclipse.org/site_login/?takemeback=http://www.eclipse.org/jetty/"><i class="fa fa-sign-in fa-fw"></i> Log in</a></li>
+		          		        </ul>
+		      </div>
+		    </div>
+			  <div id="row-logo-search">
+				  <div id="header-left" class="col-sm-14 col-md-16 col-lg-19">
+				    <div class="row">
+		          <div class="hidden-xs">
+		            <a href="http://www.eclipse.org/"><img src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/eclipse-800x188.png" alt="Eclipse.org logo" class="logo-eclipse-default"></a>		          </div>
+						   <div id="main-menu" class="navbar row yamm">
+				        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+				          <ul class="nav navbar-nav">
+				            <li class="visible-thin"><a href="http://www.eclipse.org/downloads/" target="_self">Download</a></li><li><a href="http://www.eclipse.org/users/" target="_self">Getting Started </a></li><li><a href="http://www.eclipse.org/membership/" target="_self">Members</a></li><li><a href="http://www.eclipse.org/projects/" target="_self">Projects</a></li>				            <li class="dropdown visible-xs"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Community <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://marketplace.eclipse.org/">Marketplace</a></li><li><a href="http://events.eclipse.org/">Events</a></li><li><a href="http://www.planeteclipse.org/">Planet Eclipse</a></li><li><a href="http://www.eclipse.org/community/eclipse_newsletter/">Newsletter</a></li><li><a href="https://www.youtube.com/user/EclipseFdn">Videos</a></li></ul></li><li class="dropdown visible-xs"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Participate <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="https://bugs.eclipse.org/bugs/">Report a Bug</a></li><li><a href="http://www.eclipse.org/forums/">Forums</a></li><li><a href="http://www.eclipse.org/mail/">Mailing Lists</a></li><li><a href="https://wiki.eclipse.org/">Wiki</a></li><li><a href="https://wiki.eclipse.org/IRC">IRC</a></li><li><a href="http://www.eclipse.org/contribute/">How to Contribute</a></li></ul></li><li class="dropdown visible-xs"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Working Groups <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://wiki.eclipse.org/Auto_IWG">Automotive</a></li><li><a href="http://iot.eclipse.org/">Internet of Things</a></li><li><a href="http://locationtech.org/">LocationTech</a></li><li><a href="http://lts.eclipse.org/">Long-Term Support</a></li><li><a href="http://polarsys.org/">PolarSys</a></li><li><a href="http://science.eclipse.org/">Science</a></li></ul></li>				            <!-- More -->
+				            <li class="dropdown hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle">More<b class="caret"></b></a>
+				              <ul class="dropdown-menu">
+				                <li>
+				                  <!-- Content container to add padding -->
+				                  <div class="yamm-content">
+				                    <div class="row">
+				                      <ul class="col-sm-8 list-unstyled"><li><p><strong>Community</strong></p></li><li><a href="http://marketplace.eclipse.org/">Marketplace</a></li><li><a href="http://events.eclipse.org/">Events</a></li><li><a href="http://www.planeteclipse.org/">Planet Eclipse</a></li><li><a href="http://www.eclipse.org/community/eclipse_newsletter/">Newsletter</a></li><li><a href="https://www.youtube.com/user/EclipseFdn">Videos</a></li></ul><ul class="col-sm-8 list-unstyled"><li><p><strong>Participate</strong></p></li><li><a href="https://bugs.eclipse.org/bugs/">Report a Bug</a></li><li><a href="http://www.eclipse.org/forums/">Forums</a></li><li><a href="http://www.eclipse.org/mail/">Mailing Lists</a></li><li><a href="https://wiki.eclipse.org/">Wiki</a></li><li><a href="https://wiki.eclipse.org/IRC">IRC</a></li><li><a href="http://www.eclipse.org/contribute/">How to Contribute</a></li></ul><ul class="col-sm-8 list-unstyled"><li><p><strong>Working Groups</strong></p></li><li><a href="http://wiki.eclipse.org/Auto_IWG">Automotive</a></li><li><a href="http://iot.eclipse.org/">Internet of Things</a></li><li><a href="http://locationtech.org/">LocationTech</a></li><li><a href="http://lts.eclipse.org/">Long-Term Support</a></li><li><a href="http://polarsys.org/">PolarSys</a></li><li><a href="http://science.eclipse.org/">Science</a></li></ul>					                  </div>
+				                  </div>
+				                </li>
+				              </ul>
+				            </li>
+				          </ul>
+				        </div>
+				        <div class="navbar-header">
+						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a href="http://www.eclipse.org/" class="navbar-brand visible-xs"><img src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/eclipse-800x188.png" alt="Eclipse.org logo" class="logo-eclipse-default" width="174"></a>		    				</div>
+					    </div>
+				    </div>
+				  </div>
+				  <div id="header-right" class="form-inline col-sm-10 col-md-8 col-lg-5 hidden-print hidden-xs">
+					  <div id="header-right-container">
+						  <div id="custom-search-form">
+						    <form action="//www.google.com/cse" id="form-eclipse-search" role="form" class="input-group">
+								  <input name="cx" value="017941334893793413703:sqfrdtd112s" type="hidden">
+								  <input id="search-box" placeholder="Search eclipse.org" name="q" size="25" class="form-control" type="text">
+		              <span class="input-group-btn">
+			              <button class="btn btn-default" type="submit">
+			                <i class="fa fa-search"></i>
+			              </button>
+	                </span>
+	              </form>
+	            </div><!-- /input-group -->
+	            <a id="btn-call-for-action" href="http://www.eclipse.org/downloads/" class="btn btn-huge btn-warning"><i class="fa fa-download"></i> Download</a>
+				    </div>
+				  </div>
+
+	      </div>
+
+		  </div>
+		</header>
+					<section id="breadcrumb" class="defaut-breadcrumbs hidden-print">
+			  <div class="container">
+			    <div class="col-xs-24">
+						<ol class="breadcrumb"><li><a href="http://www.eclipse.org/">Home</a></li><li><a href="http://www.eclipse.org/projects/">Projects</a></li><li><a href="http://www.eclipse.org/jetty">jetty</a></li></ol>					</div>
+			    			    </div>
+		    </section>
+	    	  		<main role="main" class=" no-promo">
+		  <div class="container background-image-none" id="novaContent">
+	        	        <!-- nav -->
+<aside id="leftcol" class="col-md-4">
+    <ul id="leftnav" class="ul-left-nav fa-ul hidden-print">
+	  
+			
+			  				  <li class="separator">
+				    <a class="separator" href="http://www.eclipse.org/jetty/">
+					    Jetty						</a>
+					</li>
+			  
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/about.php" target="_self">
+					    About Jetty					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/powered" target="_self">
+					    Jetty Powered					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/licenses.php" target="_self">
+					    Licenses					  </a>
+			    </li>
+				
+					
+											  <li class="separator">
+				    <a class="separator">
+						  Resources						</a>
+					</li>
+									
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/documentation" target="_self">
+					    Documentation					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/downloads.php" target="_self">
+					    Downloads					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html" target="_self">
+					    Maven Plugin					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://marketplace.eclipse.org/search/site/jetty?f[0]=im_taxonomy_vocabulary_3%3A31" target="_self">
+					    Eclipse Tooling					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/mailinglists.php" target="_self">
+					    Mailing Lists					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://download.eclipse.org/jetty/stable-9/apidocs/" target="_self">
+					    JavaDoc					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://download.eclipse.org/jetty/stable-9/xref/" target="_self">
+					    Source XRef					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/tools.php" target="_self">
+					    Tools					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://webtide.intalio.com/" target="_self">
+					    Blogs					  </a>
+			    </li>
+				
+					
+											  <li class="separator">
+				    <a class="separator">
+						  Project Management						</a>
+					</li>
+									
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/documentation/current/advanced-contributing.html#community" target="_self">
+					    Community					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/jetty/documentation/current/contributing-patches.html" target="_self">
+					    Contributing					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/projects/project-plan.php?projectid=rt.jetty" target="_self">
+					    Project Plan					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://www.eclipse.org/projects/ip_log.php?projectid=rt.jetty" target="_self">
+					    IP Log					  </a>
+			    </li>
+				
+					
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://git.eclipse.org/c/jetty" target="_self">
+					    Source					  </a>
+			    </li>
+				
+					
+											  <li class="separator">
+				    <a class="separator">
+						  Professional Services						</a>
+					</li>
+									
+			
+			  				  <li>
+				    <i class="fa fa-angle-double-right orange fa-fw"></i>
+				    <a href="http://marketplace.eclipse.org/search/site/jetty?f[0]=im_taxonomy_vocabulary_3%3A34" target="_self">
+					    Training and Consulting					  </a>
+			    </li>
+				
+						</ul>
+  </aside>
+
+    <div id="maincontent">
+    <div id="midcolumn">
+        <h1>Jetty</h1>
+        <table> 
+          <tbody><tr>
+            <td><p>Jetty provides a <a href="http://en.wikipedia.org/wiki/Web_server">Web server</a> and <a href="http://java.sun.com/javaee/5/docs/api/javax/servlet/package-summary.html">javax.servlet</a> container, plus support
+  for 
+  <a href="http://en.wikipedia.org/wiki/SPDY">SPDY</a>, 
+  <a href="http://en.wikipedia.org/wiki/WebSocket">WebSocket</a>, 
+  <a href="http://en.wikipedia.org/wiki/OSGi">OSGi</a>, 
+  <a href="http://en.wikipedia.org/wiki/JMX">JMX</a>, 
+  <a href="http://en.wikipedia.org/wiki/JNDI">JNDI</a>, 
+  <a href="http://en.wikipedia.org/wiki/Java_Authentication_and_Authorization_Service">JAAS</a> 
+  and many other integrations. These components are open source and 
+  available for commercial use and distribution.</p>
+            </td>
+            <td align="right">
+              <img alt="Jetty" src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/jetty-logo-80x22.png">
+            </td>
+           </tr>
+         </tbody></table>
+
+        <p>Jetty is used in a wide variety of projects and products, 
+both in development and production. Jetty can be easily embedded in 
+devices, tools, frameworks, application servers, and clusters. 
+        See the <a href="http://www.eclipse.org/jetty/powered">Jetty Powered</a> page for more uses of Jetty.</p>
+        <p>The current recommended version for use is Jetty 9 which can be obtained here: <a href="http://download.eclipse.org/jetty">Jetty Downloads</a>.  Also available are the latest maintenance releases of Jetty 8 and Jetty 7.</p>
+        <p>The Jetty project is hosted entirely at the Eclipse 
+Foundation and has been for a number of years.  Prior releases of Jetty 
+have existed in part or completely under the Jetty project at the 
+Codehaus. See the <a href="http://www.eclipse.org/jetty/about.php">About</a> page for more information about the history of Jetty.</p> 
+      
+        <table>
+          <tbody><tr>
+            <th>Features</th>
+            <th>Jetty Powered</th>
+          </tr>
+          
+          <tr>
+            <td>
+              <ul>
+                <li>Full-featured and standards-based</li>
+                <li>Open source and commercially usable</li>
+                <li>Flexible and extensible</li>
+                <li>Small footprint</li>
+                <li>Embeddable</li>
+                <li>Asynchronous</li>
+                <li>Enterprise scalable</li>
+                <li>Dual <a href="http://www.eclipse.org/jetty/licenses.php">licensed</a> under Apache and Eclipse</li>
+              </ul>
+            </td>
+          
+            <td>
+              <ul>
+                <li>Large clusters, such as the <a href="http://developer.yahoo.net/hadoop/">Yahoo Hadoop Cluster</a></li>
+                <li>Cloud computing, such as the <a href="http://code.google.com/appengine/">Google AppEngine</a></li>
+                <li>SaaS, such as <a href="http://www.zimbra.com/">Yahoo! Zimbra</a></li> 
+                <li>Application Servers, such as <a href="http://geronimo.apache.org/">Apache Geronimo</a></li>
+                <li>Frameworks, such as <a href="http://code.google.com/webtoolkit/">GWT</a></li>
+                <li>Tools, such as the <a href="http://www.eclipse.org/">Eclipse IDE</a></li>
+                <li>Devices, such as <a href="http://code.google.com/p/i-jetty/">phones</a></li>
+                <li><a href="http://www.eclipse.org/jetty/powered">More...</a></li>
+              </ul>
+            </td>    
+          </tr>
+        </tbody></table>
+      
+        <p>You can benefit from committer knowledge and get training, 
+consulting services, professional support and even production SLAs, just
+ ask us about it!</p>
+    </div>
+    </div>
+    <div id="rightcolumn">
+        
+  <div class="sideitem">
+    <h6>Quick Links</h6>
+    <ul>
+      <li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=rt.jetty">Project Summary</a></li>
+      <li><a href="http://www.eclipse.org/jetty/documentation/current">Documentation</a></li>
+      <li><a href="http://download.eclipse.org/jetty/stable-9/dist">Download</a> (as .zip or .tar.gz)</li>
+      <li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Jetty">Enter Bug</a></li>
+      <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;product=Jetty&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Reported Bugs</a></li>
+    </ul>
+  </div>
+
+  <div class="sideitem">
+    <h6>Active Contributors</h6>
+    <div style="position: relative; height: 50px;">
+      <a href="http://www.intalio.com/jetty" target="_blank" title="Intalio"><img alt="Intalio Logo" src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/intalio.png" style="position: absolute; left: 10px; top: 10px;"></a>
+          <br>
+    </div>
+    <div style="position: relative; height: 50px;">
+      <a href="http://www.webtide.com/" target="_blank" title="Webtide"><img alt="Webtide Logo" src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/webtide.png" style="position: absolute; left: 10px; top: 10px; width: 150px; height: auto;"></a>
+    </div>
+  </div>
+        
+    </div>
+      </div>
+    </main> <!-- /#main-content-container-row -->
+    <p id="back-to-top">
+      <a class="visible-xs" href="#top">Back to the top</a>
+    </p>
+    <footer role="contentinfo" id="solstice-footer">
+
+      <div class="container">
+
+        <div class="row">
+          <section id="footer-eclipse-foundation" class="col-xs-offset-1 col-xs-11 col-sm-7 col-md-6 col-md-offset-0 hidden-print">
+            <h2 class="section-title">Eclipse Foundation</h2>
+            <ul class="nav">
+              <li><a href="http://www.eclipse.org/org/">About us</a></li>
+              <li><a href="http://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+              <li><a href="http://www.eclipse.org/donate">Donate</a></li>
+              <li><a href="http://www.eclipse.org/org/documents/">Governance</a></li>
+              <li><a href="http://www.eclipse.org/artwork/">Logo and Artwork</a></li>
+              <li><a href="http://www.eclipse.org/org/foundation/directors.php">Board of Directors</a></li>
+            </ul>
+          </section>
+          <section id="footer-legal" class="col-xs-offset-1 col-xs-11 col-sm-7 col-md-6 col-md-offset-0 hidden-print ">
+            <h2 class="section-title">Legal</h2>
+            <ul class="nav">
+              <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+              <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+              <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+              <li><a href="http://www.eclipse.org/org/documents/epl-v10.php">Eclipse Public License </a></li>
+              <li><a href="http://www.eclipse.org/legal/">Legal Resources </a></li>
+
+            </ul>
+          </section>
+
+          <section id="footer-useful-links" class="col-xs-offset-1 col-xs-11 col-sm-7 col-md-6 col-md-offset-0 hidden-print">
+            <h2 class="section-title">Useful Links</h2>
+            <ul class="nav">
+              <li><a href="https://bugs.eclipse.org/bugs/">Report a Bug</a></li>
+              <li><a href="http://help.eclipse.org/">Documentation</a></li>
+              <li><a href="http://www.eclipse.org/contribute/">How to Contribute</a></li>
+              <li><a href="http://www.eclipse.org/mail/">Mailing Lists</a></li>
+              <li><a href="http://www.eclipse.org/forums/">Forums</a></li>
+              <li><a href="http://marketplace.eclipse.org/">Marketplace</a></li>
+            </ul>
+          </section>
+
+          <section id="footer-other" class="col-xs-offset-1 col-xs-11 col-sm-7 col-md-6 col-md-offset-0 hidden-print">
+
+            <h2 class="section-title">Other</h2>
+            <ul class="nav">
+               <li><a href="http://www.eclipse.org/ide/">IDE and Tools</a></li>
+              <li><a href="http://www.eclipse.org/projects">Community of Projects</a></li>
+              <li><a href="http://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
+            </ul>
+
+            <ul class="list-inline social-media">
+              <li><a href="https://twitter.com/EclipseFdn"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="https://plus.google.com/+Eclipse"><i class="fa fa-google-plus-square"></i></a></li>
+              <li><a href="https://www.facebook.com/eclipse.org"><i class="fa fa-facebook-square"></i> </a></li>
+              <li><a href="https://www.youtube.com/user/EclipseFdn"><i class="fa fa-youtube-square"></i></a></li>
+            </ul>
+
+          </section>
+          <div id="copyright" class="col-xs-offset-1 col-sm-14 col-md-24 col-md-offset-0">
+            <div>
+              <span class="hidden-print"><img src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/eclipse-logo-bw-800x188.png" alt="Eclipse.org black and white logo" id="logo-eclipse-white" height="39" width="166"></span>
+              <p id="copyright-text">Copyright © 2014 The Eclipse Foundation. All Rights Reserved.</p>
+            </div>
+          </div>
+        <a style="display: none;" href="#" class="scrollup">Back to the top</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/ga.js" async="" type="text/javascript"></script><script src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/main.js"></script>
+        <script type="text/javascript" src="Jetty%20-%20Servlet%20Engine%20and%20Http%20Server-Dateien/brand"></script>
+          <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1149868-7']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+  
+
+</body></html>

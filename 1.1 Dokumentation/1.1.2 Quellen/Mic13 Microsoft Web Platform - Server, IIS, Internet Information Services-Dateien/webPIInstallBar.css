@@ -1,0 +1,92 @@
+﻿/***************************
+ WebPI Download Prompt Bar
+***************************/
+
+#webpi-download-prompt-bar
+{
+    height: 0;
+    overflow: hidden;
+    background: transparent url(/web/media/webpi-download-prompt-bar-bkgd.png) 0 0 repeat-x;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action
+{
+    float: right;
+    width: 550px;
+    text-align: right;
+    font-size: 12pt;
+    line-height: 38px;
+    margin-right: 15px;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:active,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:visited,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:hover,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:link
+{
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a #webpi-download-prompt-word1,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:active #webpi-download-prompt-word1,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:visited #webpi-download-prompt-word1,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:hover #webpi-download-prompt-word1,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:link #webpi-download-prompt-word1
+{
+    color: Black !important;
+    font-weight: bold;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a #webpi-download-prompt-rest-of-words,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:active #webpi-download-prompt-rest-of-words,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:visited #webpi-download-prompt-rest-of-words,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:hover #webpi-download-prompt-rest-of-words,
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:link #webpi-download-prompt-rest-of-words
+{
+    color: #EEEEEE !important;
+    font-weight: bolder;
+    padding: 3px 30px 3px 4px;
+    border-top: solid 1px #79B731;
+    border-left: solid 1px #79B731;
+    border-bottom: solid 1px #4B8C06;
+    border-right: solid 1px #4B8C06;
+    background: transparent url(/web/media/webpi-download-prompt-bar-arrow.png) center right no-repeat;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-call-to-action a:hover #webpi-download-prompt-rest-of-words
+{
+    color: #FFFFFF !important;
+    border-top-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+    border-bottom-color: #555555;
+    border-right-color: #555555;
+    background: transparent url(/web/media/webpi-download-prompt-bar-arrow-bright.png) center right no-repeat;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-legalese
+{
+    float: right;
+    width: 330px;
+    font-size: 7pt;
+    color: #404040;
+    padding: 4px 0 0 20px;
+}
+
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a,
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a:visited,
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a:active,
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a:hover,
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a:link
+{
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+#webpi-download-prompt-bar #webpi-download-prompt-legalese a:hover
+{
+    color: #FFFFFF !important;
+}

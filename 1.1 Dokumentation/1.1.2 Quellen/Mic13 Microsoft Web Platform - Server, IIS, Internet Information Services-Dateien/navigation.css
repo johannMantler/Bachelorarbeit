@@ -1,0 +1,367 @@
+﻿/*  
+This is to ensure all UI Nav elements generated 
+from the ASPNET Menu system follows the MSCOM 
+UI Typography Guidelines
+*/
+
+.AspNet-Menu 
+{
+    font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+}
+
+/* End */
+
+#PrimaryNav-wrapper-1
+{
+    position: relative;
+    z-index: 1000;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+}
+#SecondaryNav-wrapper-1
+{
+    position: relative;
+    background: white url(menu2-middle.jpg) left top repeat-x;
+    z-index: 999;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+}
+#SecondaryNav-wrapper-2
+{
+    position: relative;
+    height: 35px;
+}
+
+.PrimaryNav
+{
+    position: relative;
+    height: 38px;
+    background: black url(menu-middle.png) left top repeat-x;
+}
+.SecondaryNav
+{
+    position: relative;
+    width: 945px;
+}
+.PrimaryNav,
+.PrimaryNav ul
+{
+    width: 945px;
+}
+.PrimaryNav ul
+{
+    padding-left: 4px;
+}
+.PrimaryNav ul,
+.PrimaryNav ul li,
+.SecondaryNav ul,
+.SecondaryNav ul li
+{
+    padding: 0;
+}
+.PrimaryNav ul ul
+{
+    top: 38px;
+    left: -1px;
+    width: 912px;
+}
+.PrimaryNav ul li
+{
+    background: transparent url(menu-divider.png) right top no-repeat;
+}
+.PrimaryNav ul ul li,
+.SecondaryNav ul li
+{
+    background: transparent url(menu2-divider.jpg) right top no-repeat;
+}
+.PrimaryNav ul li.AspNet-Menu-Last,
+.SecondaryNav ul li.AspNet-Menu-Last
+{
+    background: none;
+}
+
+.PrimaryNav ul li a,
+.PrimaryNav ul li span,
+.SecondaryNav ul li a,
+.SecondaryNav ul li span
+{
+    position: relative;
+    display: block;
+    height: 18px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: White;
+}
+.PrimaryNav ul li a,
+.PrimaryNav ul li span
+{
+    padding: 10px 6px 5px 6px;
+    margin: 3px 10px 2px 10px;
+}
+.PrimaryNav ul ul li a,
+.PrimaryNav ul ul li span,
+.SecondaryNav ul li a,
+.SecondaryNav ul li span
+{
+    padding: 10px 6px 3px 6px;
+    margin: 1px 10px 1px 10px;
+}
+.PrimaryNav ul li:hover ul li a,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a,
+.PrimaryNav ul li:hover ul li span,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span,
+.SecondaryNav ul li a,
+.SecondaryNav ul li span
+{
+    color: #555555;
+}
+.PrimaryNav ul li a span.AspNet-Menu-Left,
+.PrimaryNav ul li span span.AspNet-Menu-Left,
+.PrimaryNav ul li a span.AspNet-Menu-Right,
+.PrimaryNav ul li span span.AspNet-Menu-Right,
+.SecondaryNav ul li a span.AspNet-Menu-Left,
+.SecondaryNav ul li span span.AspNet-Menu-Left,
+.SecondaryNav ul li a span.AspNet-Menu-Right,
+.SecondaryNav ul li span span.AspNet-Menu-Right
+{
+    position: absolute;
+    top: 0;
+    width: 4px;
+    font-size: 1px;
+    padding: 0;
+    margin: 0;
+}
+.PrimaryNav ul li a span.AspNet-Menu-Left,
+.PrimaryNav ul li span span.AspNet-Menu-Left,
+.PrimaryNav ul li a span.AspNet-Menu-Right,
+.PrimaryNav ul li span span.AspNet-Menu-Right
+{
+    height: 33px;
+}
+.SecondaryNav ul li a span.AspNet-Menu-Left,
+.SecondaryNav ul li span span.AspNet-Menu-Left,
+.SecondaryNav ul li a span.AspNet-Menu-Right,
+.SecondaryNav ul li span span.AspNet-Menu-Right
+{
+    height: 31px;
+}
+.PrimaryNav ul li a span.AspNet-Menu-Left,
+.PrimaryNav ul li span span.AspNet-Menu-Left,
+.SecondaryNav ul li a span.AspNet-Menu-Left,
+.SecondaryNav ul li span span.AspNet-Menu-Left
+{
+    left: -4px;
+}
+.PrimaryNav ul li a span.AspNet-Menu-Right,
+.PrimaryNav ul li span span.AspNet-Menu-Right,
+.SecondaryNav ul li a span.AspNet-Menu-Right,
+.SecondaryNav ul li span span.AspNet-Menu-Right
+{
+    right: -4px;
+}
+.PrimaryNav ul li a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li a:hover span.AspNet-Menu-Left
+{
+    background: url(menu-selected-left.jpg) left top no-repeat;
+}
+.PrimaryNav ul li:hover ul li a span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a span.AspNet-Menu-Left
+{
+    background: none;
+}
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li:hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li:hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li.AspNet-Menu-Hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover  ul li.AspNet-Menu-Hover a span.AspNet-Menu-Left,
+.PrimaryNav ul li:hover ul li a:hover span.AspNet-Menu-Left,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a:hover span.AspNet-Menu-Left,
+.SecondaryNav ul li a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.SecondaryNav ul li span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.SecondaryNav ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.SecondaryNav ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+.SecondaryNav ul li:hover a span.AspNet-Menu-Left,
+.SecondaryNav ul li.AspNet-Menu-Hover a span.AspNet-Menu-Left,
+.SecondaryNav ul li a:hover span.AspNet-Menu-Left
+{
+    background: url(menu2-selected-left.jpg) left top no-repeat;
+}
+.PrimaryNav ul li a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li span.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li a:hover span.AspNet-Menu-Right
+{
+    background: url(menu-selected-right.jpg) left top no-repeat;
+}
+.PrimaryNav ul li:hover ul li a span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a span.AspNet-Menu-Right
+{
+    background: none;
+}
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li span.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li:hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li:hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li.AspNet-Menu-Hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li.AspNet-Menu-Hover a span.AspNet-Menu-Right,
+.PrimaryNav ul li:hover ul li a:hover span.AspNet-Menu-Right,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a:hover span.AspNet-Menu-Right,
+.SecondaryNav ul li a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.SecondaryNav ul li span.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.SecondaryNav ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.SecondaryNav ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+.SecondaryNav ul li:hover a span.AspNet-Menu-Right,
+.SecondaryNav ul li.AspNet-Menu-Hover a span.AspNet-Menu-Right,
+.SecondaryNav ul li a:hover span.AspNet-Menu-Right
+{
+    background: url(menu2-selected-right.jpg) left top no-repeat;
+}
+.PrimaryNav ul li:hover,
+.PrimaryNav ul li a:hover,
+.PrimaryNav ul li.AspNet-Menu-Hover,
+.PrimaryNav ul li:hover a, 
+.PrimaryNav ul li:hover span, 
+.PrimaryNav ul li.AspNet-Menu-Hover a,
+.PrimaryNav ul li.AspNet-Menu-Hover span
+{
+    color: White;
+}
+.PrimaryNav ul ul li:hover,
+.PrimaryNav ul ul li a:hover,
+.PrimaryNav ul ul li.AspNet-Menu-Hover,
+.PrimaryNav ul ul li:hover a, 
+.PrimaryNav ul ul li:hover span, 
+.PrimaryNav ul ul li.AspNet-Menu-Hover a,
+.PrimaryNav ul ul li.AspNet-Menu-Hover span,
+.SecondaryNav ul li:hover,
+.SecondaryNav ul li a:hover,
+.SecondaryNav ul li.AspNet-Menu-Hover,
+.SecondaryNav ul li:hover a, 
+.SecondaryNav ul li:hover span, 
+.SecondaryNav ul li.AspNet-Menu-Hover a,
+.SecondaryNav ul li.AspNet-Menu-Hover span
+{
+    color: Black;
+}
+.PrimaryNav ul li a span,
+.PrimaryNav ul li a:hover span,
+.PrimaryNav ul li span span,
+.SecondaryNav ul li a span,
+.SecondaryNav ul li a:hover span,
+.SecondaryNav ul li span span
+{
+    text-decoration: none !important;
+}
+.PrimaryNav ul li.AspNet-Menu-Selected,
+.PrimaryNav ul li.AspNet-Menu-Selected a.AspNet-Menu-Selected,
+.PrimaryNav ul li.AspNet-Menu-Selected span.AspNet-Menu-Selected,
+.PrimaryNav ul li.AspNet-Menu-ChildSelected,
+.PrimaryNav ul li.AspNet-Menu-ChildSelected a.AspNet-Menu-ChildSelected,
+.PrimaryNav ul li.AspNet-Menu-ChildSelected span.AspNet-Menu-ChildSelected
+{
+    color: White;
+}
+.SecondaryNav ul li.AspNet-Menu-Selected a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.SecondaryNav ul li.AspNet-Menu-Selected a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+.SecondaryNav ul li.AspNet-Menu-Selected span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+.SecondaryNav ul li.AspNet-Menu-Selected span.AspNet-Menu-Selected span.AspNet-Menu-Right
+{
+    color: White !important;
+}
+.PrimaryNav ul li a.AspNet-Menu-Selected,
+.PrimaryNav ul li a.AspNet-Menu-ChildSelected,
+.PrimaryNav ul li:hover a,
+.PrimaryNav ul li.AspNet-Menu-Hover a,
+.PrimaryNav ul li:hover span,
+.PrimaryNav ul li.AspNet-Menu-Hover span,
+.PrimaryNav ul li a:hover
+{
+    background: url(menu-selected-middle.jpg) left top repeat-x;
+}
+.PrimaryNav ul li:hover ul li a,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a,
+.PrimaryNav ul li:hover ul li span,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li span
+{
+    background: none;
+}
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-Selected,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-Selected,
+.PrimaryNav ul li:hover ul li a.AspNet-Menu-ChildSelected,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a.AspNet-Menu-ChildSelected,
+.PrimaryNav ul li:hover ul li:hover a,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li:hover a,
+.PrimaryNav ul li:hover ul li.AspNet-Menu-Hover a,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li.AspNet-Menu-Hover a,
+.PrimaryNav ul li:hover ul li:hover span,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li:hover span,
+.PrimaryNav ul li:hover ul li.AspNet-Menu-Hover span,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li.AspNet-Menu-Hover span,
+.PrimaryNav ul li:hover ul li a:hover,
+.PrimaryNav ul li.AspNet-Menu-Hover ul li a:hover,
+.SecondaryNav ul li a.AspNet-Menu-Selected,
+.SecondaryNav ul li a.AspNet-Menu-ChildSelected,
+.SecondaryNav ul li:hover a,
+.SecondaryNav ul li.AspNet-Menu-Hover a,
+.SecondaryNav ul li:hover span,
+.SecondaryNav ul li.AspNet-Menu-Hover span,
+.SecondaryNav ul li a:hover
+{
+    background: url(menu2-selected-middle.jpg) left top repeat-x;
+}
+.DimMenu ul li a,
+.DimMenu ul li span,
+.SecondaryNav .DimMenu
+{
+    /* color: #888888; */
+}
+div.DimMenu ul.AspNet-Menu li a.AspNet-Menu-Selected,
+div.DimMenu ul.AspNet-Menu li a.AspNet-Menu-ChildSelected
+{
+    background: none !important;
+}
+div.DimMenu ul li a.AspNet-Menu-Selected span.AspNet-Menu-Left,
+div.DimMenu ul li span.AspNet-Menu-Selected span.AspNet-Menu-Left,
+div.DimMenu ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+div.DimMenu ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Left,
+div.DimMenu ul li a.AspNet-Menu-Selected span.AspNet-Menu-Right,
+div.DimMenu ul li span.AspNet-Menu-Selected span.AspNet-Menu-Right,
+div.DimMenu ul li a.AspNet-Menu-ChildSelected span.AspNet-Menu-Right,
+div.DimMenu ul li span.AspNet-Menu-ChildSelected span.AspNet-Menu-Right
+{
+    background: none !important;
+}
+.DimMenu ul.AspNet-Menu li.AspNet-Menu-Selected a.AspNet-Menu-Selected,
+.DimMenu ul.AspNet-Menu li.AspNet-Menu-Selected span.AspNet-Menu-Selected,
+.DimMenu ul.AspNet-Menu li.AspNet-Menu-ChildSelected a.AspNet-Menu-ChildSelected,
+.DimMenu ul.AspNet-Menu li.AspNet-Menu-ChildSelected span.AspNet-Menu-ChildSelected,
+.SecondaryNav ul.AspNet-Menu li.AspNet-Menu-Selected a.DimMenu,
+.SecondaryNav ul.AspNet-Menu li.AspNet-Menu-Selected span.DimMenu
+{
+    color: White !important;
+}
+.SecondaryNav ul.AspNet-Menu li.DimMenu,
+.SecondaryNav ul.AspNet-Menu li.DimMenu span.AspNet-Menu-Left,
+.SecondaryNav ul.AspNet-Menu li.DimMenu span.AspNet-Menu-Right
+{
+    visibility: hidden !important;
+}

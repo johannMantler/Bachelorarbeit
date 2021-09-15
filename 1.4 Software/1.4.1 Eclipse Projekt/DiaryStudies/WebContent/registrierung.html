@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+	<title>HCI Diary</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico">
+	<link type="image/x-icon" href="pics/favicon.ico">
+	
+	<link rel="stylesheet" href="jquerymobile/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquerymobile/theme/themes/OwnTheme.min.css" />
+	<link rel="stylesheet" href="jquerymobile/theme/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquerymobile.css"/>
+	<link rel="stylesheet" href="ownStyle.css"/> <!-- CSS overrides theme-->
+
+	<script src="jquerymobile/jquery.js"></script>
+	<script src="jquerymobile/jquery-ui/jquery-ui.js"></script> 
+	<script src="jquerymobile/defaultconfig.js"></script>
+	<script src="forms.js"></script>
+	<script src="jquerymobile/jquerymobile.js"></script>
+	<script src="registrierung.js"></script>
+</head>
+<body>
+
+	<div data-role="page" id="info">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div class="separator separatorRegistrierung" ></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div class="formContainer">
+				<p>
+					In dieser Studie soll die Wahrnehmung von Erfolgs- und Misserfolgssituationen bei der Verwendung von Computersystemen (Hard- und Software) untersucht werden.
+					Diese App enthält dafür jeweils zehn so genannte Situationsberichte zu Problemen und Erfolgen bei der Computerarbeit. Bitte füllen Sie einen Situationsbericht aus, wenn Ihnen am Computer etwas gelingt oder nicht gelingt.
+				</p>
+				<p class="heading1">Jeder Situationsbericht besteht aus zwei Teilen:</p>
+				<table>
+					<tr>
+						<td class="aufzaehlung hintergrundFarbe mylabel">1</td><td>Der erste Teil soll ganz knapp die Situation beschreiben.</td>
+					</tr>
+					<tr>
+						<td class="aufzaehlung hintergrundFarbe mylabel">2</td><td>Der zweite Teil bezieht sich auf Ihre Wahrnehmung des Problems bzw. Erfolgs.</td>
+					</tr>
+				</table>
+				<p>
+					Für die Datenerhebung ist es wichtig, dass das Ausfüllen möglichst zeitnah geschieht. Haben Sie das Ausfüllen einmal vergessen, lassen Sie diese Situation einfach weg und füllen Sie das nächste Mal einen Situationsbericht aus. Denken Sie daran:<span class="heading2">Auch kleine Erfolge oder Probleme sind von Interesse!</span>
+					<br>
+					Alle erfassten Daten werden anonymisiert verwendet und unterliegen selbstverständlich dem <a href="datenschutz.html" data-theme='b' class="darkLink">Datenschutz</a>.
+				</p>
+				<p>
+					Als kleines Dankeschön verlosen wir unter allen Teilnehmerinnen und Teilnehmern zwei Amazon-Gutscheine im Wert von jeweils 25,- € <a href="teilnahmebedingungen.html" data-theme='b' class="darkLink">(Teilnahmebedingungen)</a>.
+				</p>
+				<p>Viel „Erfolg“ beim Ausfüllen des Tagebuchs!</p>
+			</div>
+			<a href="#seite1" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="seite1">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div id="menu_1"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="gebJahr"></div>
+			<div id="geschlecht"></div>
+			<a class="storeData" href="#seite2" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="seite2">
+		<div id="seite2Header" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div id="menu_2"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="bildungsabschluss"></div>
+			<div id=""></div>
+			<div class="formContainer"> 
+				<label for="derzeitBeruflich" class="mylabel">Was machen Sie zur Zeit beruflich?</label>
+				<input type="text" name="derzeitBeruflich" id="derzeitBeruflich" />
+			</div>
+			<a class="storeData" href="#seite3" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="seite3">
+		<div id="seite3Header" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div id="menu_3"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="compPrivat"></div>
+			<div id="compBeruflich"></div>
+			<div id="compStdPrivat"></div>
+			<div id="compStdBeruflich"></div>
+			<a class="storeData" href="#seite4" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="seite4">
+		<div id="seite4Header" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div id="menu_4"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="regRadio_1"></div>
+			<div id="regRadio_2"></div>
+			<div id="regRadio_3"></div>
+			<div id="regRadio_4"></div>
+			<div class="formContainer">
+				<span class="mylabel">Welche(s) Betriebssystem(e) nutzen Sie hauptsächlich?</span>
+				<fieldset id="os" data-role="controlgroup">
+					<input type="checkbox" name="os_windows" id="os_windows" value="1"/>
+					<label for="os_windows">Windows</label>
+					<input type="checkbox" name="os_mac" id="os_mac" value="1"/>
+					<label for="os_mac">Mac OS X</label>
+					<input type="checkbox" name="os_linux" id="os_linux" value="1"/>
+					<label for="os_linux">Linux/Unix</label>
+					<input type="checkbox" name="os_andere" id="os_andere" value="1"/>
+					<label for="os_andere">andere</label>
+				</fieldset>
+			</div>
+			<a class="storeData" href="#seite5" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="seite5">
+		<div id="seite5Header" data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div id="menu_5"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<form id="regForm" action="#" method="post">
+				<div class="formContainer">
+					<div> 
+						<label for="username" class="mylabel">Benutzername</label>
+						<input type="text" name="username" id="username" value=""/>
+					</div>
+					<div> 
+						<label for="password" class="mylabel">Passwort</label>
+						<input type="password" name="password" id="password" value="" placeholder="Mindestens 8 Zeichen"/>
+					</div>
+					<div> 
+						<label for="password_2" class="mylabel">Passwort wiederholen</label>
+						<input type="password" name="password_2" id="password_2" value=""/>
+					</div>
+					<div id="errorMessage" class="errorMessage mylabel"></div>
+					<div>
+					  <label for="email" class="mylabel">E-Mail-Adresse
+							<!--	<br><span class="mylabelSmall">Ihre E-Mail-Adresse wird nur benötigt, um Ihnen Ihr Passwort zu senden, falls Sie es vergessen haben. Außerdem verlosen wir unter allen Teilnehmern zwei Amazon-Gutscheine im Wert von 25,- €. Auch hier würden Sie eine Benachrichtigung per Mail erhalten.</span>
+						-->
+						</label>
+						<input type="email" name="email" id="email" value=""/>
+					</div>
+					<div>
+						<input type="checkbox" data-mini="true" name="anmeldeDatenMerken" value="1" checked="checked" id="anmeldeDatenMerken"/>
+						<label for="anmeldeDatenMerken">Anmeldedaten merken</label>
+					</div>
+					<div>
+						<input type="checkbox" data-mini="true" name="datenschutzAkzeptiert" value="1"  id="datenschutzAkzeptiert"/>
+						<label for="datenschutzAkzeptiert">Ich habe die <a href="datenschutz.html" data-theme='b' id="datenschutzAkzeptiertLink">Datenschutzbestimmungen</a> gelesen und bin damit einverstanden.</label>
+					</div>
+					<div>
+						<input type="checkbox" data-mini="true" name="verlosungsTeilnahme" value="1"  id="verlosungsTeilnahme" checked="checked"/>
+						<label for="verlosungsTeilnahme">Ich möchte an der Verlosung der 25,-€ Amazon-Gutscheine teilnehmen und bin mit den <a href="teilnahmebedingungen.html" data-theme='b' id="verlosungsTeilnahmeLink">Teilnahmebedingungen</a> des Gewinnspiels einverstanden.</label>
+					</div>
+				</div>
+				<input id="abschicken" type="submit" data-theme='c' value="Fertig" >
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="fragebogen">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Registrierung</div>
+			</div>
+			<div class="separator separatorRegistrierung" ></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div class="formContainer">
+				<p class="mylabel">Fragebogen</p>
+				<p>Bevor Sie mit der Tagebuchstudie beginnen, möchten wir Sie bitten, einen Fragebogen auszufüllen. In dem Fragebogen sollen Sie Ihre Computerkenntnise einschätzen.</p>
+				<p>Das Ausfüllen des Fragebogens dauert ca. 10 Minuten. Wenn Sie möchten, können Sie diesen Fragebogen auch überspringen und zu einem späteren Zeitpunkt ausfüllen.</p>
+			</div>
+			<a href="fragebogen.html" data-role="button" data-ajax="false" data-theme='c'>Jetzt ausfüllen</a>
+			<a href="auswahl.html#beispiel" data-ajax="false" data-role="button" data-theme='c'>Später ausfüllen</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+</body>
+</html>

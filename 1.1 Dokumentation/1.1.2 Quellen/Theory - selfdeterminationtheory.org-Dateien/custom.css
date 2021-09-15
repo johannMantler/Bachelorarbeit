@@ -1,0 +1,130 @@
+/******************************************  
+ CUSTOM STYLESHEET
+*******************************************/
+
+/*
+* You can place your custom CSS statements in this file, after this message.
+* It is better to write everything custom here because this file won't be replaced during updates.
+* 
+* Simply copy an existing style from style.css to this file, and modify it to your liking.
+*/
+
+{padding:0; margin:0; border: none; outline:0; }
+body {font-family: Helvetica, Arial, Tahoma, sans-serif; color: #333; font-size: 62.5%; text-align:center; background-color: #fff; }
+a {text-decoration:none; color:#0c5390; }
+a:hover {text-decoration:none; color: #f99734; }
+h1,h2,h3,h4,h5,h6 {font-weight:normal; margin:0; padding:0; color:#885e4a; }
+p {margin: 0 0 10px; }
+li,p {line-height: 1.6em; }
+li {list-style-type: none; }
+
+/******************************************  
+ Menus
+*******************************************/
+
+#menuhead, #menuhead ul {margin:0; padding:0; position: relative; line-height:18px; z-index:300; width:100%; }
+#menuhead {background-color: #3a2115; height: 36px; line-height: 36px; font-size: 12px; font-weight: normal; margin-bottom: 15px; }
+#menuhead a {display:block; color: #fff; text-decoration: none; padding: 0 15px 0; }  
+#menuhead a:hover, #menuhead .current-menu-item > a {color: #fff; text-shadow: #b86d21 1px 1px 0; background-color: #885e4a; }  
+#menuhead li {float:left; display: inline; position:relative; line-height: 36px; font-size: 16px; border-right: solid 1px #fff;}
+#menuhead li li {line-height: 28px; }  
+#menuhead ul {position:absolute; display:none; width:120px; top:36px; left:0; }  
+#menuhead ul a {border-left:1px solid #333; border-right: 1px solid #333; border-top: solid 1px #333; background-color: #444; text-shadow: none;}  
+#menuhead li ul {width:130px;}  
+#menuhead li ul a {width:130px; float:left; display:inline; border-bottom:1px solid #555;}  
+#menuhead ul ul {top:auto;}  
+#menuhead li ul ul {left:130px; margin:0 0 0 10px;}  
+#menuhead li:hover ul ul, #menuhead li:hover ul ul ul, #menuhead li:hover ul ul ul ul {display:none;}  
+#menuhead li:hover ul, #menuhead li li:hover ul, #menuhead li li li:hover ul, #menuhead li li li li:hover ul {display:block;}
+
+#menu, #menu2 {float: left; display: inline; position:relative; z-index:200; }
+#menu li, #menu2 li {float: left; display: inline; font-size: 11px; font-weight: bold; text-transform: uppercase; margin-right: 25px; }
+#menu li li, #menu2 li li {margin-right: 0;}
+#menu2 {z-index: 100;}
+#menu2 li {text-transform: none;}
+
+div.column p.heading, #footerColumn p.heading {font-size: 11px; text-transform: uppercase; }
+#content div.column-content {line-height: 20px; }
+#content ul.menu {border-bottom: solid 1px #ccc; margin-bottom: 15px; }
+#content ul.menu li {font-size: 17px; font-weight: bold; padding: 10px 0; border-top: solid 1px #ccc; }
+#content ul.menu ul {margin: 10px 0 5px 10px; border-left: solid 1px #ccc; padding-left: 10px; }
+#content ul.menu ul li {border: none; font-size: 12px; font-weight: normal;}
+#content ul.menu li.current-menu-item > a {color: #333; font-weight: bold; }
+#content ul.menu li.current-menu-item > a:hover {color: #f99734;}
+
+
+
+div.postInfo {margin-bottom: 15px; padding-bottom: 15px; border-bottom: solid 1px #ccc; font-size: 36px; line-height: 18px; }
+
+.posts {margin-bottom: 10px; }
+.posts .post {padding-bottom: 10px; border-bottom: solid 1px #ddd; line-height: 18px; margin-bottom: 15px; }
+.posts .post-last {margin-right: 0; }
+.posts .post h2 {font-size: 12px; font-weight: bold; line-height: 18px; margin-bottom: 2px; }
+.posts .post div.thumb {float: left; display: inline; margin: 0 20px 10px 0; }
+.posts p.postmetadata, p.postmetadata {font-size: 10px; text-transform: uppercase; margin: 5px 0 5px; color: #999; }
+.posts p.postmetadata a, h2.heading a, div.postInfo a, div.single a, a.highlight 
+.posts p.postmetadata a:hover, h2.heading a:hover, div.postInfo a:hover, div.single a:hover, a.highlight:hover {text-decoration: underline; }
+.posts .post-info {
+	overflow: hidden;
+}
+
+/********************************************************************************************* 
+
+2. Single Post/Page
+
+*********************************************************************************************/
+
+
+div.single p {margin: 0 0 14px; }
+div.single ul, div.single ol {margin-left: 20px; margin-bottom: 14px; }
+div.single li {list-style-position: inside;} 
+div.single ul li {list-style-type: square;}
+div.single ol li {list-style-type: decimal;} 
+div.single blockquote {margin-left: 20px; padding-left: 20px; font-style: italic; border-left: dotted 2px #aaa; }
+div.single h2, div.single h3, div.single.h4, div.single h5, div.single h6 {margin: 14px 0; }
+div.single .content-narrow .widget ul, div.single .content-narrow .widget ol {margin-left: 0;}
+div.single .content-narrow .widget li {list-style-type: none; }
+div.single h2, .content-narrow .widget h2 {font-size: 24px; }
+div.single h3 {font-size: 20px; }
+body.tax-domains div.single h3 {font-size: 26px; }
+div.single h4 {font-size: 18px; }
+div.single h5 {font-size: 16px; }
+div.single h6 {font-size: 14px; }
+.alignleft {float: left; display: inline; margin: 0 15px 10px 0; }
+.alignright {float: right; display: inline; margin: 0 0 10px 15px; }
+
+/********************************************************************************************* 
+
+0. CSS Reset  -------------------------  All Theme Files
+
+*********************************************************************************************/
+
+* {padding:0; margin:0; border: none; outline:0; }
+body {font-family: Helvetica, Arial, Tahoma, sans-serif; font-size: 62.5%; color: #333; text-align:center; background-color: #fff; }
+a {text-decoration:none; color:#0c5390; }
+a:hover {text-decoration:none; color: #f99734; }
+h1,h2,h3,h4,h5,h6 {font-weight:normal; margin:0; padding:0; color:#885e4a; }
+p {margin: 0 0 10px; }
+li,p {line-height: 1.6em; }
+li {list-style-type: none; }
+
+#wrap {width:100%; margin: 0 auto; text-align:left;  }
+#wrap div.wrap {width: 960px; margin: 0 auto; text-align: left; }
+#wrap div.clear {clear: both; font-size:1px; height: 1px; margin:0; line-height: 1px; }
+#wrap div.sep {font-size:1px; height: 1px; margin:20px 0; line-height: 1px; background-color: #89cdd4; }
+#wrap div.sepinside {margin: 0 0 20px; }
+
+#header {padding: 5px 0 30px; }
+#header div.banner {float: right; display: inline; }
+#logo {float: left; display: inline; font-family: Georgia, Times, "Times New Roman", serif; text-transform: uppercase; text-align: left; }
+#logo h1 { font-size: 36px; font-weight: bold; }
+#logo #tagline { font-size: 23px; color: #0c5390; }
+
+
+/********************************************************************************************* 
+
+0. Custom Styles
+
+*********************************************************************************************/
+.sha {border-bottom: 5px solid #ddd; margin-top: 33px;}
+	

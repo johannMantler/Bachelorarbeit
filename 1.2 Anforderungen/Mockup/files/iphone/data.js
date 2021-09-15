@@ -1,0 +1,135 @@
+﻿$axure.loadCurrentPage({
+  "url":"iphone.html",
+  "generationDate":new Date(1396968452162.97),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"c067f80f7e014fd382a99cf31333c25d",
+    "type":"Axure:Page",
+    "name":"Iphone",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"cc8e0ea66fba4270bc047a7dc0026366",
+          "label":"iPhone Body",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":1,
+              "y":-3},
+            "size":{
+              "width":481,
+              "height":895},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2a431f01795647ccb95d7beb03801bdb",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":1,
+                  "y":-3},
+                "size":{
+                  "width":481,
+                  "height":895},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/iphone/iphone_body_u0.gif"}},
+{
+          "id":"b8325210f88f45c9a3f2ee6414acb501",
+          "label":"Inline Frame",
+          "type":"inlineFrame",
+          "styleType":"inlineFrame",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":85,
+              "y":170},
+            "size":{
+              "width":320,
+              "height":548}},
+          "adaptiveStyles":{
+}},
+{
+          "id":"b66ba16dd27744de9a3ec4d8ebbd7448",
+          "label":"Status Bar",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":85,
+              "y":150},
+            "size":{
+              "width":320,
+              "height":20},
+            "borderWidth":"-1"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"57158b540bf14b9f9ee70166c649043d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":85,
+                  "y":150},
+                "size":{
+                  "width":320,
+                  "height":20},
+                "borderWidth":"-1"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/iphone/status_bar_u3.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "cc8e0ea66fba4270bc047a7dc0026366":{
+      "scriptId":"u0"},
+    "2a431f01795647ccb95d7beb03801bdb":{
+      "scriptId":"u1"},
+    "b8325210f88f45c9a3f2ee6414acb501":{
+      "scriptId":"u2"},
+    "b66ba16dd27744de9a3ec4d8ebbd7448":{
+      "scriptId":"u3"},
+    "57158b540bf14b9f9ee70166c649043d":{
+      "scriptId":"u4"}}});

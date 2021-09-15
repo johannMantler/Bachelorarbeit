@@ -1,0 +1,164 @@
+﻿Proband;Alter;Alter_Gruppe;Geschlecht;Bildung;PC_Nutzung_pJ;PC_Nutzung_bJ;PC_Nutzung_pS;PC_Nutzung_bS;Kenntnisse_Betriebssystem;Kenntnisse_Internet;Kenntnisse_Programme;Betriebssystem_Win;Betriebssystem_Mac;Betriebssystem_Linux;Betriebssystem_Andere;Schwere;bekannt;UrsacheNennen;Lokation;Stabilitaet;Kontrollierbarkeit;Globalitaet;Aufgabe
+1;22;1;2;5;14;8;4;6;4;6;5;1;1;0;0;7;7;Übersicht nicht gut;1;7;4;5;2
+1;22;1;2;5;14;8;4;6;4;6;5;1;1;0;0;7;7;Weil ich die Funktion nicht gefunden habe!;1;6;2;5;4
+1;22;1;2;5;14;8;4;6;4;6;5;1;1;0;0;7;7;Es war nicht da, wo ich es erwartet habe;6;2;2;3;6
+2;22;1;2;5;9;8;2;3;4;2;3;1;0;0;0;4;2;Überblick hat gefehlt in de kurzen Zeit;6;7;6;6;2
+2;22;1;2;5;9;8;2;3;4;2;3;1;0;0;0;1;7;Ich habe das Zeichen der Währung zwar gefunden, konnte sie jedoch nicht abrufen.;7;6;7;3;3
+2;22;1;2;5;9;8;2;3;4;2;3;1;0;0;0;1;7;Gleiches Problem wie bei der Währung.;7;7;7;3;4
+2;22;1;2;5;9;8;2;3;4;2;3;1;0;0;0;2;7;Das Ergebnis wurde angezeigt, aber nicht die Differenz;7;7;6;5;6
+3;51;3;1;6;25;32;1;9;7;6;4;1;0;0;0;4;7;Das Auffinden der Seite, wo es hätte stehen sollen schien mir sehr einfach zu sein. Die gesuchte Bauordnung selbst konnte ich jedoch in der vorgeg. zeit nicht finden.;6;7;7;6;2
+3;51;3;1;6;25;32;1;9;7;6;4;1;0;0;0;7;4;"Es gelang mir nicht, das allgemeine Menü für die Formatierung von Texten in Zellen zu finden. Die rechte Maustaste funkionierte nicht; in der Symbolleiste war nur das einfach Unterstreichen verfügbar.";4;4;3;7;4
+3;51;3;1;6;25;32;1;9;7;6;4;1;0;0;0;7;7;Es war für mich nicht erkennbar, wo sich die gesuchte Funktionalität verbirgt.;5;4;4;5;6
+4;22;1;1;5;12;10;2;5;5;5;3;0;1;0;0;5;6;unübersichtliche struktur der Website;5;6;5;5;2
+4;22;1;1;5;12;10;2;5;5;5;3;0;1;0;0;4;6;Erwartete Funktion im Programm hat nicht funktioniert.;5;6;5;3;4
+4;22;1;1;5;12;10;2;5;5;5;3;0;1;0;0;6;7;Auf vermuteter Unterseite keine geeignete Funktion gefunden.;5;5;6;3;6
+5;25;1;1;5;12;9;3;3;7;7;6;1;1;1;0;7;2;Information wurde nicht gefunden;7;5;4;2;2
+5;25;1;1;5;12;9;3;3;7;7;6;1;1;1;0;6;2;Funktion wurde weder im Menü noch in der Symbolleiste gefunden. Rechte MT war deaktiviert, dort hätte ich auch noch eine Funktion vermutet.;4;5;5;3;4
+5;25;1;1;5;12;9;3;3;7;7;6;1;1;1;0;3;7;Absolute Gewichtsangaben konnten angezeigt werden, aber die Möglichkeit, die Differenz auszurechnen, wurde nicht gefunden.;5;3;2;6;6
+6;35;2;1;3;15;13;3;1;5;5;3;1;1;0;0;7;2;nicht gefunden weil zu unübersichtlich;6;7;1;2;2
+6;35;2;1;3;15;13;3;1;5;5;3;1;1;0;0;7;6;konnte die Aufgabe nicht lösen, da ich nicht fündig geworden bin wie man doppelt unterstreicht;2;7;2;4;4
+6;35;2;1;3;15;13;3;1;5;5;3;1;1;0;0;7;7;konnte nichts finden um das Gewicht zusammen zu rechnen;6;7;2;6;6
+7;27;2;2;5;12;12;1;1;3;5;4;1;0;0;0;4;7;Die Öffnungszeiten sind nicht unter 'Öffnungszeiten' zu finden.;3;6;4;7;1
+7;27;2;2;5;12;12;1;1;3;5;4;1;0;0;0;7;7;Thema zu fremd. Ich konnte die BEgriffe nicht auf der Seite umsetzten.;1;5;4;6;2
+7;27;2;2;5;12;12;1;1;3;5;4;1;0;0;0;7;7;Ich habe die Funktion zum doppelt Unterstreichen nicht gefunden.;4;4;3;5;4
+7;27;2;2;5;12;12;1;1;3;5;4;1;0;0;0;7;7;Aufgabe nicht im Program gefunden.;1;7;4;5;6
+8;31;2;1;5;15;13;4;5;5;6;5;1;0;1;0;7;4;Wie bei der ersten Aufgabe ist das Menü inklusive Unterpunkte wesentlich überladen und für unregelmäßige Besucher ist nicht klar, wo bestimmte Informationen zu finden sind.;6;6;6;6;2
+8;31;2;1;5;15;13;4;5;5;6;5;1;0;1;0;6;7;Konnte keine Einstellung/kein Menü für diese Information finden.;4;6;4;6;6
+9;17;1;2;3;13;7;3;1;5;7;4;1;0;0;0;6;4;zu geballte Informationen;6;4;2;5;2
+9;17;1;2;3;13;7;3;1;5;7;4;1;0;0;0;5;6;gesuchte Funktion nicht gefunden;3;2;1;2;4
+9;17;1;2;3;13;7;3;1;5;7;4;1;0;0;0;4;7;App ist nicht gut aufgebaut;5;4;3;3;6
+10;26;2;2;5;16;14;1;1;5;7;3;1;0;0;0;7;4;unübersichtlich  keine Erfahrungen in Bereich Bau;3;6;2;6;2
+10;26;2;2;5;16;14;1;1;5;7;3;1;0;0;0;7;7;Ich kenne das Programm nicht  Button nicht gefunden;2;5;1;7;4
+10;26;2;2;5;16;14;1;1;5;7;3;1;0;0;0;7;7;Ich kenne die App nicht.   Menü-Button erst spät gefunden;1;1;1;4;6
+11;75;3;2;6;14;10;1;2;1;6;1;0;1;0;0;7;6;ohne schnellsuche bauordnung nicht gefunden, stadtteilsuche vergessen;4;7;6;7;2
+11;75;3;2;6;14;10;1;2;1;6;1;0;1;0;0;7;7;ich wusste nicht, wo ich nachlösung sollte.  Beschreibung der hilfe kompliziert;3;3;1;5;3
+11;75;3;2;6;14;10;1;2;1;6;1;0;1;0;0;7;7;kein lösung gefunden;1;7;4;5;4
+11;75;3;2;6;14;10;1;2;1;6;1;0;1;0;0;4;7;zum 1. Mal diese programm benutzt, vollkornbrötchen nicht gefunden;3;3;2;3;5
+11;75;3;2;6;14;10;1;2;1;6;1;0;1;0;0;7;7;nötiges programm dazu nicht gefunden;7;6;4;6;6
+12;54;3;1;6;14;16;1;3;5;5;4;1;1;0;0;7;1;Begrifflichkeiten nicht zu finden;6;7;7;1;2
+12;54;3;1;6;14;16;1;3;5;5;4;1;1;0;0;7;7;nicht zu finden;7;7;7;4;6
+14;55;3;2;4;10;15;1;9;3;3;1;1;0;0;0;7;7;Bauverordnung nicht gefunden;1;7;1;4;2
+14;55;3;2;4;10;15;1;9;3;3;1;1;0;0;0;7;7;keine Ahnung wie das funktioniert;1;7;1;5;4
+14;55;3;2;4;10;15;1;9;3;3;1;1;0;0;0;7;7;Unkenntnis;1;7;2;5;5
+14;55;3;2;4;10;15;1;9;3;3;1;1;0;0;0;7;7;Unkenntnis;1;4;1;4;6
+21;31;2;2;6;10;6;1;1;2;4;3;1;0;0;0;6;7;Begriff war schwierig zu finden;5;4;3;4;2
+21;31;2;2;6;10;6;1;1;2;4;3;1;0;0;0;7;7;Das Programm ist mir nicht bekannt;4;6;6;5;4
+21;31;2;2;6;10;6;1;1;2;4;3;1;0;0;0;7;7;Konnte nicht herausfinden, wie man das ausrechnet!;6;6;6;5;6
+22;31;2;1;5;14;14;1;8;4;5;3;1;0;0;0;6;7;Bis Bauordnung alles übersichtlich,danach unübersichtlich;4;4;4;4;2
+22;31;2;1;5;14;14;1;8;4;5;3;1;0;0;0;5;7;fehlende Kenntnisse;1;7;4;4;4
+22;31;2;1;5;14;14;1;8;4;5;3;1;0;0;0;4;7;fehlende Kenntnisse über die Bedienung,  fehlende Optionen in der App;4;4;3;4;6
+23;24;1;1;6;12;8;4;3;5;6;5;1;1;0;0;6;3;"Erneut die Fülle des Angebotes; Formulare, Dienstleistungen usw. Evtl. sollte man so etwas erstellen, wie: 'Best of Formulare'! Also auswerten, welche Infos man vorheben sollte/könnte, da ich denke, dass Fragen wie 'Wie hoch kann ich bauen?' recht relevant/elementar sind.";6;6;4;6;2
+23;24;1;1;6;12;8;4;3;5;6;5;1;1;0;0;5;7;Bis zum Statistik-Button ist es ein kurzer/intuitiver Weg. Danach war mir nicht klar, wie die Zusammfassung der Gewichtsabhnahme anzeigen lassen kann. vllt nur in Pro?;5;6;3;4;6
+24;24;1;1;6;14;14;3;5;5;6;5;0;1;0;0;5;7;Bauverordnung schwer zu finden viel Text.;5;6;5;4;2
+24;24;1;1;6;14;14;3;5;5;6;5;0;1;0;0;5;5;Problem wurde in der Hilfe nicht aufgeführt.;3;6;4;6;4
+24;24;1;1;6;14;14;3;5;5;6;5;0;1;0;0;7;7;Nicht ersichtlich wie ich das Problem lösen sollte und das Gefühl das es gar nicht zu lösen war.;7;7;4;5;6
+25;20;1;2;5;6;6;3;5;5;7;6;1;0;0;0;7;4;Unübersichtilich gestaltet. Man bräuchte eine Übersicht für die einzelnen Stadtteile.;4;7;1;6;2
+25;20;1;2;5;6;6;3;5;5;7;6;1;0;0;0;7;5;Keine Bezeichnung gefunden die unterstreicht. Schwierig zu verstehen wenn man nicht häufig mit dem Programm arbeitet.;6;7;1;5;4
+25;20;1;2;5;6;6;3;5;5;7;6;1;0;0;0;7;7;Logischerweise müsste man bei der Gewichtstabelle einen Überblick finden , dies ist jedoch nicht der Fall. Bei anderen Kategorien wäre es nicht logisch.;6;7;1;6;6
+26;21;1;2;5;7;14;2;3;5;7;7;1;1;0;0;7;7;Es gab unter Ämter und Bereiche das Amt für Bau, es gab keinen Verweis auf eine Bauverordnung, ohne die Schnellsuchfunktion könnte derb Link wahrscheinlich nicht gefunden werden. Oder er ist unter einer ganz anderen Rubrik abgespeichert.;5;5;4;2;2
+26;21;1;2;5;7;14;2;3;5;7;7;1;1;0;0;6;5;über die Hilffunktion konnte ich den Verweis Unterstreichen finden, aber die Ausführung konnte ich nicht durchführen, welche mir der Computer vorgegeben hatte.;3;4;2;5;4
+26;21;1;2;5;7;14;2;3;5;7;7;1;1;0;0;6;7;es lag daran, das ich das Ernährungstagebuch als verweis nicht gefunden habe, ich bin über den Link Ernährungstagebuch gestoßen, konnte aber nur Häkchen setzen. Was nicht der Aufgabe entsprach.;1;5;4;3;5
+26;21;1;2;5;7;14;2;3;5;7;7;1;1;0;0;7;7;Die App ist unübersichtlich aufgebaut. Man kann zwar sein Gewicht auf Anhieb finden, aber nicht das verlorene. Unübersichtliche Apps, sind nervenauftreibend, und eh man alles gefunden hat löscht man doch lieber die App und sucht nach einer Auswahlmöglichkeit;4;5;6;4;6
+27;27;2;1;6;17;5;1;1;6;6;2;1;0;0;0;6;7;Unübersichtliche Weiterleitung;6;7;2;6;2
+27;27;2;1;6;17;5;1;1;6;6;2;1;0;0;0;7;7;Keine Führung in der Nutzeranwendung;7;7;7;5;6
+28;66;3;1;6;10;0;3;0;5;5;5;1;0;0;0;7;2;wahrscheinlich falsches Stichwort gesucht;3;4;1;7;2
+28;66;3;1;6;10;0;3;0;5;5;5;1;0;0;0;5;7;entsprechenden Befehl nicht gefunden;3;3;1;7;4
+28;66;3;1;6;10;0;3;0;5;5;5;1;0;0;0;5;7;Schwierigkeiten bei der Bedienung;4;5;1;4;5
+28;66;3;1;6;10;0;3;0;5;5;5;1;0;0;0;6;7;Keine Erfahrung in der Bedienung;2;5;1;5;6
+29;60;3;2;5;5;111;2;0;1;1;1;1;0;0;0;7;7;Verständnis  unübersichtlich;1;7;4;4;1
+29;60;3;2;5;5;111;2;0;1;1;1;1;0;0;0;7;7;Seite ist unübersichtlich;5;7;2;6;2
+29;60;3;2;5;5;111;2;0;1;1;1;1;0;0;0;7;7;Frage nicht verstanden;1;7;7;7;3
+29;60;3;2;5;5;111;2;0;1;1;1;1;0;0;0;7;7;Unkenntnis;1;7;7;7;4
+29;60;3;2;5;5;111;2;0;1;1;1;1;0;0;0;7;7;Unsicherheit bei der Anwendung;1;7;7;7;6
+30;27;2;1;6;15;10;4;8;7;6;7;1;0;0;0;7;3;Keine konktreten Links/Wegweiser für Bauverordnungen  Meine Idee war Bewohner->Bauen&Wohnen;6;4;3;5;2
+30;27;2;1;6;15;10;4;8;7;6;7;1;0;0;0;6;7;Selbst Lebensmittel hinzufügen zu spät erkannt;2;6;6;6;5
+30;27;2;1;6;15;10;4;8;7;6;7;1;0;0;0;7;7;"Alle Einstellungen durchgegangen -> Keine Option Gewicht gesamt verloren gefunden ;(";5;6;3;3;6
+31;53;3;1;6;25;23;1;8;5;7;5;1;0;0;1;7;4;Auf der Seite des Bauamtes gab es nur einen Link nach Juris , der aber nicht benutzt werden durfte.   Bauverordnung wurde nicht genannt auf der Homepage der Stadt.;7;7;7;5;2
+31;53;3;1;6;25;23;1;8;5;7;5;1;0;0;1;7;7;kein Menü für die Ermittlung der Differenz gefunden;6;6;2;4;6
+32;26;2;2;5;15;10;2;4;5;6;6;1;0;0;0;7;3;Bauordnung hat man relativ schnell gefunden aber für die jeweiligen Stadtteilbüros hat man keine Informationen gefunden.;7;7;7;1;2
+32;26;2;2;5;15;10;2;4;5;6;6;1;0;0;0;7;4;mangelnde Kenntnisse mit Calc. schlechte usability;6;7;3;3;3
+32;26;2;2;5;15;10;2;4;5;6;6;1;0;0;0;7;4;mangelnder Umgang mit Calc.;5;7;3;3;4
+32;26;2;2;5;15;10;2;4;5;6;6;1;0;0;0;5;7;Die Gewichtstabelle hat man schnell gefunden aber kein Bearbeitungsbutton oben rechts so wie in der Aufgabe davor so das man Einstellung dran vornehmen hätte können.;6;6;4;3;6
+41;25;1;2;6;8;10;2;9;5;6;6;1;0;0;1;2;3;Schlechte aufteilung für den bereich dieser Seite;6;7;3;4;2
+41;25;1;2;6;8;10;2;9;5;6;6;1;0;0;1;1;7;Funktion zum doppelt Unterstreichen nicht gefunden;7;7;2;1;4
+41;25;1;2;6;8;10;2;9;5;6;6;1;0;0;1;1;7;Anzeige nicht gefunden;7;7;1;1;6
+42;0;0;0;0;111;111;111;111;0;0;0;0;0;0;0;7;7;kein Hinweis für die Lösung der Fragestellung im Programm;4;6;4;5;6
+43;50;2;2;2;6;5;2;6;1;2;1;1;0;0;0;6;4;Zuviel Beschreibungen drum herum;2;5;3;4;2
+43;50;2;2;2;6;5;2;6;1;2;1;1;0;0;0;5;7;Kompliziert;1;5;2;6;3
+44;47;2;2;5;14;18;1;8;4;4;4;1;0;0;0;2;1;Seite wurde nicht gefunden;7;6;7;7;2
+45;23;1;2;5;6;4;3;3;3;3;2;1;0;0;0;6;6;ich konnte keine suchfunktion verwenden;2;6;4;3;2
+45;23;1;2;5;6;4;3;3;3;3;2;1;0;0;0;6;7;ich kannte das programm nicht;1;1;2;5;3
+45;23;1;2;5;6;4;3;3;3;3;2;1;0;0;0;5;7;ich wusste nicht wo ich noch hätte rauf drücken können.;4;6;3;5;6
+46;0;0;0;0;111;111;111;111;0;0;0;0;0;0;0;7;3;nicht aufzufinden die Funktion;7;7;3;2;6
+47;21;1;2;5;6;3;2;8;6;7;4;0;1;0;0;7;7;Keine genauen Angagebn gefunden;7;4;4;4;2
+47;21;1;2;5;6;3;2;8;6;7;4;0;1;0;0;7;7;Keine Ahnung vom Programm;4;7;4;3;3
+47;21;1;2;5;6;3;2;8;6;7;4;0;1;0;0;6;7;unübersichtlich;7;5;4;4;6
+48;20;1;1;5;8;6;2;0;7;7;5;1;0;0;0;6;6;Ich habe den Link zur Bauverordnung nicht gefunden. In diesem Fall war mir die Navigationsleiste nicht hilfreich.;5;5;3;5;2
+48;20;1;1;5;8;6;2;0;7;7;5;1;0;0;0;6;7;Es würde aus den Menüpunken nicht deutlich wo das bereits abgenomme Gewicht anzuzeigen ist.;6;4;3;6;6
+49;19;1;2;1;5;3;2;1;2;5;3;1;0;0;0;6;4;Nur sehr wenig Erfahrung mit diesem Programm.;1;5;4;5;3
+49;19;1;2;1;5;3;2;1;2;5;3;1;0;0;0;7;4;Keine Erfahrung mit dieser Aufgabe.;1;7;4;5;4
+49;19;1;2;1;5;3;2;1;2;5;3;1;0;0;0;5;6;Die App war mir nicht vertraut, also habe ich keine Details herausgefunden.;4;6;2;6;6
+50;30;2;1;5;18;18;2;2;5;5;4;1;0;0;0;5;6;Begrifflichkeit nicht in Übersicht gefunden;5;5;5;6;2
+50;30;2;1;5;18;18;2;2;5;5;4;1;0;0;0;4;3;Zu geringe Kenntnisse;3;6;3;3;4
+50;30;2;1;5;18;18;2;2;5;5;4;1;0;0;0;3;7;Entweder einfach Lösung übersehen oder Punkt nicht leicht genug auffindbar;4;4;4;6;6
+61;23;1;1;5;15;5;1;2;7;7;5;1;0;0;0;6;7;Ich empfinde die Seite immernoch als ziemlich unübersichtlich und 'nervig ' auf dieser etwas zu suchen( vorallem, weil man die Suchfunktion nicht nutzen darf!!)  Deswegen entschied ich mich diese Aufgabe vorzeitig abzubrechen.;1;3;4;2;2
+61;23;1;1;5;15;5;1;2;7;7;5;1;0;0;0;5;7;Entweder es steht nicht zur Verfügung  ODER  Ich hab es nicht gesehen.;4;4;3;4;6
+62;55;3;1;3;3;1;1;2;2;2;1;1;0;0;0;7;7;Schwahe kentnise.;1;7;7;7;1
+62;55;3;1;3;3;1;1;2;2;2;1;1;0;0;0;7;7;Wie eben;1;7;1;7;2
+62;55;3;1;3;3;1;1;2;2;2;1;1;0;0;0;7;7;Kein wissen.;1;7;7;7;4
+62;55;3;1;3;3;1;1;2;2;2;1;1;0;0;0;7;7;keine Anung;1;7;7;7;5
+62;55;3;1;3;3;1;1;2;2;2;1;1;0;0;0;7;7;wie eben;1;7;3;7;6
+63;47;2;2;3;10;111;1;111;1;1;1;0;1;0;0;7;4;unübersichtlich;2;7;1;7;1
+63;47;2;2;3;10;111;1;111;1;1;1;0;1;0;0;7;4;schlecht beschrieben;1;7;1;7;2
+63;47;2;2;3;10;111;1;111;1;1;1;0;1;0;0;5;7;war füt mich nicht ersichtlich;4;4;4;7;6
+64;45;2;1;3;3;0;2;0;1;3;1;1;0;0;0;6;7;0;2;6;2;4;2
+64;45;2;1;3;3;0;2;0;1;3;1;1;0;0;0;6;7;0;1;6;2;4;4
+64;45;2;1;3;3;0;2;0;1;3;1;1;0;0;0;1;4;0;2;6;2;4;5
+64;45;2;1;3;3;0;2;0;1;3;1;1;0;0;0;6;4;0;1;5;2;5;6
+65;45;2;2;6;3;1;2;4;1;3;3;1;0;0;0;5;7;ich habe den Stadtteil nicht gefunden;5;4;2;3;2
+65;45;2;2;6;3;1;2;4;1;3;3;1;0;0;0;7;6;ich habe die Symbole nicht gefunden;4;5;2;6;4
+65;45;2;2;6;3;1;2;4;1;3;3;1;0;0;0;7;7;die richtige Symbole nicht gefunden;4;6;1;5;6
+66;26;2;2;5;12;6;2;9;4;5;3;1;0;0;0;4;3;Die Seite ist sehr unübersichtlich;7;5;5;3;2
+66;26;2;2;5;12;6;2;9;4;5;3;1;0;0;0;7;7;Die App zeigte das nicht  übersichtlich genug an;4;4;4;4;6
+67;22;1;1;5;8;4;12;2;7;7;3;1;0;0;0;7;7;Unübersichtlichkeit auf der kompletten Seite, wenn man die Suchanfrage nicht benutzen darf.;6;7;2;1;2
+67;22;1;1;5;8;4;12;2;7;7;3;1;0;0;0;6;1;keinen button für eine funktion gefunden, die das ausführen könnte. weiß nicht, ob es an mir lag oder nicht.;4;6;2;1;6
+68;58;3;1;6;0;6;0;7;2;4;1;1;0;0;0;2;6;bauverordnung nicht gefunden;6;6;3;6;2
+68;58;3;1;6;0;6;0;7;2;4;1;1;0;0;0;5;7;nichts gefunden;2;2;1;5;4
+68;58;3;1;6;0;6;0;7;2;4;1;1;0;0;0;7;7;nix gefunden;6;6;3;6;6
+69;24;1;1;5;10;6;1;0;4;4;2;1;0;0;0;4;7;unübersichtliche Seite, nicht benutzen der Schnellsuchfunktion;5;5;3;6;2
+69;24;1;1;5;10;6;1;0;4;4;2;1;0;0;0;6;7;konnte die Funktion nicht finden;4;5;3;6;4
+69;24;1;1;5;10;6;1;0;4;4;2;1;0;0;0;6;7;unübersichtlichkeit;4;7;2;6;6
+81;28;2;1;6;20;11;3;6;7;7;6;1;0;1;0;5;5;Wirrwarr an Links, teilweise zirkulär, die nicht zielgerichtet zu irgendeiner sinnvollen Information führten.;6;7;1;7;2
+81;28;2;1;6;20;11;3;6;7;7;6;1;0;1;0;4;7;Gewichtschronik war abrufbar, aber hier war keine Interaktionsmöglichkeit zu erkennen, um an die gewünschte Information zu gelangen. Vielleicht gab es eine?;6;6;2;7;6
+82;31;2;2;6;5;5;1;7;2;4;4;1;1;0;0;6;7;Unübersichtliche Website: Unter der scheinbar passenden Rubrik konnte das entsprechende Dokument nicht gefunden werden.;2;6;5;5;2
+82;31;2;2;6;5;5;1;7;2;4;4;1;1;0;0;4;7;Die Möglichkeit sein Gewicht anzeigen zu lassen gab es nicht.;6;7;6;5;6
+83;33;2;1;6;24;22;24;10;6;6;6;1;0;0;1;2;6;es gibt nur eine Bauordnung keine Bauverordnung;4;4;5;1;2
+83;33;2;1;6;24;22;24;10;6;6;6;1;0;0;1;7;2;Dokument schreibgeschützt;7;6;1;1;3
+83;33;2;1;6;24;22;24;10;6;6;6;1;0;0;1;5;7;ich mag keine apps und auch kein Abnehmen;1;1;5;1;6
+84;22;1;2;5;12;8;1;3;6;6;4;0;1;0;0;7;7;Navigation unübersichtlich, verwirrend;4;6;1;5;2
+84;22;1;2;5;12;8;1;3;6;6;4;0;1;0;0;7;7;Funktion nicht gefunden (ausgegraut, weil schreibgeschützt?);3;6;1;6;3
+84;22;1;2;5;12;8;1;3;6;6;4;0;1;0;0;7;7;Funktion nicht gefunden;4;6;1;6;6
+85;21;1;1;5;15;8;5;3;6;7;7;1;0;0;0;7;4;nicht unter Bauordnung/nicht logisch sortiert;6;7;7;5;2
+85;21;1;1;5;15;8;5;3;6;7;7;1;0;0;0;6;7;Ich habe keinen Knopf für die Gesamtansicht gefunden.;7;7;7;3;6
+101;40;2;1;5;30;20;1;6;6;6;4;0;0;1;0;7;7;Durfte die Suche nich benutzen;7;7;1;6;2
+101;40;2;1;5;30;20;1;6;6;6;4;0;0;1;0;7;4;Kontextmenu war abgeschaltet;7;7;1;4;3
+101;40;2;1;5;30;20;1;6;6;6;4;0;0;1;0;7;7;Ich habe kein Button /Menu gefunden.;7;7;1;7;6
+102;46;2;2;3;7;5;2;4;4;5;4;1;0;0;0;5;7;orientierung;2;4;4;4;1
+102;46;2;2;3;7;5;2;4;4;5;4;1;0;0;0;5;7;für mich nicht richtig ersichtlich;4;4;4;5;2
+102;46;2;2;3;7;5;2;4;4;5;4;1;0;0;0;6;7;Orientirungslos;2;4;4;5;4
+102;46;2;2;3;7;5;2;4;4;5;4;1;0;0;0;4;7;den Weg nicht gefunden;3;4;3;4;6
+103;27;2;1;5;15;12;4;5;6;6;6;1;1;0;0;7;4;keine entsprechende Unterpunkte gefunden;6;6;7;5;2
+103;27;2;1;5;15;12;4;5;6;6;6;1;1;0;0;6;2;entsprechender Menüpunkt (Zeichen) nicht anwählbar / keine Alternative gefunden;6;7;7;5;4
+103;27;2;1;5;15;12;4;5;6;6;6;1;1;0;0;7;7;entsprechende Funktion nicht gefunden/nicht verfügbar(?);6;6;4;5;6
+104;24;1;1;5;10;0;1;0;4;5;2;1;0;0;0;5;6;bei den plänen (stadtplanung) haben ich keine Bauverordnungen gefunde, und bei den algemeinen Bauverordnungen keine eingliederungen in stadtteile;4;6;3;6;2
+104;24;1;1;5;10;0;1;0;4;5;2;1;0;0;0;3;7;ich konnte mein gewicht bearbeiten habe habe keinen differenz wert oder botton zum anzeigen des wertes gefunden;7;6;2;5;6
+105;48;2;2;3;30;10;4;6;4;5;3;0;1;0;0;5;7;Hätte gerne direkt auf Schlutup geklickt. Suchweg nicht durchgängig;5;6;1;7;2
+105;48;2;2;3;30;10;4;6;4;5;3;0;1;0;0;1;7;kein tool zum ausrechnen gefunden;6;7;1;7;6
+106;49;2;1;2;30;20;2;2;3;4;2;1;1;0;0;6;4;ohne schnellsuche schwer;4;4;5;5;2
+106;49;2;1;2;30;20;2;2;3;4;2;1;1;0;0;7;6;keine erfahrung mit dem program;2;6;2;6;4
+106;49;2;1;2;30;20;2;2;3;4;2;1;1;0;0;7;7;keine ahnung von der app;6;6;2;4;6
+107;24;1;2;5;12;14;4;2;2;5;4;1;0;0;0;7;4;Soweit ich es erkennen konnte, war die Bauverordnung nicht unter 'Bauen und Wohnen' zu finden, daher hab ich sie nicht gefunden;6;6;6;5;2
+107;24;1;2;5;12;14;4;2;2;5;4;1;0;0;0;6;7;Ich habe, soweit ich das sehen konnte, alles im Bereich 'Gewicht' angeklickt, was ging, und die Information nicht finden können;4;6;6;3;6
+108;55;3;1;6;30;25;2;8;7;7;7;1;1;1;0;7;6;Ich habe keinen Hinweis auf die Bauvorschriften gefunden.;6;7;7;7;2
+108;55;3;1;6;30;25;2;8;7;7;7;1;1;1;0;7;7;Keine Möglichkeit gefunden, die Gewichtsabnahme festzustellen.;7;7;7;7;6
+109;24;1;2;3;10;6;3;8;4;4;5;1;0;0;0;5;3;Das nicht verwenden der Suchfunktion.;4;6;4;5;2

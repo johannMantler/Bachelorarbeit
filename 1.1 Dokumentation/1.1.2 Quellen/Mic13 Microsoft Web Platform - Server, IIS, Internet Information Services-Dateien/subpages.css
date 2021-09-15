@@ -1,0 +1,77 @@
+﻿div.content 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+div.content-section-borderless 
+{
+    padding-top: 0px;
+}
+
+/* Generic Sub Page Styles */
+
+.large-button 
+{
+    padding: 0px 3px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    display:block;
+    width: 230px;
+    font-size: 13pt;
+    color: #FFFFFF;
+    font-family: Segoe UI, Tahoma, Verdana, Helvetica, Verdana, Sans-Serif;
+    background: transparent url('../media/large-btn.png') no-repeat right top;
+}
+
+.large-button:hover 
+{
+    text-decoration: none;
+    color: #333333;
+}
+
+.large-button .large-button-inner 
+{
+    padding: 13px 30px 0px 30px;
+    margin: 0px 0px 0px -3px;
+    max-height: 45px;
+    min-height: 45px;
+    height: 45px;
+    text-align: center;
+    background: transparent url('../media/large-btn.png') no-repeat left top;
+    display:block;
+}
+
+.small-button 
+{
+    padding: 0px 3px 0px 0px;
+    margin: 0px auto 0px auto;
+    display:block;
+    width: 107px;
+    font-size: 8pt;
+    color: #FFFFFF;
+    font-family: Segoe UI, Tahoma, Verdana, Helvetica, Verdana, Sans-Serif;
+    background: transparent url('../media/small-btn.png') no-repeat right top;
+}
+
+.small-button:hover 
+{
+    text-decoration: none;
+    color: #333333;
+}
+
+.small-button .small-button-inner 
+{
+    padding: 7px 20px 0px 20px;
+    margin: 0px 0px 0px -3px;
+    max-height: 26px;
+    min-height: 26px;
+    height: 26px;
+    text-align: center;
+    background: transparent url('../media/small-btn.png') no-repeat left top;
+    display:block;
+}
+
+.generic-background-page 
+{
+    /* background: transparent url('../media/swoosh-gradient.jpg') no-repeat center top;  */   
+}

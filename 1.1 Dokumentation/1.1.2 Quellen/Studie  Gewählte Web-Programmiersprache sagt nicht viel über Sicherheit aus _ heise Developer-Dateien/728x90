@@ -1,0 +1,3 @@
+document.writeln('<sc'+'ript type=\"text\/javasc'+'ript\" src=\"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js\">');
+document.writeln('googletag.pubads().definePassback(\'\/6514\/www.heise.de\/passback\/yieldlab\/c\', [[468, 60], [728, 90], [970, 90], [970, 250]]).display();');
+document.writeln('<\/sc'+'ript>');

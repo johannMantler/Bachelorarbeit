@@ -1,0 +1,934 @@
+﻿/***************************
+ CSS RESET
+***************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+}
+
+h1 sup,
+h2 sup,
+h3 sup,
+h4 sup
+{
+	vertical-align: text-top;
+    font-size: 0.65em;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Updated */
+}
+
+/***************************************************************************************************
+ Content emphasis and highlighting.
+ Highlight is generally used for highlight product names within copy. (Italic)
+ Emphasize is generally used to highlight the main points within a paragraph. (Bold)
+***************************************************************************************************/
+
+.highlight-point 
+{
+    font-style: italic;
+}
+
+.emphasize-point 
+{
+    font-weight: bold;
+}
+
+
+/***************************
+ Clear Float Hack
+***************************/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+/***************************
+ General Styles
+***************************/
+
+a {
+	color: #1e85be;
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+	padding: 7px 0px 7px 0px;
+	line-height: 1.6em;
+}
+.emphasis {
+	color: #000000;
+	font-weight:bold;
+}
+
+.highlight {
+	color: #000000; /* Color still needs to be decided */
+}
+
+/* This is used for content areas that line 
+   up closer to the edge of the page.
+   This would be used for things like dividers
+   and special page grid boxes. */
+.content-section {
+	padding: 20px 20px 0px 20px;
+}
+
+/* This is used for general content such as a 
+   page of body text, or a generic page like terms
+   and conditions. This no longer exist in Sub.Master.
+   If you want to applty this generic style,
+   wrap your content around it in pages that inherit from
+   Sub.Master 
+*/   
+.content {
+	padding: 10px 40px 10px 40px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section h4 {
+	padding: 1em 0px 7px 0px;
+    font-weight: normal;
+    line-height: 1.25em;
+}
+.content h3.gray-bkgd,
+.content-section h3.gray-bkgd
+{
+    padding: 0;
+    margin: 0 5px;
+}
+.content h4,
+.content-section h4
+{
+    color: Black;
+}
+.content p,
+.content-section p {
+	padding: 7px 0px 7px 0px;
+	line-height: 1.6em;
+}
+
+.content-section p.intro
+{
+    font-size: 1.2em;
+}
+.content h1.tight-to-sibling,
+.content h2.tight-to-sibling,
+.content h3.tight-to-sibling,
+.content h4.tight-to-sibling,
+.content p.tight-to-sibling,
+.content-section h1.tight-to-sibling,
+.content-section h2.tight-to-sibling,
+.content-section h3.tight-to-sibling,
+.content-section h4.tight-to-sibling,
+.content-section p.tight-to-sibling {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.content h1.tight-to-sibling + *,
+.content h2.tight-to-sibling + *,
+.content h3.tight-to-sibling + *,
+.content h4.tight-to-sibling + *,
+.content p.tight-to-sibling + *,
+.content-section h1.tight-to-sibling + *,
+.content-section h2.tight-to-sibling + *,
+.content-section h3.tight-to-sibling + *,
+.content-section h4.tight-to-sibling + *,
+.content-section p.tight-to-sibling + * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.content h1.separate-from-sibling,
+.content h2.separate-from-sibling,
+.content h3.separate-from-sibling,
+.content h4.separate-from-sibling,
+.content p.separate-from-sibling,
+.content-section h1.separate-from-sibling,
+.content-section h2.separate-from-sibling,
+.content-section h3.separate-from-sibling,
+.content-section h4.separate-from-sibling,
+.content-section p.separate-from-sibling {
+    margin-bottom: 45px !important;
+}
+.content ol,
+.content ul,
+.content-section ol,
+.content-section ul {
+	margin-left: 30px;
+	list-style-type: disc;
+    line-height: 1.5em;
+}
+
+.content ol.decimal,
+.content-section ol.decimal
+{
+	list-style-type: decimal;
+}
+
+.content ol.lower-alpha,
+.content-section ol.lower-alpha
+{
+	list-style-type: lower-alpha;
+}
+
+.divider {
+	height: 1px;
+	background: transparent url('divider.png') no-repeat center top;
+}
+
+
+/***************************
+ Layout
+***************************/
+
+html {
+	height: 100%;
+	width: 100%;
+	min-width: 969px;
+}
+
+body {
+	background: #e6e6e6 url('bkg-html.jpg') repeat-x  left bottom;
+	width: 100%;
+	min-width: 969px;
+	font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+	color: #4b4b4b;
+	font-size: 0.71em; /* Follows MSCOM Typography Guidelines */
+}
+
+#container {
+	width: 969px;
+	margin: 0px auto 0px auto;
+	background: transparent url('bkg-shadow.png') no-repeat center 53px;
+}
+
+#container-inner {
+	width: 945px;
+	margin: 0px auto 0px auto;
+}
+
+#container-content {
+	border-left: 1px #e5e5e5 solid;
+	border-right: 1px #e5e5e5 solid;
+	background-color: #FFFFFF;
+	margin: 0px auto 0px auto;
+	width: 943px;
+}
+
+#header {
+	height: 67px;
+	position: relative;
+}
+
+#header .brand {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+}
+
+.socialIcon {
+    position: relative;
+    top: 2px;
+}
+.search-main 
+{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 520px;
+}
+
+.search-main .search-box input[type="text"] 
+{
+    width:230px;
+    margin: 0px;
+    float: right;
+    padding: 2px;
+}
+
+.search-main .search-box input[type="image"] 
+{
+    float: right;
+}
+
+.search-main ul 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.search-main ul li 
+{
+    float: right;
+    list-style: none;
+    padding: 0px 0px 0px 12px;
+    line-height: 24px;
+}
+
+.search-main ul li.next-line
+{
+    clear: both;
+}
+
+.search-main ul li a:hover 
+{
+    text-decoration: underline;
+}
+
+.search-main ul li:after 
+{
+
+}
+
+.search-main .language-list
+{
+    position: relative;
+    padding: 2px 0;
+}
+
+/***************************
+ Navigation
+***************************/
+
+#nav {
+	height: 73px;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+}
+
+#nav-main-outer {
+	height: 38px;
+	background: transparent url('bkg-menu-left.png') no-repeat left top;
+
+}
+
+#nav-main-inner {
+	height: 38px;
+	background: transparent url('bkg-menu-right.png') no-repeat right top;
+}
+
+#nav-main-inner ul {
+	
+}
+
+#nav-main-inner ul li {
+	float:left;
+}
+
+#nav-main-inner a {
+	color: #FFFFFF;
+	font-size: 12px;
+	display:block;
+	padding: 11px 40px 0px 40px;
+	height: 27px;
+}
+
+#nav-main-inner a:hover {
+	
+}
+
+#nav-sub {
+	background: transparent url('bkg-sub-menu.png') repeat-x left top;
+	height: 35px;
+}
+
+#nav-sub li {
+	float:left;
+}
+#nav-sub li a {
+	color: #000000;
+	font-size: 12px;
+	display:block;
+	padding: 10px 40px 0px 40px;
+	height: 25px;
+	font-size: 12px;
+}
+#nav-sub li a:hover {
+	color: #1e85be;
+}
+
+
+/***************************
+ Explore Your Web
+***************************/
+
+#container-explore {
+	background: transparent url('bkg-footer.png') no-repeat center bottom;
+	position: relative;
+	margin: -5px 0px 0px 0px;
+}
+
+#explore-content {
+	background: transparent url('divider.png') no-repeat center 0px;
+	padding: 10px 42px 20px 42px;
+	position: relative;
+}
+
+.explore-header
+{
+    padding-top: 20px;
+}
+
+.explore-section {
+	padding: 0px 0px 0px 62px;
+}
+
+.explore-links {
+	float:left;
+	width: 159px;
+	font-size: 1em;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Follows MSCOM Typography Guidelines */
+	padding: 15px 0px 0px 0px;
+}
+
+.explore-links ul {
+	padding: 0px 0px 30px 0px;
+}
+
+.explore-links ul.long {
+	padding: 0px 0px 10px 0px;
+}
+
+.explore-links ul li {
+	padding: 5px 0px 5px 0px;
+}
+
+.explore-links ul a {
+	color: #999999;
+	text-decoration: none;
+}
+
+.explore-links ul a:hover {
+	color: #1e85be;
+	text-decoration: none;
+}
+
+/***************************
+ Footer
+***************************/
+
+#container-footer {
+	height: 75px;
+	width: 100%;
+}
+
+#footer-items {
+	width: 815px;
+	margin: 0px auto 0px auto;
+	position: relative;
+	font-size: 8pt;
+	color: #666666;
+	padding: 12px 130px 0px 0px;
+	font-size: 1em;
+	font-family: Segoe UI, Verdana, Tahoma, Helvetica, Arial, sans-serif; /* Updated */
+}
+
+#footer-items li {
+	float:right;
+}
+
+#footer-items li a {
+	color: #666666;
+	display: block;
+	margin: 0px 0px 0px 12px;
+	}
+
+#footer-items li a:hover {
+	color: #1e85be;
+}
+
+#footer-items li.makewebnotwar {
+	position: absolute;
+	top: 7px;
+	left: 21px;
+}
+
+#footer-items li.mssmall {
+	position: absolute;
+	top: 10px;
+	right: 21px;
+}
+ 
+/***************************
+ Grids
+***************************/
+
+#subpage-banner 
+{
+    
+}
+
+#subpage-banner .hero 
+{
+
+    width: 451px;
+       
+}
+
+#subpage-banner .hero-copy 
+{
+    float: left;
+    width: 412px;
+    padding: 70px 20px 0px 20px;
+    height: 180px;
+}
+
+/* 4x1 Shadow Box */
+/* Display 4 columns of content with shadows */
+/* Content be used with .content container as it requires 903px width */
+/* Stackable */
+
+.four-box-row 
+{
+    padding: 1px 0px 0px 0px;
+    /* background: transparent url('4x4-box-top-divider.jpg') no-repeat center top; */
+       background: transparent url('4x1-box-bottom.jpg') no-repeat right bottom;
+}
+
+.four-box-row .boxouter
+{
+    float: left;
+    border-left: solid 1px #e7e7e7;
+    /* background: transparent url('4x4-box-bottom.jpg') no-repeat left bottom; */
+}
+
+.four-box-row .boxouter:first-child
+{
+    float: left;
+    border-left: none;
+}
+
+.four-box-row .boxinner
+{
+    width: 185px;
+    background: transparent url('4x4-box-top.jpg') no-repeat left top;
+    padding: 20px;
+}
+
+/* 2x1 Shadow Box */
+/* Display 2 columns of content with shadows */
+/* Must be used in conjunction with 4x1 */
+/* Connects at the bottom of 4x1 or any 1x1 */
+
+.two-box-connector 
+{
+    position: relative;
+}
+.two-box-connector .boxouter
+{
+    float: left;
+    border-left: solid 1px #e7e7e7;
+    background: transparent url('4x4-box-bottom.jpg') no-repeat right bottom;
+}
+
+.two-box-connector .boxouter:first-child
+{
+    float: left;
+    border-left: none;
+}
+
+.two-box-connector .boxinner
+{
+    width: 411px;
+    min-height: 130px;
+    background: transparent url('4x4-box-top.jpg') no-repeat left top;
+    padding: 20px 20px 0px 20px;
+}
+
+.two-box-connector .top-shadow 
+{
+    width: 864px;
+    position: absolute;
+    top: 0px;
+    left: 34px;
+    height: 8px;
+    z-index: 100;
+    background: transparent url('2x1-connector-top.png') no-repeat left top;
+}
+
+
+.two-box
+{
+    position: relative;
+}
+.two-box .boxouter
+{
+    float: left;
+    border-left: solid 1px #e7e7e7;
+    background: transparent url('4x4-box-bottom.jpg') no-repeat right bottom;
+}
+
+.two-box .boxouter:first-child
+{
+    float: left;
+    border-left: none;
+}
+
+.two-box .boxinner
+{
+    width: 411px;
+    min-height: 130px;
+    padding: 20px 20px 0px 20px;
+}
+
+/* 3x1 Blank Grid */
+/* Display 3 columns of content without shadows */
+/* Can be used independent of any grids */
+/* Include dotted dividers */
+
+.three-box {padding: 0px 0px 14px 0px;}
+.three-box .box-l {float:  left; width: 33%}
+.three-box .box-m {float:  left; width: 33%}
+.three-box .box-r {float:  left; width: 33%}
+
+
+.one-box 
+{
+    margin: 10px 0px 0px 0px;    
+}
+
+.one-box .boxouter
+{
+    float: left;
+    background-color: Red;
+    border-left: solid 1px #e7e7e7;
+    background: transparent url('4x4-box-bottom.jpg') no-repeat right bottom;
+}
+
+.one-box .boxouter:first-child
+{
+    float: left;
+    border-left: none;
+    border: solid 1px #EAEAEA;
+}
+
+.one-box .boxinner
+{
+    background: transparent url('4x4-box-top.jpg') no-repeat left top;
+    padding: 10px 20px 10px 20px;
+}
+
+.one-box ul 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.one-box ul li 
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-top: dotted 1px #9e9e9e;
+    padding: 5px;
+}
+
+.one-box ul li:first-child 
+{
+    border-top: none;
+}
+
+.one-box ul li a 
+{
+    
+}
+
+
+/* Individual Content Blocks
+   Consisting of copy and an image
+   Either to the left or the right
+   Requires Clearing
+*/
+
+/* Parent container, if you want to enclosed 
+multiple section boxes and have a top shadow divider */
+.section-main 
+{
+    background: transparent url('section-head-bkg.jpg') no-repeat center top;
+    padding: 30px 20px 20px 20px;  
+}
+/* This is the main link for the section. Usually 
+used as a footer link to link to a outbound resource */
+.section-main-link 
+{
+    text-align: right;
+    padding: 20px 0px 10px 0px;
+    clear: both;
+}
+
+.section-main-link a
+{
+    background-color: #1e85be;
+    color: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+}
+
+.section-main h2:first-child
+{
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    color: #000000;
+    font-size: 1.667em;
+    
+}
+
+.section-box-left 
+{
+   padding: 0px 0px 20px 0px;
+}
+
+.section-box-left .section-copy
+{
+   float: right;
+}
+
+.section-box-left .section-copy .main-link
+{
+   display: block;
+   margin: 7px 0px 7px 0px;
+}
+
+.section-box-left p
+{
+
+}
+
+.section-box-left h3
+{
+    color: #000000;
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section-box-left .section-img 
+{
+   float: left;
+   padding: 10px;
+}
+
+.section-box-right
+{
+   padding: 0px 0px 20px 0px;   
+}
+
+.section-box-right .section-copy 
+{
+   float: left;
+}
+
+.section-box-right p
+{
+
+}
+
+.section-box-right h3
+{
+    color: #000000;
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px; 
+}
+
+.section-box-right .section-img
+{
+   float: right;
+}
+
+.section2x1 
+{
+   padding: 0px 0px 20px 0px;    
+}
+
+.section2x1 .section2x1-1
+{
+    float: left;
+    width: 49%;
+    border-right: dotted 1px #CCCCCC;
+}
+
+.section2x1 .section2x1-2
+{
+    float: left;
+    width: 49%;   
+}
+
+.section2x1-1 .section-box-right:first-child,
+.section2x1-1 .section-box-left:first-child 
+{
+    padding: 0px 40px 0px 0px;
+}
+
+.section2x1-2 .section-box-right:first-child,
+.section2x1-2 .section-box-left:first-child 
+{
+    padding: 0px 0px 0px 40px;
+}
+
+/***************************
+ Custom Controls
+***************************/    
+
+/* Web PI Footer Bar */
+
+.webpi-bar 
+{   
+    background: transparent url('divider.png') no-repeat center top;
+    padding: 17px 0px 0px 0px;
+    height: 59px;
+}
+.webpi-bar 
+{
+    
+}
+
+.webpi-bar a 
+{
+    display: block;
+    float: right;
+    margin: 0px 40px 0px 0px;
+}
+
+.webpi-bar p 
+{
+    float: right;
+    font-size: 1.1em;
+    margin: 5px 20px 0px 0px;
+}
+
+/* Context Nav */
+
+.context-nav 
+{
+    height: 40px;
+    background: transparent url('context-nav-bkg.jpg') no-repeat center top;
+    padding: 0px 20px 0px 20px;
+}
+
+.context-nav .context-left 
+{
+    text-align: left;
+    width: 400px;
+    float: left;
+    padding: 14px 0px 0px 0px;
+}
+
+.context-nav .context-right 
+{
+    text-align: right;
+    width: 400px;
+    float: right;
+    padding: 14px 0px 0px 0px;
+}
+
+.wm3-azurebtn 
+{
+    display: inline-block;
+    font-size: 18px;
+    background-color: #eee;
+    color: #4b4b4b;
+    padding:13px 20px 15px 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.wm3-azurebtn:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #d2d2d2;
+}
+
+.wm3-azurebtn span {
+    display: block;
+    line-height: 28px;
+    padding-right: 30px;
+    background: url(arrow-grey.png) right center no-repeat transparent;
+}
+
+.wm3-azurebluebtn 
+{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00BCF2;
+    padding:13px 20px 15px 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.wm3-azurebluebtn:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0099cc;
+}
+
+.wm3-azurebluebtn span {
+    display: block;
+    line-height: 28px;
+    padding-right: 30px;
+    background: url(arrow-white.png) right center no-repeat transparent;
+}

@@ -1,0 +1,181 @@
+@media only screen and (min-width: 600px){
+        .ui-mobile, .ui-mobile body {
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        html {
+        	background-color: #c6c6c5;
+        }
+        .ui-header-fixed, .ui-footer-fixed {
+		    position: fixed;
+		    width: 600px;
+		    margin: 0 auto;
+		}
+ }
+.ui-content {
+	background-color: transparent;
+}
+.ui-page {
+	background: url(pics/backgroundTile.jpg);
+    background-repeat:repeat;
+}
+.ui-header {
+	border-bottom: 0 none !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+#mainLogo {
+	width: 60%;
+	margin-left: 20%; /*zentrieren: (100-60)/2 */
+}
+img { /* Bilder sollen nicht breiter sein als ihr umschlieszendes Element */
+	max-width:100%;
+}
+.logoWithTitle {
+	width: 40%; /*Ein als schoen empfundener Wert.*/
+	float: left;
+}
+.headerContent {
+	padding: 15px 15px 0 15px; /* 15px wie .ui-content */
+	margin-bottom: 0px;
+}
+.logo {
+	width: 5.1%; /* 40/550*70 = 5.1 */
+	float: left;
+}
+.customTitle {
+	font-size: 150%;
+	font-weight: bold;
+	margin-left: 8.7%; /* Abstand vom Logo: 40/550*50+5.1= 8.7 */
+}
+.menu {
+	float:right;
+}
+#popupStartPoint {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	margin-right: 75px;
+	margin-top: 0;
+	float: right;
+}
+.ui-listview .ui-li-icon { /*fuer die menu icons*/
+    max-height: 30px 	!important; /*icons: 30x30px*/
+    max-width: 30px 	!important;
+    top: 50% 			!important;
+    margin-top: -15px 	!important;
+ }
+.separator {
+	background-color: white;
+	height: 5px;
+	clear: both;
+}
+.separatorErfolg {
+	border-bottom: 4px solid #71AEC3;;
+}
+.separatorProblem {
+	border-bottom: 4px solid #E35276;
+}
+.separatorRegistrierung {
+	border-bottom: 4px solid #EBE7B3;
+}
+.menuContainer {
+	clear: both;
+	padding-left: 15px;
+	background-color: #F5F8F9;
+}
+.formContainer, .beispielContainer {
+	padding: 5px;
+	margin: 1% 0% 2% 0%;
+	border-radius: 0.4em;
+	text-shadow: none;
+}
+.beispielContainer  {
+	color: white;
+}
+.mylabel {
+	font-weight: bold !important;
+}
+.mylabelSmall {
+	font-weight: normal !important;
+	font-size: 90% !important;
+}
+.errorMessage {
+	color: #f00;
+}
+.markErrorLocation {
+	border: 1px solid red !important;
+}
+body, .hintergrundFarbe {
+	background-color: #43445B;
+}
+.formContainerFarbe ,.formContainer{
+	background-color: #c6c6c5; /*old: #F5F8F9;*/
+}
+.containerFarbe {
+	background-color: #F5F8F9;
+}
+.problemFarbe {
+	background-color: #E35276;
+}
+.erfolgFarbe {
+	background-color: #71AEC3;
+}
+.registerFarbe {
+	background-color: #EBE7B3;
+}
+.aufzaehlung { /*Nur fuer registrierung.html*/
+	border-width:1px;
+	border-style:solid;
+	border-color:transparent;
+	border-radius: 0.4em;
+	padding:0.7em;
+	text-align:justify;
+	color: white;
+}
+.auswahlbox { /*Fuer auswahl.html*/
+	margin: 0px;
+	padding: 10% 0%;
+}
+.smallBtn {
+	width: 80%;
+}
+.ui-widget-content {/* Customizing progressbars */
+	border: 1px solid #43445B;
+}
+.ui-widget-header { /* Customizing progressbars */
+      background: #e9e6b2;
+      border: 1px solid #e9e6b2;
+ }
+/*Fuer beispiel.html*/
+.ui-disabled, .ui-state-disabled {
+    opacity: 1.0 !important;
+}
+.disabled {
+	cursor: default !important;
+	pointer-events: none !important;
+}
+
+#leftMenuItem {/*Fuer auswahl.html*/
+	border-left-width: 0 !important;
+}
+.linkDiv {	
+	text-align: center;
+	margin-top: 4%;
+}
+.myLink, .mySmallLink {
+	text-decoration: none;
+}
+.mySmallLink {
+	font-size: 80% !important;
+}
+.darkLink {
+	color: #43445B !important;
+}
+.btnGroupCenter {
+	text-align:center;
+}
+.btnGroupCenter div {
+	display:inline-block;
+}

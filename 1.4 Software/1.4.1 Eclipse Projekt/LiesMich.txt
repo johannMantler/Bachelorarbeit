@@ -1,0 +1,2 @@
+Der Projektordner ist ein von Eclipse erstellter Projektordner vom Typ: "Dynamic Web Project".
+Um diesen in Eclipse zu importieren wird die erweiterte Eclipse-Version: "Eclipse for Java EE Developers" benötigt.

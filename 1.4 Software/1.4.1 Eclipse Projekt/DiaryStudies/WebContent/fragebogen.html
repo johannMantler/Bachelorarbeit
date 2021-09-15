@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+	<title>HCI Diary</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico">
+	<link type="image/x-icon" href="pics/favicon.ico">
+	
+	<link rel="stylesheet" href="jquerymobile/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquerymobile/theme/themes/OwnTheme.min.css" />
+	<link rel="stylesheet" href="jquerymobile/theme/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquerymobile.css"/>
+	<link rel="stylesheet" href="ownStyle.css"/> <!-- CSS overrides theme-->
+
+	<script src="jquerymobile/jquery.js"></script>
+	<script src="jquerymobile/jquery-ui/jquery-ui.js"></script> 
+	<script src="jquerymobile/defaultconfig.js"></script>
+	<script src="forms.js"></script>
+	<script src="jquerymobile/jquerymobile.js"></script>
+</head>
+<body>
+	
+	<div data-role="page" id="seite1">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Fragebogen</div>
+			</div>
+			<div id="menu_1"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="frage_1"></div>
+			<div id="frage_2"></div>
+			<div id="frage_3"></div>
+			<div id="frage_4"></div>
+			<div id="frage_5"></div>
+			<div id="frage_6"></div>
+			<div id="frage_7"></div>
+			<a class="storeData" href="#seite2" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+		<script>
+		$(document).on("pagebeforeshow","#seite1", function(){
+			
+			$('#menu_1_1').addClass('ui-btn-active');
+		});
+		$(document).on("pagebeforecreate","#seite1", function(){
+
+				createMenu("menu_1",1,4);
+			
+				createRadioForm("frage_1", "Was denken Sie typischerweise, wenn Ihnen bei der Nutzung von Computern etwas gelingt?",
+						"(Bitte kreuzen Sie die Aussage an, die Ihnen am ehesten entspricht.)",
+						['"Manchmal klappt es, manchmal eben nicht"',
+						 '"Dieses Mal habe ich einfach Glück gehabt"',
+						 '"Ich kenne mich mit Computern gut aus und bin für meinen Erfolg selbst verantwortlich"'],
+						 "vertical");
+				
+				createRadioForm("frage_2", "Was denken Sie typischerweise, wenn Sie bei der Nutzung von Computern Probleme haben?",
+						"(Bitte kreuzen Sie die Aussage an, die Ihnen am ehesten entspricht.)",
+						['"Diesmal hat es nicht geklappt – nächstes Mal funktioniert es besser"',
+						 '"Ich hab’s verbockt, aber beim nächsten Mal mache ich es besser"',
+						 '"Ich verstehe nie, wie Computer funktionieren"'],
+						 "vertical");
+				
+				
+				createRadioForm("frage_3", "Ich verfüge über viel praktische Erfahrung im Umgang mit Computern.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_4", "Ich habe mich in der Kindheit und Jugend wenig mit Computern beschäftigt.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_5", "In meiner Freizeit beschäftige ich mich viel mit Computern (z.B. Computerspiele, Internet, Foto-, Videobearbeitung).",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_6", "Ich habe großen Spaß an der Auseinandersetzung mit Computern.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_7", "Computertechnik fasziniert mich.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				initLocalStorage('#seite1');
+		});
+
+ 		$(document).on("pageinit","#seite1", function()
+		{
+ 			storePageData("#menu_1", "#seite1",4);
+		}); 
+		</script>
+	</div>
+	
+	<div data-role="page" id="seite2">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Fragebogen</div>
+			</div>
+			<div id="menu_2"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="frage_8"></div>
+			<div id="frage_9"></div>
+			<div id="frage_10"></div>
+			<div id="frage_11"></div>
+			<div id="frage_12"></div>
+			<div id="frage_13"></div>
+			<div id="frage_14"></div>
+			<div id="frage_15"></div>
+			<div id="frage_16"></div>
+			<a class="storeData" href="#seite3" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+		<script>
+		$(document).on("pagebeforeshow","#seite2", function(){
+			
+			$('#menu_2_2').addClass('ui-btn-active');
+		});
+		$(document).on("pagebeforecreate","#seite2", function(){
+				
+					
+				createMenu("menu_2",2,4);
+			
+				createRadioForm("frage_8", "Im Umgang mit Computern habe ich Angst, etwas falsch zu machen.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_9", "Im Umgang mit Computern befürchte ich, etwas kaputt zu machen oder zu löschen.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_10", "Ich habe Hemmungen im Umgang mit Computern.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_11", "Ich will verstehen, wie Computersysteme funktionieren.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_12", "Wenn ein Computer nicht funktioniert, möchte ich verstehen, woran es liegt.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_13", "Ich finde es interessant, mit Computern etwas zu erschaffen (z.B. durch Programmieren, Grafikverarbeitung...).",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_14", "Ich beschäftige mich mit Informations-technologie, weil ich damit etwas gestalten kann.",
+				"(1 = trifft nicht zu; m = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_15", "Der Computer ist für mich nur ein Mittel zum Zweck.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_16", "Computer müssen funktionieren, technische Details interessieren mich dabei nicht.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				initLocalStorage('#seite2');
+				
+		});
+ 		$(document).on("pageinit","#seite2", function()
+		{
+			storePageData("#menu_2", "#seite2", 4);
+		}); 
+		</script>
+	</div>
+	
+	<div data-role="page" id="seite3">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Fragebogen</div>
+			</div>
+			<div id="menu_3"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="frage_17"></div>
+			<div id="frage_18"></div>
+			<div id="frage_19"></div>
+			<div id="frage_20"></div>
+			<div id="frage_21"></div>
+			<div id="frage_22"></div>
+			<div id="frage_23"></div>
+			<a class="storeData" href="#seite4" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+		<script>
+		$(document).on("pagebeforeshow","#seite3", function(){
+			
+				$('#menu_3_3').addClass('ui-btn-active');
+		});
+		$(document).on("pagebeforecreate","#seite3", function(){
+				
+					
+				createMenu("menu_3",3,4);
+			
+				createRadioForm("frage_17", "Ich halte mich im Umgang mit Computern für sehr kompetent.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_18", "Im Umgang mit Computern bin ich sicherer als der Durchschnitt.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_19", "Ich habe umfassende Computer-kenntnisse.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_20", "Computerproblemen sehe ich gelassen entgegen, weil ich mich immer auf meine Fertigkeiten verlassen kann.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_21", "Ich fühle mich den meisten computerbezogenen Anforderungen gewachsen.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_22", "Wenn ich mit Computerproblemen konfrontiert bin, finde ich Mittel und Wege, sie zu lösen.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_23", "Wenn ich mich bemühe, gelingt mir in der Regel die Lösung von Computerproblemen.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				initLocalStorage('#seite3');
+		});
+		
+ 		$(document).on("pageinit","#seite3", function()
+		{
+			storePageData("#menu_3", "#seite3",4);
+		}); 
+		</script>
+	</div>
+	
+	<div data-role="page" id="seite4">
+		<div data-role="header" data-position="fixed"  data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Fragebogen</div>
+			</div>
+			<div id="menu_4"></div>
+		</div>
+		<div data-role="content" class="registerFarbe">
+			<div id="frage_24"></div>
+			<div id="frage_25"></div>
+			<div id="frage_26"></div>
+			<div id="frage_27"></div>
+			<div id="frage_28"></div>
+			<div id="frage_29"></div>
+			<a id="abschicken" class="storeData" href="auswahl.html" data-ajax="false" data-role="button" data-theme='c'>Weiter</a>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+		<script>
+		$(document).on("pagebeforeshow","#seite4", function(){
+			
+				$('#menu_4_4').addClass('ui-btn-active');
+		});
+		$(document).on("pagebeforecreate","#seite4", function(){
+				
+					
+				createMenu("menu_4",4,4);
+			
+				createRadioForm("frage_24", "Wenn der Computer nicht richtig funktioniert, liegt es in der Regel daran, dass ich etwas falsch gemacht habe.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_25", "Wenn sich ein Computerprogramm nicht bedienen lässt, liegt das hauptsächlich an mir.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_26", "Ich habe keine Kontrolle über Computerprobleme, die auftreten.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_27", "Die Funktionsweise von Computerprogrammen erscheint mir oft willkürlich.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_28", "Ich habe keine Scheu davor, neue Computeranwendungen einfach auszuprobieren.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				createRadioForm("frage_29", "Eine neue Software probiere ich meist erst einmal intuitiv aus.",
+				"(1 = trifft nicht zu; 5 = trifft völlig zu)",
+				['1','2','3','4','5'], "horizontal");
+				
+				initLocalStorage('#seite4');
+				
+			});
+		
+ 		$(document).on("pageinit","#seite4", function()
+		{
+			storePageData("#menu_4", "#seite4",4);
+			//Bei Klick: Daten asynchron senden
+			$("#abschicken").on("click", function() { 
+				$.ajax({
+					type: "POST",
+					url: "fragebogen",
+					async: true,
+					data: getFragebogenAntworten(),
+					success: function() {
+						localStorage.clear();
+		            }
+				});
+			}); 
+			/**
+				Baut den Request-Body zusammen. Dazu werden
+				die Eingabedaten aus dem localStorage geholt und zu einem
+				String konkateniert.
+			*/
+	  		function getFragebogenAntworten()
+			{
+				var result = "frage_1="+localStorage["frage_1"];
+				for(var i = 2; i <= 29; i++) //29 Fragen
+				{
+					result += "&frage_"+i+"="+localStorage["frage_"+i];
+				}
+				
+				return result;
+			} 
+		}); 
+		</script>
+	</div>
+</body>
+</html>

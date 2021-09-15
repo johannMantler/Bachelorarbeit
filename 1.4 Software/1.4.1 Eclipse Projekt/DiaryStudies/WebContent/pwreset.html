@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+	<title>HCI Diary</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico">
+	<link type="image/x-icon" href="pics/favicon.ico">
+	
+	<link rel="stylesheet" href="jquerymobile/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquerymobile/theme/themes/OwnTheme.min.css" />
+	<link rel="stylesheet" href="jquerymobile/theme/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquerymobile.css"/>
+	<link rel="stylesheet" href="ownStyle.css"/> <!-- CSS overrides theme-->
+
+	<script src="jquerymobile/jquery.js"></script>
+	<script src="jquerymobile/defaultconfig.js"></script>
+	<script src="jquerymobile/jquerymobile.js"></script>
+</head>
+<body>
+	<div data-role="page" id="pwResetInvalid">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Passwort zurücksetzen</div>
+			</div>
+			<div class="separator"></div>
+		</div>
+		<div data-role="content">
+			<div class="formContainer">
+				<div class="mylabel">Ungültig wegen Zeitüberschreitung.<br>
+					<span class="mylabelSmall">Aus Sicherheitsgründen vergeben wir nur ein kleines Zeitfenster innerhalb
+					derer man das Passwort zurück setzen kann. Ihre Sicherheit ist uns wichtig! </span>
+				</div>
+				<div><a href="start.html#anmeldung" data-role="button" data-theme='c' rel="external">Zur Anmeldeseite</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="pwResetPage">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logo"><img src="pics/logo.png"/></div>
+				<div class="customTitle">Passwort zurücksetzen</div>
+			</div>
+			<div class="separator"></div>
+		</div>
+		<div data-role="content">
+			<div class="formContainer">
+				<div class="mylabel"></div>
+				<form id="pwReset"  action="#" method="post">
+					<div> 
+						<label for="password" class="mylabel">Geben Sie Ihr neues Passwort ein:</label>
+						<input type="password" name="password" id="passwordNew" value="" />
+					</div>
+					<div> 
+						<label for="password" class="mylabel">Neues Passwort wiederholen:</label>
+						<input type="password" name="password" id="passwordNew2" value="" />
+					</div>
+					<div id="errorMessage" class="errorMessage mylabel"></div>
+					<div data-role='controlgroup' data-type="horizontal">
+						<input type="submit" data-theme='c' value="Zurücksetzen">
+						<a href="start.html#anmeldung" data-role="button" data-theme='c' rel="external">Abbrechen</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+		$( document ).on( "pageinit","#pwResetPage", function() {
+			$( "#pwReset" ).submit(function(event) {
+		        event.preventDefault();//default submit-Verhalten ausschalten
+		        
+		        //Nutzereingaben pruefen
+				var error = checkInput();
+				$( "#passwordNew" ).change(function() {
+					error = checkInput();
+				});
+				$( "#passwordNew2" ).change(function() {
+					error = checkInput();
+				});
+				//Daten synchron senden und Antwort abwarten
+				if(!error) {
+					$.ajax({
+						type: "POST",
+						url: "newpw",
+						async: false,
+						data: "password="+$("#passwordNew").val()+"&password2="+$("#passwordNew2").val()+"&id="+$.urlParam('id'),
+						success: function(msg){
+							alert("Passwort erfolgreich geändert!");
+							error = false;
+				  		 },
+						error: function(xmlHttpRequest, textStatus, errorThrown) {
+							    $("#errorMessage").text(xmlHttpRequest.responseText).show();
+							    
+						   		error = true;
+						  }
+						});
+				}
+				if(error) {
+					$.mobile.activePage.focus(); //focus vom Button entfernen, damit er nicht mehr als aktiv markiert ist.
+				}
+				else {
+ 					
+				}
+				return !error;
+			});
+		});
+		
+		/**
+        Prueft, ob Passwoerter eingegeben worden sind und gibt evt. 
+        eine Fehlermeldung aus. Zudem werden die Passwoerter auf Uebereinstimmung getestet.
+        @returns false, wenn Anmeldedaten vollstaendig, sonst true
+    */
+    function checkInput() {
+    	var error = false;
+        var pass1 = $("#passwordNew").val();
+        var pass2 = $("#passwordNew2").val();	        	
+    	if ( pass1.length == 0 || pass2.length == 0 ) {
+    		$("#errorMessage").text("Bitte alle Felder ausfüllen.").show();
+    		if(pass1.length == 0) {
+    			$("#passwordNew[class!='markErrorLocation']").addClass("markErrorLocation");
+    		}	
+    		if(pass2.length == 0) {
+    			$("#passwordNew2[class!='markErrorLocation']").addClass("markErrorLocation");	
+    		}
+    		error = true;
+    	}
+    	else { //alles ist ausgefuellt..
+    		
+    		if(pass1 != pass2) {
+    			$("#errorMessage").text("Passwörter stimmen nicht überein").show();
+    			error = true;
+    		}
+    		else {
+    			$("#errorMessage").hide();
+    			//error = false; error is false
+    		}
+    	}
+    	if(pass1.length > 0) {
+    		$("#passwordNew[class='markErrorLocation']").removeClass("markErrorLocation");	
+    	}
+    	if(pass2.length > 0) {
+    		$("#passwordNew2[class='markErrorLocation']").removeClass("markErrorLocation");	
+    	}
+    	return error;
+    }
+    /**
+    	Holt einen Parameter aus der URL.
+    */
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+           return null;
+        }
+        else{
+           return results[1] || 0;
+        }
+    }
+		</script>
+	</div>
+</body>

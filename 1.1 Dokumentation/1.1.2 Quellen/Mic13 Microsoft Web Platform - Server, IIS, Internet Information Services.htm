@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/getid.js"></script><meta name="WT.z_bdb" content="1"><meta name="WT.cg_n" content="de-de"><link href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/general.css" type="text/css" rel="stylesheet"><link href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/navigation.css" type="text/css" rel="stylesheet"><link href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/style.css" type="text/css" rel="stylesheet"><meta name="ms.siteorg" content="Developer"><meta name="ms.sitename" content="WebPlatform"><meta name="ms.lang" content="de"><meta name="ms.loc" content="de"><link id="ctl00_AdaptersInvariantImportCSS" rel="stylesheet" href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/Import.css" type="text/css">
+    <!--[if lt IE 7]>
+        <link rel="stylesheet" href="../styles/BrowserSpecific/GeneralIE6.css" type="text/css" />
+    <![endif]--> 
+    <!--[if gt IE 6]>
+    <![endif]--> 
+                    
+    
+    <link id="ctl00_HeadContent_platformCSS" rel="stylesheet" href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/platform.css" type="text/css">
+    <link rel="stylesheet" href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/subpages.css" type="text/css">
+<title>
+	Microsoft Web Platform - Server, IIS, Internet Information Services
+</title><link href="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/webPIInstallBar.css" type="text/css" rel="stylesheet"><style type="text/css">
+	.ctl00_ctl06_PrimaryNav_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_ctl06_PrimaryNav_1 { text-decoration:none; }
+	.ctl00_ctl06_PrimaryNav_2 {  }
+	.ctl00_ctl06_SecondaryNav_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_ctl06_SecondaryNav_1 { text-decoration:none; }
+	.ctl00_ctl06_SecondaryNav_2 {  }
+
+</style></head>
+<body>
+    <form method="post" action="server.aspx?templang=de-de" id="aspnetForm">
+<div>
+<input name="ctl00_ScriptMgr_HiddenField" id="ctl00_ScriptMgr_HiddenField" value="" type="hidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQxMjAyNDgwD2QWAmYPZBYGZg9kFgQCBw8WAh4EVGV4dAUkPE1FVEEgbmFtZT0nbXMubGFuZycgY29udGVudD0nZGUnIC8+ZAIIDxYCHwAFIzxNRVRBIG5hbWU9J21zLmxvYycgY29udGVudD0nZGUnIC8+ZAIBD2QWBAIBD2QWAgIJD2QWAmYPEA9kFgIeCG9uY2hhbmdlBRlyZXR1cm4gZG9MYW5ndWFnZUNoYW5nZSgpDxYRZgIBAgICAwIEAgUCBgIHAggCCQIKAgsCDAINAg4CDwIQFhEQBRdFbmdsaXNoIChVbml0ZWQgU3RhdGVzKQUFZW4tdXNnEAUVRGV1dHNjaCAow5ZzdGVycmVpY2gpBQVkZS1hdGcQBRVEZXV0c2NoIChEZXV0c2NobGFuZCkFBWRlLWRlZxAFEkVzcGHDsW9sIChFc3Bhw7FhKQUFZXMtZXNnEAUSZnJhbsOnYWlzIChGcmFuY2UpBQVmci1mcmcQBRRmcmFuw6dhaXMgKEJlbGdpcXVlKQUFZnItYmVnEAURaXRhbGlhbm8gKEl0YWxpYSkFBWl0LWl0ZxAFFm1hZ3lhciAoTWFneWFyb3JzesOhZykFBWh1LWh1ZxAFFE5lZGVybGFuZHMgKEJlbGdpw6spBQVubC1iZWcQBQ9wb2xza2kgKFBvbHNrYSkFBXBsLXBsZxAFE1BvcnR1Z3XDqnMgKEJyYXNpbCkFBXB0LWJyZxAFE1TDvHJrw6dlIChUw7xya2l5ZSkFBXRyLXRyZxAFHdGA0YPRgdGB0LrQuNC5ICjQoNC+0YHRgdC40Y8pBQVydS1ydWcQBRftlZzqta3slrQo64yA7ZWc66+86rWtKQUFa28ta3JnEAUS5pel5pys6KqeICjml6XmnKwpBQVqYS1qcGcQBQ7kuK3mloco566A5L2TKQUGemgtY2hzZxAFDuS4reaWhyjnuYHpq5QpBQZ6aC1jaHRnFgECAmQCAw8PFgIeB1Zpc2libGVoZGQCAg8WAh8ABWU8bm9zY3JpcHQ+PGltZyBhbHQ9IiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgc3JjPSJodHRwOi8vYy5taWNyb3NvZnQuY29tL3RyYW5zX3BpeGVsLmFzcHgiLz48L25vc2NyaXB0PmQYAwUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFG2N0bDAwJGN0bDA1JGN0bDA1JFNlYXJjaEJ0bgUYY3RsMDAkY3RsMDYkU2Vjb25kYXJ5TmF2Dw9kBRFJSVMgYWxzIFdlYnNlcnZlcmQFFmN0bDAwJGN0bDA2JFByaW1hcnlOYXYPD2QFDFRlY2hub2xvZ2llbmRUcWH1i+5KWTeGSpT9v0SGglKcMA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/broker.js" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/wt.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+var _tag = new WebTrends();
+_tag.dcsid = 'dcs8muh1110000wwq7so0uysl_9h7u';
+_tag.dcsGetId();
+_tag.trackevents=true;
+_tag.dcsCollect();
+var webAppRoot = 'http://www.microsoft.com/web/';
+doLanguageChange = function()
+{
+    var theLang = document.getElementById('ctl00_ctl05_ctl06_LanguageList').options[document.getElementById('ctl00_ctl05_ctl06_LanguageList').selectedIndex].value;
+    var theRandomNumber = 807031986
+    window.location.href = 'http://www.microsoft.com/web/platform/server.aspx?templang=de-de\u0026lang=' + theLang + '&random=' + theRandomNumber;
+    return false;
+}
+var __cultureInfo = {"name":"de-DE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-unendlich","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"+unendlich","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135568000000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":2,"FullDateTimePattern":"dddd, d. MMMM yyyy HH:mm:ss","LongDatePattern":"dddd, d. MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d. MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["So","Mo","Di","Mi","Do","Fr","Sa"],"ShortestDayNames":["So","Mo","Di","Mi","Do","Fr","Sa"],"DayNames":["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"],"AbbreviatedMonthNames":["Jan","Feb","Mrz","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez",""],"MonthNames":["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember",""],"IsReadOnly":false,"NativeCalendarName":"Gregorianischer Kalender","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mrz","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez",""],"MonthGenitiveNames":["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember",""]},"eras":[1,"n. Chr.",null,0]};//]]>
+</script>
+
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource.js" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_003.js" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_005.axd" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_003.axd" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_004.axd" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource.axd" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ScriptResource_002.axd" type="text/javascript"></script>
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/js.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetLocaleForFile:function(fileName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetLocaleForFile',false,{fileName:fileName},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("server.aspx");
+PageMethods.GetLocaleForFile= function(fileName,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetLocaleForFile(fileName,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EC228374" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWJwKa4sGpCwLau8XGAgLU/LpwAtSj2KoJApW/yKsJAujKx8IIAsrIyzcC+8iPoQYC6Mqz6g8CgsmjzAQCscnz/wkC98WvrQYC18W/yw4Cucfb4QkCpsOzmQQCxMP7+QkC2MSb+wMChcSnqAUCt8bb7gQCkMbXtQ8CmMKD2Q4CmML32Q4C6MrHwggCysjLNwL7yI+hBgLoyrPqDwKCyaPMBAKxyfP/CQL3xa+tBgLXxb/LDgK5x9vhCQKmw7OZBALEw/v5CQLYxJv7AwKFxKeoBQK3xtvuBAKQxte1DwKYwoPZDgKYwvfZDp6JJ9Z0K039UZd2mggTGsIMZ/I3" type="hidden">
+</div>
+         <script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/topjs" type="text/javascript"></script>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptMgr', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="container">
+	        <div id="container-inner">
+    	        
+
+<div id="header">
+    <a href="http://www.microsoft.com/web/"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/msweb-logo.png" alt="Microsoft /Web" class="brand"></a>
+    <div class="search-main clearfix">
+        <ul class="clearfix">           
+				
+		<li><a onclick="MscomCustomEvent('ms.ea_name','Link: Youtube - Microsoft Web Platform Videos','ms.ea_action','ref', 'ms.ea_offer', 'soc');dcsMultiTrack('DCS.dcssip','www.youtube.com','DCS.dcsuri','/user/microsoftwebplatform','WT.ti','Link:Social%20YouTube','WT.z_convert','Social-YouTube','WT.dl','1','WT.z_ea_name','Social YouTube','WT.z_ea_actionoffer', 'Social-YouTube'); window.open(this.href, '_blank', ''); return false;" href="http://www.youtube.com/user/WebMatrixMS"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/wm3-youtube.png" class="socialIcon" alt="YouTube"></a></li>
+            <li><a onclick="MscomCustomEvent('ms.ea_name','Link: Twitter for Microsoft Web Platform ','ms.ea_action','ref', 'ms.ea_offer', 'soc');dcsMultiTrack('DCS.dcssip','twitter.com','DCS.dcsuri','/mswebplatform','WT.ti','Link:Social%20Twitter','WT.z_convert','Social-Twitter','WT.dl','1','WT.z_ea_name','Social Twitter','WT.z_ea_actionoffer', 'Social-Twitter'); window.open(this.href, '_blank', ''); return false;" href="https://twitter.com/webmatrix"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/wm3-twitter.png" class="socialIcon" alt="Twitter"></a></li>
+            <li><a onclick="MscomCustomEvent('ms.ea_name','Link: Facebook for Microsoft Web Platform','ms.ea_action','ref', 'ms.ea_offer', 'soc');dcsMultiTrack('DCS.dcssip','www.facebook.com','DCS.dcsuri','/WebPlatform','WT.ti','Link:Social%20Facebook','WT.z_convert','Social-Facebook','WT.dl','1','WT.z_ea_name','Social Facebook','WT.z_ea_actionoffer', 'Social-Facebook'); window.open(this.href, '_blank', ''); return false;" href="https://www.facebook.com/microsoftwebmatrix"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/wm3-facebook.png" class="socialIcon" alt="Facebook"></a></li>
+            <li>Join us on:</li>            
+            
+            
+                <li>
+                    <a id="ctl00_ctl05_SignInLink" title="Bei Microsoft Passport
+Anmelden" href="https://profile.microsoft.com/RegSysProfileCenter/wizard.aspx?wizid=28d3b98d-cb7c-4682-b483-a3cae5705372&amp;lcid=1033&amp;fu=http%3a%2f%2fwww.microsoft.com%2fweb%2fplatform%2fserver.aspx%3ftemplang%3dde-de%26&amp;cu=http%3a%2f%2fwww.microsoft.com%2fweb%2fplatform%2fserver.aspx%3ftemplang%3dde-de">Anmelden</a>
+                </li>
+            
+            <li> | </li>
+			
+            <li><a title="Microsoft Seite" href="http://www.microsoft.com/">Microsoft Seite</a></li>
+            <li class="next-line">
+
+<div class="search-box">
+    <input name="ctl00$ctl05$ctl05$SearchBtn" id="ctl00_ctl05_ctl05_SearchBtn" class="do-search" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/search-btn.jpg" onclick="doSearch('ctl00_ctl05_ctl05_SearchBox', ''); return false;" style="border-width:0px;" type="image">
+    <input name="ctl00$ctl05$ctl05$SearchBox" id="ctl00_ctl05_ctl05_SearchBox" class="keywords" onkeypress="return checkForEnterKey(event, 'ctl00_ctl05_ctl05_SearchBox', '');" type="text">
+</div>               
+</li>
+            <li><select name="ctl00$ctl05$ctl06$LanguageList" id="ctl00_ctl05_ctl06_LanguageList" class="language-list" onchange="return doLanguageChange()">
+	<option value="en-us">English (United States)</option>
+	<option value="de-at">Deutsch (Österreich)</option>
+	<option selected="selected" value="de-de">Deutsch (Deutschland)</option>
+	<option value="es-es">Español (España)</option>
+	<option value="fr-fr">français (France)</option>
+	<option value="fr-be">français (Belgique)</option>
+	<option value="it-it">italiano (Italia)</option>
+	<option value="hu-hu">magyar (Magyarország)</option>
+	<option value="nl-be">Nederlands (België)</option>
+	<option value="pl-pl">polski (Polska)</option>
+	<option value="pt-br">Português (Brasil)</option>
+	<option value="tr-tr">Türkçe (Türkiye)</option>
+	<option value="ru-ru">русский (Россия)</option>
+	<option value="ko-kr">한국어(대한민국)</option>
+	<option value="ja-jp">日本語 (日本)</option>
+	<option value="zh-chs">中文(简体)</option>
+	<option value="zh-cht">中文(繁體)</option>
+
+</select>
+</li>
+        </ul>
+    </div>  
+</div>
+
+        		
+		        <div id="ctl00_nav">
+		            
+
+<div id="navigation">
+    
+    
+    
+    <div id="PrimaryNav-wrapper-1">
+        <div id="PrimaryNav-wrapper-2">
+            
+<div class="PrimaryNav" id="ctl00_ctl06_PrimaryNav">
+	<div class="AspNet-Menu-Horizontal">
+			<ul class="AspNet-Menu">
+				<li class="AspNet-Menu-Leaf AspNet-Menu-First">
+					<a href="http://www.microsoft.com/web/default.aspx" class="AspNet-Menu-Link" title="Home">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Home<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/news/default.aspx" class="AspNet-Menu-Link" title="News">
+						<span class="AspNet-Menu-Left">&nbsp;</span>News<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-WithChildren  AspNet-Menu-Selected">
+					<a href="http://www.microsoft.com/web/platform/default.aspx" class="AspNet-Menu-Link  AspNet-Menu-Selected" title="Technologien">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Technologien<span class="AspNet-Menu-Right">&nbsp;</span></a>
+					<ul style="width: 877px; left: -58px; display: none;">
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected AspNet-Menu-First">
+							<a href="http://www.microsoft.com/web/platform/tools.aspx" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="Die Werkzeuge">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Die Werkzeuge<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected">
+							<a href="http://www.microsoft.com/web/platform/framework.aspx" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="ASP.NET als Framework">
+								<span class="AspNet-Menu-Left">&nbsp;</span>ASP.NET als Framework<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected">
+							<a href="http://www.microsoft.com/web/platform/phponwindows.aspx" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="PHP auf Windows">
+								<span class="AspNet-Menu-Left">&nbsp;</span>PHP auf Windows<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected">
+							<a href="http://www.microsoft.com/web/page.aspx?templang=de-de&amp;chunkfile=special/silverlight.html" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="Silverlight">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Silverlight<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected">
+							<a href="http://www.microsoft.com/web/platform/server.aspx" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="IIS als Webserver">
+								<span class="AspNet-Menu-Left">&nbsp;</span>IIS als Webserver<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected">
+							<a href="http://www.microsoft.com/web/platform/database.aspx" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="SQL Server als Datenbank">
+								<span class="AspNet-Menu-Left">&nbsp;</span>SQL Server als Datenbank<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf  AspNet-Menu-ParentSelected AspNet-Menu-Last">
+							<a href="http://www.microsoft.com/web/page.aspx?templang=de-de&amp;chunkfile=special/windowsazure.html" class="AspNet-Menu-Link  AspNet-Menu-ParentSelected" title="Windows Azure">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Windows Azure<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="AspNet-Menu-WithChildren">
+					<a href="http://www.microsoft.com/web/gallery/default.aspx" class="AspNet-Menu-Link" title="Web Apps downloaden">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Web Apps downloaden<span class="AspNet-Menu-Right">&nbsp;</span></a>
+					<ul style="width: 395px;">
+						<li class="AspNet-Menu-Leaf AspNet-Menu-First">
+							<a href="http://www.microsoft.com/web/gallery/featured.aspx" class="AspNet-Menu-Link" title="Besondere Apps">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Besondere Apps<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf">
+							<a href="http://www.microsoft.com/web/gallery/browse.aspx" class="AspNet-Menu-Link" title="Alle durchstöbern">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Alle durchstöbern<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf AspNet-Menu-Last">
+							<a href="http://www.microsoft.com/web/gallery/developer.aspx" class="AspNet-Menu-Link" title="Applikation einreichen">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Applikation einreichen<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/bizspark/" class="AspNet-Menu-Link" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;" title="Join Programs">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Join Programs<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/category/all" class="AspNet-Menu-Link" title="Lernen">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Lernen<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-WithChildren">
+					<a href="http://www.microsoft.com/web/downloads/platform.aspx" class="AspNet-Menu-Link" title="Downloads">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Downloads<span class="AspNet-Menu-Right">&nbsp;</span></a>
+					<ul style="width: 214px;">
+						<li class="AspNet-Menu-Leaf AspNet-Menu-First">
+							<a href="http://www.microsoft.com/web/webmatrix/default.aspx" class="AspNet-Menu-Link" title="WebMatrix">
+								<span class="AspNet-Menu-Left">&nbsp;</span>WebMatrix<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf AspNet-Menu-Last">
+							<a href="http://www.microsoft.com/web/webmatrix/next/default.aspx" class="AspNet-Menu-Link" title="WebMatrix 2 Beta">
+								<span class="AspNet-Menu-Left">&nbsp;</span>WebMatrix 2 Beta<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="AspNet-Menu-WithChildren">
+					<a href="http://www.microsoft.com/web/Hosting/" class="AspNet-Menu-Link" title="Hostingangebote">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Hostingangebote<span class="AspNet-Menu-Right">&nbsp;</span></a>
+					<ul style="width: 288px;">
+						<li class="AspNet-Menu-Leaf AspNet-Menu-First">
+							<a href="http://www.microsoft.com/web/Hosting/faq/" class="AspNet-Menu-Link" title="FAQ">
+								<span class="AspNet-Menu-Left">&nbsp;</span>FAQ<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf">
+							<a href="http://www.microsoft.com/web/hosting/HostingProvider/codeofconduct/" class="AspNet-Menu-Link" title="Code of Conduct">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Code of Conduct<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+						<li class="AspNet-Menu-Leaf AspNet-Menu-Last">
+							<a href="http://www.microsoft.com/web/page.aspx?templang=de-de&amp;chunkfile=special/windowsazure.html&amp;nav=sub" class="AspNet-Menu-Link" title="Cloud Hosting">
+								<span class="AspNet-Menu-Left">&nbsp;</span>Cloud Hosting<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="AspNet-Menu-WithChildren AspNet-Menu-Last">
+					<a href="http://www.microsoft.com/web/webmatrix/next/default.aspx?nav=top" class="AspNet-Menu-Link" title="WebMatrix 2 Beta">
+						<span class="AspNet-Menu-Left">&nbsp;</span>WebMatrix 2 Beta<span class="AspNet-Menu-Right">&nbsp;</span></a>
+					<ul style="width: 99px;">
+						<li class="AspNet-Menu-Leaf AspNet-Menu-First AspNet-Menu-Last">
+							<a href="http://www.microsoft.com/web/webmatrix/default.aspx?nav=sub" class="AspNet-Menu-Link" title="WebMatrix 1">
+								<span class="AspNet-Menu-Left">&nbsp;</span>WebMatrix 1<span class="AspNet-Menu-Right">&nbsp;</span></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+	</div>
+</div>
+        </div>
+    </div>
+    <div id="SecondaryNav-wrapper-1">
+        <div id="SecondaryNav-wrapper-2">
+            
+<div class="SecondaryNav" id="ctl00_ctl06_SecondaryNav">
+	<div class="AspNet-Menu-Horizontal">
+			<ul style="left: 70px;" class="AspNet-Menu">
+				<li class="AspNet-Menu-Leaf AspNet-Menu-First">
+					<a href="http://www.microsoft.com/web/platform/tools.aspx" class="AspNet-Menu-Link" title="Die Werkzeuge">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Die Werkzeuge<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/platform/framework.aspx" class="AspNet-Menu-Link" title="ASP.NET als Framework">
+						<span class="AspNet-Menu-Left">&nbsp;</span>ASP.NET als Framework<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/platform/phponwindows.aspx" class="AspNet-Menu-Link" title="PHP auf Windows">
+						<span class="AspNet-Menu-Left">&nbsp;</span>PHP auf Windows<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/page.aspx?templang=de-de&amp;chunkfile=special/silverlight.html" class="AspNet-Menu-Link" title="Silverlight">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Silverlight<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf  AspNet-Menu-Selected">
+					<a href="http://www.microsoft.com/web/platform/server.aspx" class="AspNet-Menu-Link  AspNet-Menu-Selected" title="IIS als Webserver">
+						<span class="AspNet-Menu-Left">&nbsp;</span>IIS als Webserver<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf">
+					<a href="http://www.microsoft.com/web/platform/database.aspx" class="AspNet-Menu-Link" title="SQL Server als Datenbank">
+						<span class="AspNet-Menu-Left">&nbsp;</span>SQL Server als Datenbank<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+				<li class="AspNet-Menu-Leaf AspNet-Menu-Last">
+					<a href="http://www.microsoft.com/web/page.aspx?templang=de-de&amp;chunkfile=special/windowsazure.html" class="AspNet-Menu-Link" title="Windows Azure">
+						<span class="AspNet-Menu-Left">&nbsp;</span>Windows Azure<span class="AspNet-Menu-Right">&nbsp;</span></a>
+				</li>
+			</ul>
+
+	</div>
+</div>
+        </div>
+    </div>
+</div>
+
+		        </div>
+		
+                
+
+        		<div id="container-content">
+        		    <div class="content">
+                        
+    
+    <div class="content-section">
+        <div class="component-banner-right clearfix">
+            <div class="component-intro">
+                <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/webserver.png" alt="Unterstützt von einem flexiblen Webserver">
+                <p>Die in Windows Server&nbsp;2012 R2 integrierten 
+Internetinformationsdienste (IIS)&nbsp;8.5 bieten eine sichere und 
+leicht zu verwaltende Plattform, die modular aufgebaut und jederzeit 
+erweiterbar ist. Stellen Sie damit Ihre Websites, -services und 
+-anwendungen zuverlässig im Netz bereit. Mit IIS haben Sie viele Wahl- 
+und Steuerungsmöglichkeiten, ohne dass Sie bei der Zuverlässigkeit und 
+Sicherheit Einbußen hinnehmen müssen. Verändern Sie vorhandene 
+Eigenschaften oder fügen Sie neue Funktionen wie etwa Routing von 
+Anwendungsanforderungen und Lastenausgleich mit den kostenfreien 
+IIS-Erweiterungen hinzu. Erhöhen Sie die Websicherheit, indem Sie die 
+von einem Server hinterlassen Daten in einem Netzwerk auf ein Minimum 
+reduzieren und zusätzlich Anwendungen automatisch isoliert ausführen. 
+Verwenden Sie ASP.NET- und PHP-Webanwendungen gleichzeitig auf dem 
+gleichen Server. Das alles und noch viel mehr bieten Ihnen die IIS. <a href="http://www.iis.net/getstarted" target="_blank" title="Erste Schritte mit den IIS">Erfahren Sie mehr über die ersten Schritte auf der IIS.NET-Website</a>.</p>
+            </div>
+            <div class="component-img">
+                <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/webserver-hero.jpg" alt="IIS 8.5 Web Server Hero">
+            </div>
+        </div>
+        <div class="section-main">
+            <h2>Lernen Sie IIS&nbsp;8.5 schätzen</h2>
+            <div class="section-box-right clearfix">
+                <div class="section-copy">
+                    <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/installer-icon.png" alt="A" class="section-img installer-icon">
+                    <h3>Sofort einsetzen. Kostenfrei nutzen.</h3>
+                    <p>Alles, was Sie für die Ausführung und 
+Bereitstellung Ihrer Webanwendungen mit IIS benötigen, erhalten Sie 
+unkompliziert mit dem Microsoft-Webplattform-Installer. Die einfach zu 
+bedienende, optimierte Installationsanwendung sorgt dafür, dass Ihr 
+Entwicklungs- oder Hostingcomputer sofort einsatzbereit ist. Sie enthält
+ die aktuelle Version der IIS und deren Erweiterungen. Zudem erhalten 
+Sie so auch die aktuellen Versionen der Microsoft Web-Plattform mit 
+allen Frameworks, Datenbanken und Entwicklungstools. Das Gute daran: Sie
+ erhalten alles kostenfrei! <a href="http://www.microsoft.com/web/downloads/platform.aspx" title="Microsoft Web-Plattform jetzt herunterladen!">Laden Sie Ihre Version jetzt herunter</a>.</p>
+                </div>
+            </div>
+            <div class="section-box-left clearfix">
+                <div class="section-copy">
+                    <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/server-aspphp.jpg" alt="ASP.NET und PHP" class="section-img iis-aspphp">
+                    <h3>Alles wird Eins.</h3>
+                    <p>Von ASP.NET bis hin zu PHP bieten IIS einen 
+leistungsstarken und flexiblen Webserver für die beliebtesten 
+Webanwendungen, wie etwa <a href="http://www.microsoft.com/web/umbraco/" title="Umbraco">Umbraco</a>, <a href="http://www.microsoft.com/web/wordpress/" title="WordPress">WordPress</a> und <a href="http://www.microsoft.com/web/drupal/" title="Drupal">Drupal</a>.
+ Dank vollständiger Integration in die Pipeline für die 
+Anforderungsverarbeitung, das Konfigurationssystem und die 
+Verwaltungskonsole ist ASP.NET-Hosting noch einfacher und 
+leistungsfähiger. <a href="http://www.microsoft.com/web/platform/phponwindows.aspx" title="PHP unter Windows">Erfahren Sie mehr über PHP unter Windows.</a></p>
+                </div>
+            </div>
+            <div class="section-box-right clearfix">
+                <div class="section-copy">
+                    <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/server-scaling.png" alt="IIS 8.5-Skalierung" class="section-img iis-scaling">
+                    <h3>Erhalten Sie mehr für Ihr Geld.</h3>
+                    <p>IIS&nbsp;8.5 bieten verschiedene neue Features, 
+die speziell auf umfangreiche Hosting-Umgebungen abzielen. Durch die 
+dynamische Aktivierung von Websites und das Aussetzen im Leerlauf 
+befindlicher Arbeitsprozesse lässt sich die Ressourcenauslastung 
+reduzieren. So können Sie die Dichte der Websites erhöhen und die 
+Gesamtbetriebskosten reduzieren. Zudem ermöglichen die neuen, 
+erweiterten Protokollierungsoptionen eine verbesserte Datenerfassung und
+ Problembehandlung. <a href="http://www.iis.net/learn/get-started/whats-new-in-iis-85" title="Neuerungen in IIS 8.5">Erfahren Sie mehr über die neuen Features in IIS 8.5.</a></p>
+                </div>
+            </div>
+            <div class="section-box-left clearfix">
+                <div class="section-copy">
+                    <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/server-usewhatyouneed.jpg" alt="Modulare Architektur mit IIS 8.5" class="section-img iis-control">
+                    <h3>Verwenden Sie nur das, was Sie benötigen.</h3>
+                    <p>Die IIS sind komplett modular auf den vielfältig 
+erweiterbaren APIs aufgebaut. Dank dieser Architektur sind Sie in der 
+Lage, sehr einfach IIS-Komponenten hinzuzufügen, zu entfernen oder zu 
+ersetzen und so mit angepassten Modulen nahezu jeden Kundenwunsch zu 
+erfüllen. Verwenden Sie nur das, was Sie benötigen. Verändern Sie 
+vorhandene Eigenschaften oder fügen Sie neue Funktionen wie etwa Routing
+ von Anwendungsanforderungen und URL-Neuschreibung mit den kostenfreien 
+IIS-Erweiterungen hinzu.</p>
+                </div>
+            </div>
+            <div class="section2x1 clearfix">
+                <div class="section2x1-1">
+                    <div class="section-box-right clearfix">
+                        <div class="section-copy">
+                            <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/server-speed.jpg" alt="IIS 8.5 High Performance" class="section-img iis-fast">
+                            <h3>Leistung</h3>
+                            <p>Beschleunigen Sie Ihre Website mit dem 
+integrierten dynamischen Cache-Verfahren und verbesserter 
+Datenkompression. IIS bieten durch eine leistungsfähige HTTP-Kompression
+ sowie eine tiefere Integration in die Abfrageprozesse vom 
+Windows-Kernel an SSL-geschützte Websites eine sehr hohe Leistung, wenn 
+es um die Verarbeitung statischer und dynamischer Webinhalte geht. 
+Implementieren Sie eine skalierbare Web-Infrastruktur mit einem 
+HTTP-basierten Lastenausgleich und einer intelligenten Handhabung von 
+Anforderungen und Weiterleitungen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section2x1-2">
+                    <div class="section-box-right clearfix">
+                        <div class="section-copy">
+                            <img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/server-security.jpg" alt="IIS 8.5-Sicherheit" class="section-img iis-secure">
+                            <h3>
+                                Sicherheit</h3>
+                            <p>Mit IIS erhöhen Sie automatisch die 
+Sicherheit, weil Ihre Webserver damit nur so viele Spuren wie nötig in 
+einem Netzwerk hinterlassen und Anwendungen automatisch gekapselt 
+ausführen. IIS bieten leistungsfähiges Sandboxing durch CPU-Drosselung, 
+wodurch die Wahrscheinlichkeit reduziert wird, dass Anwendungen 
+ausbrechen. Außerdem isolieren IIS Anwendungen besser, da sie ihnen bei 
+der Ausführung für alle Arbeitsprozesse eine einzigartige 
+Identifikationsnummer und eine eigene Sandbox-Konfiguration zuweisen. So
+ minimieren Sie Sicherheitsrisiken.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-main-link">
+                <a href="http://www.iis.net/getstarted" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;" title="Erste Schritte mit IIS">
+                    Erfahren Sie mehr über die ersten Schritte auf der IIS.NET-Website.</a>
+            </div>
+        </div>
+        <div class="context-nav clearfix">
+            <div class="context-left">
+                <a href="http://www.microsoft.com/web/platform/" title="Übersicht über die Microsoft-Webplattform">&lt; Microsoft-Webplattform</a></div>
+            <div class="context-right">
+                <a href="http://www.microsoft.com/web/platform/database.aspx" title="SQL Server-Datenbank">Datenbank &gt;</a></div>
+        </div>
+    </div>
+    
+    
+
+<div class="webpi-bar clearfix">
+    <a id="ctl00_MainContent_WebPIBar1_A1" title="Installieren Sie die Microsoft Web Plattform" href="http://www.microsoft.com/web/downloads/platform.aspx"><img id="ctl00_MainContent_WebPIBar1_Img1" title="Installieren Sie die Microsoft Web Plattform" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/btn-webpi.png" style="border-width:0px;"></a>
+    <p>Alles was Sie für den Start brauchen, der kostenlose, schlanke Web Plattform Installer.</p>
+</div>
+
+        		    </div>
+                    <div class="clearing">&nbsp;</div>
+                </div>
+                
+    <div id="container-explore">
+        <div id="explore-content" class="clearfix">
+	        <div class="explore-header"><img alt="Explore Your Web" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/header-explore.png"></div>
+	        <div class="explore-section">
+		        <div class="explore-links">
+			        <ul class="long">
+				        <li class="explore-links-header">Servers</li>
+				        <li><a title="Windows Server" href="http://www.microsoft.com/germany/windowsserver2008/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Windows Server</a></li>
+				        <li><a title="SQL Server" href="http://www.microsoft.com/germany/sql/2008/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">SQL Server</a></li>
+				        <li><a title="IIS" href="http://www.iis.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">IIS</a></li>
+			        </ul>
+			        <ul>
+				        <li class="explore-links-header">Technologien</li>
+				        <li><a title=".NET Framework" href="http://msdn.microsoft.com/de-de/netframework/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">.NET Framework</a></li>
+				        <li><a title="ASP.NET" href="http://msdn.microsoft.com/de-de/asp.net/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">ASP.NET</a></li>
+				        <li><a title="Silverlight" href="http://msdn.microsoft.com/de-de/silverlight/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight</a></li>
+				        <li><a title="PHP on Windows" href="http://www.microsoft.com/web/platform/phponwindows.aspx">PHP on Windows</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Werkzeuge</li>
+				        <li><a title="Visual Studio" href="http://www.microsoft.com/germany/visualstudio/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Visual Studio</a></li>
+				        <li><a title="Expression Studio" href="http://www.microsoft.com/germany/expression/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Expression Studio</a></li>
+			        </ul>
+			        <ul>
+				        <li class="explore-links-header">Web Apps</li>
+				        <li><a title="SharePoint Server" href="http://office.microsoft.com/de-de/sharepointserver/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">SharePoint Server</a></li>
+				        <li><a title="BizTalk Server" href="http://www.microsoft.com/germany/biztalk/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">BizTalk Server</a></li>
+				        <li><a title="Web App Gallery" href="http://www.microsoft.com/web/gallery/">Web App Gallery</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Communities</li>
+				        <li><a title="ASP.NET Community" href="http://www.asp.net/community/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">ASP.NET Community</a></li>
+				        <li><a title="Visual Studio Community" href="http://msdn.microsoft.com/de-de/aa497440.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Visual Studio Community</a></li>
+				        <li><a title="Silverlight Community-Forum" href="http://social.msdn.microsoft.com/Forums/de-DE/silverlightde/threads" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight Community-Forum</a></li>
+				        <li><a title="MSDN Community Center" href="http://msdn.microsoft.com/de-de/aa497440.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">MSDN Community Center</a></li>
+				        <li><a title="Techstudent" href="http://msdn.microsoft.com/de-de/academic/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Techstudent</a></li>
+				        <li><a title="Channel 9" href="http://channel9.msdn.com/germany/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Channel 9</a></li>
+				        <li><a title="CodePlex" href="http://www.codeplex.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">CodePlex</a></li>
+				        <li><a title="MSDN Deutschland auf LinkedIn" href="http://www.linkedin.com/groups?mostPopular=&amp;gid=3268784" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">MSDN Deutschland auf LinkedIn</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Blogs</li>
+				        <li><a title="MSDN Blogs" href="http://www.microsoft.com/germany/msdn/kontakt/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">MSDN Blogs</a></li>
+				        <li><a title="Web Tools Team Blog" href="http://blogs.msdn.com/webdevtools/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Web Tools Team Blog</a></li>
+				        <li><a title="Web Platform Team Blog" href="http://blogs.iis.net/msdeploy/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Web Platform Team Blog</a></li>
+				        <li><a title="Silverlight Team Blog" href="http://team.silverlight.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight Team Blog</a></li>
+				        <li><a title="Deutscher RIA Blog" href="http://blogs.msdn.com/riablog/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Deutscher RIA Blog</a></li>
+				        <li><a title="Scott Guthrie's Blog" href="http://weblogs.asp.net/Scottgu/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Scott Guthrie's Blog</a></li>
+				        <li><a title="Oliver Scheer's Blog" href="http://the-oliver.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Oliver Scheer's Blog</a></li>
+			            <li><a title="Dariusz Parys's Blog" href="http://blogs.msdn.com/b/dparys/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Dariusz Parys's Blog</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Informationen für...</li>
+				        <li><a title="IT Professionals (TechNet)" href="http://technet.microsoft.com/de-de/default.aspx" onclick="dcsMultiTrack('DCS.dcssip','technet.microsoft.com','DCS.dcsuri','/','WT.ti','Link:TechNet', 'WT.z_convert','TechNet','WT.dl','1'); window.open(this.href, '_blank', ''); return false;" onkeypress="dcsMultiTrack('DCS.dcssip','technet.microsoft.com','DCS.dcsuri','/','WT.ti','Link:TechNet', 'WT.z_convert','TechNet','WT.dl','1'); window.open(this.href, '_blank', ''); return false;">IT professionals (TechNet)</a></li>
+				        <li><a title="Web Entwickler (MSDN)" href="http://msdn.microsoft.com/de-de/default.aspx" onclick="dcsMultiTrack('DCS.dcssip','msdn.microsoft.com','DCS.dcsuri','/','WT.ti','Link:MSDN', 'WT.z_convert','MSDN','WT.dl','1'); window.open(this.href, '_blank', ''); return false;" onkeypress="dcsMultiTrack('DCS.dcssip','msdn.microsoft.com','DCS.dcsuri','/','WT.ti','Link:MSDN', 'WT.z_convert','MSDN','WT.dl','1'); window.open(this.href, '_blank', ''); return false;">Web Developers (MSDN)</a></li>
+				        <li><a id="A1" title="Hoster" runat="server" href="http://www.microsoft.com/germany/branchen/hosting/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Hosters</a></li>							        
+			        </ul>
+		        </div>
+	        </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+        
+
+<div id="container-footer">
+    <ul id="footer-items" class="clearfix">
+        <li class="makewebnotwar"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/makewebnotwar.png" alt="Make Web Not War"></li>
+        <li><a title="Datenschutz und Cookies" href="http://go.microsoft.com/fwlink/?LinkId=248681">Datenschutz und Cookies</a></li>
+        <li><a title="Impressum" href="http://www.microsoft.com/germany/siteservices/impressum/default.mspx">Impressum</a></li>
+        <li><a title="Markenzeichen" href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Markenzeichen</a></li>
+        <li><a title="Nutzungsbedingungen" href="http://www.microsoft.com/germany/siteservices/impressum/copyright.mspx?CM=Foot">Nutzungsbedingungen</a></li>
+        <li><a title="Sitemap" href="http://www.microsoft.com/web/sitemap.aspx">Sitemap</a></li>
+        <li>© 2013 Microsoft Corporation.<br>Alle Rechte vorbehalten.</li>
+        <li class="mssmall"><img src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/mslogo-small.png" alt="Microsoft"></li>
+    </ul>
+</div>
+
+    
+<script type="text/javascript" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/XMLHttpSyncExecutor.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+adjustNavWidths();//]]>
+</script>
+</form>
+    
+    <noscript>
+        <div>
+            <img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://m.webtrends.com/dcs8muh1110000wwq7so0uysl_9h7u/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=MS.3.0.0"/>
+        </div>
+    </noscript>
+
+    <!-- WEDCS -->
+    <script type="text/javascript">
+        var varSegmentation = 0;
+        var varClickTracking = 1;
+        var varCustomerTracking=1;
+        document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
+    </script><script type="text/javascript" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/ms.js" '=""></script><iframe id="_msnFrame" src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/c.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;"></iframe>
+    <noscript><img alt="" width="1" height="1" src="http://c.microsoft.com/trans_pixel.aspx"/></noscript>
+
+
+
+<script src="Mic13%20Microsoft%20Web%20Platform%20-%20Server,%20IIS,%20Internet%20Information%20Services-Dateien/broker-config_s2.js"></script></body></html>

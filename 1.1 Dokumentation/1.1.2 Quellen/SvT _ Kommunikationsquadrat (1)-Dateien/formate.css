@@ -1,0 +1,845 @@
+h1 {
+	color:#294677;
+	padding-bottom: 0.2em;
+	font-size: 1.3em;
+	/* font: bold 1.3em "Lucida Grande", Lucida, Verdana, sans-serif; */
+}
+	
+h2 {
+	color:#294677;
+	padding-bottom: 0.1em;
+	font-size: 1.2em;
+}
+
+h3 {
+	/* padding: 0 0 0 1.4em; */
+	color:#294677;
+	margin-top:2.0em;
+	font-size:0.9em;
+}
+
+h4 {
+	/* padding: 0 0 0 1.4em; */
+	margin-top: 2.8em;
+	font-size:0.9em;
+}
+
+h6 {
+	font-size:1em;
+	color:#333;
+	background-color: #ff2f17; /* roter Hintergrund */
+	padding: 0.2em;	
+}
+
+.clearer {
+	display:block;
+	clear:both;
+	line-height:0;
+	height:1px;
+	font-size:0;
+	visibility:hidden;
+}
+
+.clear {
+	clear:both;
+	line-height:0;
+	height:1px;
+	font-size:0;
+	visibility:hidden;
+}
+
+a:link { color:#174756; text-decoration:none;}
+a:visited { color:#044d77; text-decoration:none;} 
+a:hover { color:#174756; text-decoration:underline;}
+a:active { color:#62291c; text-decoration:none;} 
+
+/* @group Artikelliste einspaltig */
+#content .einspalter1 {
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+#content .einspalter1 p {
+	margin:0;
+	padding-bottom: 0.4em;
+}
+#content .einspalter1 p, #content .einspalter1 ul, #content .einspalter1 li {
+	margin:0;
+	padding-bottom: 0.6em;
+}
+/* @end */
+
+/* @group Zwei & Dreispalter */
+
+#content .zweispalter1, #content .zweispalter2, #content .zweispalter_1a, #content .zweispalter_2a, #content .zweispalter_1b, #content .zweispalter_2b {
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+
+#content .zweispalter1 p {
+	margin:0;
+	padding-bottom: 0.4em;
+}
+
+#content .zweispalter2 p, #content .zweispalter2 ul, #content .zweispalter2 li {
+	margin:0;
+	padding-bottom: 0.8em;
+}
+	
+#content .zweispalter_1a {
+	float: left;
+	width: 25%; /* 6em; */
+}
+
+#content .zweispalter_2a {
+	float: right;
+	width: 74%; /*32em; */
+}
+
+#content .zweispalter_1b {
+	float: left;
+	width: 49%; /* 6em; */
+}
+
+#content .zweispalter_2b {
+	float: right;
+	width: 49%; /*32em; */
+}
+
+#content .zweispalter_2a ul, #content .zweispalter_2b ul {
+	list-style-type: square;
+	padding:0;
+	margin: 0 0 0 15px;	
+}
+
+/* Formate für Artikelliste mit Minibild der Referenten */
+
+#content p.mit_bild, #content p.mit_bild a {
+	height: 160px;
+	margin:0;
+	padding:0;
+}
+
+#content p.bild_text_center {
+	margin:0;
+	text-align: right;
+	padding: 5px 0 30px;
+}
+
+#content p.mit_bild a:hover {
+	text-decoration: none;
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	/* padding:0 0 2px 0;
+	background-image:url(./../img/link_hover_bild.gif);
+	background-position:bottom;
+	background-repeat:repeat-x; */
+}
+
+#content .referenten_liste_0, #content .dreispalter, #content .dreispalter_1, #content .dreispalter_2, #content .dreispalter_3  {
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+
+#content .referenten_liste_0 {
+	padding-top: 15px;
+}
+#content .referenten_liste_1 {
+	float: left;
+	width: 160px;
+	padding: 0 22px 0 0;
+}
+
+#content .referenten_liste_2 {
+	float: left;
+	width: 160px;
+	padding: 0;
+}
+
+#content .dreispalter_1 {
+	width: 15em;
+}
+
+#content .dreispalter_2 {
+	width: 4em;
+	margin-left: 10px;
+}
+
+#content .dreispalter_3 {
+	width: 20em;
+	margin-left: 10px;
+}
+
+#content .dreispalter_1, 
+#content .dreispalter_2, 
+#content .dreispalter_3 {
+	float: left;
+}
+/* @end */
+
+/* @group Divs für Textformatierungen */
+.achtung_rot {
+	color: #333;
+	background-color: red;
+	padding: 0.2em 0.4em;
+}
+.rot {
+	color: #333;
+	background-color: red;
+	padding: 0.2em 0.6em;
+}
+.gelb {
+	color: #333;
+	background-color: yellow;
+	padding: 0.2em 0.6em;
+}
+.gruen {
+	color: #fff;
+	background-color: green;
+	padding: 0.2em 0.6em;
+}
+
+.blau {
+	color: #fff;
+	background-color: #044d77;
+	padding: 0.2em 0.6em;
+}
+
+.ohne_abstand {
+	margin: -0.8em 0 0.2em 0;
+}
+
+.dunkel_rot {
+	color: #8f1613;
+}
+
+/* @end */
+
+table {width:91%; border:2px; padding: 8px; margin-top:0px; margin-left:auto; margin-right:auto; border-spacing:2px; font-size:11px;
+	text-decoration:none;
+}
+/*tr { border:none; padding:0px; margin:0px; }*/ 
+td { border:none; padding:4px 6px; margin:0px; vertical-align:top; border-spacing:0px; text-decoration:none;}
+
+#content .text_1 {
+	padding: 0;
+	margin: 0;
+}
+
+#content .text_2 {
+	padding: 0;
+	margin: 0 0 1.8em;
+}
+
+#content .text_3 {
+	padding: 0;
+	margin: 0 0 2.6em;
+}
+
+#content .text_4 {
+	padding: 0;
+	margin: 0 0 3.4em;
+}
+
+#content .text_5 {
+	padding: 0;
+	margin: 0 0 -0.45em;
+}
+
+#content .text_6 {
+	padding: 0;
+	margin: 0 0 -0.9em;
+}
+
+#content .text_7 {
+	padding: 0;
+	margin: 0 0 -1.35em;
+}
+
+
+#content .text_8 {
+	padding: 0;
+	margin: 0 0 -1.8em;
+}
+
+#content strong, #sidebar-2 strong {
+	color:#777169; /*294677; */
+} 
+
+#content .dunkel_rot, #sidebar-2 .dunkel_rot {
+	color:#8f1613; 
+} 
+
+/* allgemeine Formatierung fuer Links im Contentbereich */
+
+#content ul { list-style-type: square;
+	padding-left: 1.2em;
+}
+#content p a:link { color:#174756; text-decoration:none;}
+#content p a:visited { color:#044d77; text-decoration:none;}
+#content p a:hover { color:#174756; text-decoration:underline;}
+#content p a:active { color:#333; text-decoration:none;}
+
+#content a.dunkel_rot:link, #sidebar-2 a.dunkel_rot:link { color:#8f1613; text-decoration:none;}
+#content a.dunkel_rot:visited, #sidebar-2 a.dunkel_rot:visited { color:#8f1613; text-decoration:none;}
+#content a.dunkel_rot:hover, #sidebar-2 a.dunkel_rot:hover { color: #53081a; text-decoration:underline;}
+#content a.dunkel_rot:active, #sidebar-2 a.dunkel_rot:active { color:#8f1613; text-decoration:none;}
+
+#content ul a:link { color:#174756; text-decoration:none;}
+#content ul a:visited { color:#044d77; text-decoration:none;} 
+#content ul a:hover { color:#174756; text-decoration:underline;}
+#content ul a:active { color:#62291c; text-decoration:none;} 
+
+.external { /* gif zur Markierung von externen Links aus [textile]*/
+	background: url(./../img/externalLink.gif) no-repeat right top;
+	padding-right: 6px; 
+}
+
+.external2 { /* gif zur Markierung von externen Links */
+	background: url(./../img/externalLink.gif) no-repeat right top;
+	padding-right: 10px; 
+}
+
+.sendmail { /* gif zur Markierung von E-Mail-Adressen mit hinterlegtem "MailTo"-Aufruf 
+			wird z. B. verwendet im Modul "E-Mail-Anschrift verschlsselt einfgen"*/
+	background: url(./../img/email.png) no-repeat right top;
+	padding-right: 15px; 
+}
+
+/* @group Obere Navigation */
+
+/* --- obere Navigation */
+
+#top_navigation { 
+	float: left;
+	width: 77%;
+	margin:0;
+	padding:0;
+	background-color: #a49e95;
+}
+
+#top_navigation a {
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 8px 26px 6px;
+	min-height:16px;
+	color: #fcfbfb;
+	text-align: center;
+ 	text-decoration: none;
+}
+	
+#top_navigation ul.nav1st, #top_navigation ul.nav1st li {
+	float: left;
+	list-style: none;	
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+	background-color: #a49e95;
+}
+	
+#top_navigation ul.nav1st li.active, #top_navigation ul.nav1st li.active a.current {
+	color: #777169;
+	background-color:#ece6df;
+	border-bottom: 1px solid #e49d04;
+}
+
+#top_navigation ul.nav1st a:hover {
+	color: #777169;
+	padding: 8px 26px 6px;
+	background-color: #ece6df;
+	border-bottom: 2px solid #e49d04;
+}
+
+#top_nav_right { 
+	width: 23%;
+	float: right;
+	margin:0;
+	padding:0;
+	background-color: #958f84; /*#904210; */
+}
+	
+#top_nav_right a {
+	float: left;
+	min-height:17px;
+	display: block;
+	margin: 0;
+	padding: 8px 26px 6px;
+	color: #fcfbfb;
+	text-align: center;
+ 	text-decoration: none;
+}
+	
+#top_nav_right a.current {
+	color: #777169;
+	padding: 8px 26px 5px;
+	background-color:#ece6df;
+	border-bottom: 2px solid #e49d04;
+}
+		
+#top_nav_right a:hover {
+	color: #777169;
+	padding: 8px 26px 5px;
+	background-color: #ece6df;
+	border-bottom: 2px solid #e49d04;
+}
+
+/* @end */
+
+/* @group Linke Navigation */
+
+#sidebar ul.nav2nd {
+	/* width:11em; */
+	margin:0;
+	padding:0;
+}
+	
+#sidebar ul.nav2nd li {
+	font-size:12px;
+	/* font-size:0.9em; */ 
+	font-weight:normal;
+	text-decoration:none;
+	list-style: none;
+	text-align:left;
+}
+
+#sidebar ul.nav2nd a, 
+#sidebar ul.nav2nd a:link {
+	color:#5c5752;/*777169; */
+	text-decoration:none;
+	list-style: none;
+	display:block;
+	padding: 0.6em 0 0.6em 26px; 
+}
+
+#sidebar ul.nav2nd a.current,
+#sidebar ul.nav2nd a.current:link {
+	color:#ddb662;
+	font-weight:normal;
+	text-decoration:none;
+	background: url(./../img/hover2nd.gif) no-repeat 0 0.9em;
+}	
+
+#sidebar ul.nav2nd a:hover {
+	color:#ddb662; /*#e49d04; */
+	font-weight:normal;
+	text-decoration:none;
+}
+
+#sidebar ul.nav3nd {
+	padding:0; /* hier den linken Einzug fuer nummerierte Liste angeben */
+	margin:0;
+}
+
+#sidebar ul.nav3nd li {
+	margin-left:1.6em; /* wenn mit margin-left gearbeitet wird, darf KEIN padding fuer den linken rand eingetragen werden!*/
+	font-weight:normal;
+	list-style-type: none; 
+}
+
+#sidebar ul.nav3nd a, 
+#sidebar ul.nav3nd a:link {
+	display:block;
+	color:#5c5752;/*777169; */
+	padding: 0.6em 0 0.6em 26px; 	/* hier den linken Abstand des Textes zur Nummer der Liste angeben */
+
+}
+#sidebar ul.nav3nd a.current, 
+#sidebar ul.nav3nd a.current:link {
+	color:#ddb662;
+	font-weight:normal;
+	text-decoration:none;
+	background-image:url(./../img/dummy_leer.gif); /* hier ein transparentes Bild angeben da sonst noch Background von nav2nd gilt... */
+}
+
+#sidebar ul.nav3nd a:hover {
+	color:#ddb662; /*#e49d04; */
+	text-decoration:none;
+}
+
+/* @end */
+
+/* Format und Position fuer Impressum im Footer */ 
+#footer_right .impressum_footer {
+	float: left;
+	font-weight:normal;
+	font-size:0.85em;
+	overflow:visible;
+	margin: 35px 15px 0 28px;
+}
+
+#footer_right div.impressum_footer a {
+	color: #777169;
+	text-decoration:none;	
+}
+
+#footer_right div.impressum_footer a:hover {
+	color:#ddb662; /*#e49d04; */
+	text-decoration:none;	
+}
+
+#footer_right div.image_footer  { /* */
+	padding:0;
+	border:0;
+	margin-left: 10px;
+	overflow:visible;
+
+}
+/* --- Link-Anzeige vom Content */ 
+/* aber erstmal die Raender um die Bilder abschalten*/
+
+/* --- Artikelliste */
+.blaettern {
+	margin-left: 0;
+	padding: 0.5em 0 0;
+}
+
+.blaettern a {
+	color: #ddb662; 
+	text-decoration:none;	
+}
+
+.blaettern a:hover {
+	color:#ddb662; /*#e49d04; */
+	text-decoration:underline;	
+}
+	
+.clear_left { /* ACHTUNG, wird u.a. auch im Modul "Bild im Fliesstext mit internem Link" verwendet! */
+	clear: left;
+	line-height:0;
+	height:1px;
+	font-size:0;
+	visibility:hidden;
+}
+
+	/*	Images
+	------------------------------------------------------------------------------*/	
+	
+.schatten_1 {
+	-webkit-box-shadow: 3px 3px 11px -2px #8c8d8b;	/* webkit browser*/ 
+	-moz-box-shadow: 3px 3px 11px -2px #8c8d8b;	/* firefox */ 
+	box-shadow: 3px 3px 11px -2px #8c8d8b;
+	margin-bottom: 10px;
+}
+
+img {
+	border-width:0px;
+	border-style:none;
+}
+
+#content img {
+	border-width:0px;
+	border-style:none;
+}
+
+#header img {
+	border-width:0px;
+	border-style:none;
+}
+	
+/* #header div.image_top {
+	float:right;
+	padding:0;
+	margin-top:24px;
+	margin-right:44px; 
+}
+
+#header div.image_bottom {
+	float:right;
+	padding:0;
+	margin-top:14px;
+	margin-right:20px;
+} */
+		
+#sidebar-2 img {
+	border-width:0px;
+	border-style:none;
+}
+
+#sidebar-2 div {
+	margin:0; padding:0; 
+	overflow:hidden;
+	text-align: left;
+}
+
+#content .bildschatten1, #sidebar-2 .bildschatten1 {
+	 background: url(./../img/bildschatten_110px.png) no-repeat -8px bottom;
+	padding: 0 2px 12px 0px;
+}
+
+#content .bildschatten2, #sidebar-2 .bildschatten2 {
+	 background: url(./../img/bildschatten_114px.png) no-repeat -2px bottom;
+	padding: 0 2px 12px 0px;
+}
+
+#content .bildschatten3, #sidebar-2 .bildschatten3 {
+	 background: url(./../img/bildschatten_418px.png) no-repeat -270px bottom;
+	padding: 0 2px 12px 0px;
+}
+
+/*#sidebar-2 .schlagschatten1 { 
+	box-shadow: 4px 4px 10px #535353;
+	-webkit-box-shadow: 4px 4px 10px #535353;
+	-moz-box-shadow: 4px 4px 10px #535353;
+} */
+
+.zentriert_1 {
+	text-align: center;
+}
+
+.rechts_1 {
+	text-align: right;
+	padding: 0 154px 0 0;
+}
+
+.rechts_berater_1 {
+	text-align: right;
+	padding: 0 154px 18px 0;
+}
+
+.pict_text_left {
+	text-align: left;
+}
+
+.pict_text_center {
+	text-align: center;
+}
+
+.pict_text_right {
+	text-align: right;
+}
+
+.pict_text_berater {
+	text-align: right;
+	margin: 0;
+	padding: 6px 124px 10px 0;
+}
+
+#sidebar-2 div.image {
+	margin:0; padding:0; overflow:hidden;
+	margin-top:4.5em;
+	text-align: center;
+}
+
+/* --- css für Module 'Bild mit Div-Auswahl'---*/
+#sidebar-2 div.image_1, #content div.image_1 { /* Standard-Abstand */
+	margin:0; padding:0; overflow:hidden;
+	margin-top:4.5em;
+	text-align: center;
+}
+#sidebar-2 div.image_2, #content div.image_2 { /* Abstand oben etwas kleiner */
+	margin:0; padding:0; overflow:hidden;
+	margin-top:2.4em;
+	text-align: center;
+}
+#sidebar-2 div.image_3, #content div.image_3 { /* Abstand oben noch kleiner */
+	margin:0; padding:0; overflow:hidden;
+	margin-top:1.8em;
+	text-align: center;
+}
+
+#content div.image_4 { /* Standard-Abstand */
+	margin:0; 
+	overflow:hidden;
+	margin-top:1.0em;
+	text-align: left;
+	padding: 0 0 0 50px;
+}
+
+#content div.image_5 { /* Standard-Abstand */
+	margin:0; 
+	overflow:hidden;
+	margin-top:1.0em;
+	text-align: center;
+	padding: 0 20px 0 0;
+}
+
+/* ---------- */ 
+#content div.image {
+	margin-bottom:0;
+}
+
+#content div.image p {
+	margin:0;
+	font-size:0.9em;
+}
+
+#content div.image_float {
+	float:left;
+	padding:0 0 2px 0;
+	margin: 2px 2px 0;
+}
+
+#content div.image_float a:link    { color:#ddb662; }
+#content div.image_float a:visited { color:#ddb662; text-decoration:none;}
+/* #content ul a:hover   { color:#333; text-decoration:underline;}
+#content ul a:active  { color:#62291c; text-decoration:none;} */
+
+#content div.image_float a:hover {
+	padding:0 0 2px 0;
+	background-image:url(./../img/link_hover_bild.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+#content div.img_active a {
+	padding:0 0 2px 0;
+	background-image: url(./../img/link_hover_bild.gif);
+	background-position: 0 bottom;
+	background-repeat:repeat-x;
+}
+	
+#content div.flLeft {
+	float:left;
+	margin: 0 28px 10px 0;
+	padding:0;
+}
+
+#content div.flRight {
+	float:right;
+	margin: 0 0 10px 28px;
+	padding:0;
+}
+
+/* @group Bildgalerie mit highslide */
+	
+.hidden-container {
+	margin:0; padding:0;
+	text-align:left;
+}	
+
+#sidebar-2 a.image_200 img { /* Bilder 200px breit*/
+	margin:0; 
+	padding: 0 0 20px 20px;
+	overflow:hidden;
+	text-align: center;
+}
+
+#sidebar-2 a.image_170 img, #sidebar-2 .image_170 img, #sidebar-2 img.image_170 { /* Bilder 170px breit*/
+	margin: 0;
+	padding: 61px 0 20px 25px;
+	text-align: center;
+}
+
+#sidebar-2 a.image_160 img, #sidebar-2 img.image_160 { /* Bilder 160px breit*/
+	margin: 0;
+	padding: 61px 0 20px 30px;
+	text-align: center;
+}
+
+#sidebar-2 a.image_120 img, #sidebar-2 img.image_120 { /* Bilder 120px breit*/
+	margin: 0;
+	padding: 61px 0 20px 60px;
+	text-align: center;
+}
+
+
+#sidebar-2 a.image_spaltenbreite img, #sidebar-2 img.image_spaltenbreite { /* Bilder mit voller Spaltenbreite*/
+	margin: 0;
+	padding: 61px 0 20px;
+	overflow:hidden;
+	text-align: center;
+}
+
+#sidebar-2 p.zoom_title1 {
+	margin: 0 33px 0 0;
+	padding:0;
+	text-align:right;
+}
+
+.image_fuss1 {/* Bilder im Fussbereich*/
+	float:left;
+	padding-right: 10px;
+}
+
+.image_fuss2 {/* Bilder im Fussbereich*/
+	float:left;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.image_title1 {
+	text-align:center;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+/* @end */
+
+/* @group Videos mit highslide */
+#content .video_wrap {
+	width: 98%;
+	float: left;
+	padding: 0;
+	margin:0;
+	margin-bottom: 1.0em;
+	
+}
+
+#content .show_video {
+	margin: 0;
+	float: left;
+	padding: 0.8em 0 0 1.8em;
+}
+	
+#content .show_video_text {
+	width: 74%;
+	float: right;
+	margin:0;
+	padding: 0.4em 0 0;
+	text-align:left;
+}
+
+.show_video_text p {
+	font-size: 0.9em;
+	margin:0;
+	padding-top: 0.5em;
+}
+
+.show_small_text {
+	font-size: 0.8em;
+	padding: 0;
+	margin:0;
+}
+
+.center_text {
+	
+}
+/* @end */
+
+
+/* CSS fuer Modul "Datei zum Download einfuegen */
+#content .download-hdl p, 
+#content .download-file p, 
+#content .download-desc p { 
+	  /* width:97.3%;  IE6 Hack */
+	margin: 0; 
+	padding: 0;
+}
+
+#content .download-hdl { 
+	padding: 0 7px 5px 0;
+}
+
+#content .download-file {
+	padding: 0 7px 0.5em 0;
+}
+
+#content .download-desc {
+	padding: 0.6em 0;
+}
+
+#content .download-without-desc { 
+	margin-bottom: 0.5em;
+}	
+
+/* CSS fr Modul "Datei laden (ohne Bild)"*/
+.list_content {
+	
+}
+
+.list_content2 {
+
+}

@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+	<title>HCI Diary</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="icon" type="image/x-icon" href="pics/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico">
+	<link type="image/x-icon" href="pics/favicon.ico">
+	
+	<link rel="stylesheet" href="jquerymobile/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="jquerymobile/theme/themes/OwnTheme.min.css" />
+	<link rel="stylesheet" href="jquerymobile/theme/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquerymobile.css"/>
+	<link rel="stylesheet" href="ownStyle.css"/> <!-- CSS overrides theme-->
+
+	<script src="jquerymobile/jquery.js"></script>
+	<script src="jquerymobile/jquery-ui/jquery-ui.js"></script> 
+	<script src="jquerymobile/defaultconfig.js"></script>
+	<script src="forms.js"></script>
+	<script src="jquerymobile/jquerymobile.js"></script>
+	
+	<script src="auswahl.js"></script>
+	<script>
+// 		$.ajax({	//skip this html if the user has currently logged in
+// 			type: "GET",
+// 			url: "login",
+// 			async: false,
+// 			success: function(msg)
+// 			{
+// 				window.location.href = msg;
+// 			}
+// 		});
+	</script>	
+</head>
+<body>
+	<noscript>
+		 <h1>Um den vollen Funktionsumfang dieser Webseite zu erfahren, benötigen Sie JavaScript.
+		 Eine Anleitung wie Sie JavaScript in Ihrem Browser einschalten, befindet sich 
+		 <a href="http://www.enable-javascript.com/de/" target="_blank">hier</a>.</h1>
+	</noscript>
+	
+	<div data-role="page" id="start">
+		<div data-role="content">
+			<div id="mainLogo" ><img src="pics/mainLogo.png"></div>
+			<div><a href="#anmeldung" data-role="button" data-theme='c'>Anmelden</a></div>
+			<div><a href="registrierung.html" data-role="button" data-ajax="false" data-theme='c'>Registrieren</a></div>
+		</div>
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+	</div>
+	
+	<div data-role="page" id="anmeldung">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="head">
+			<div class="headerContent">
+				<div class="logoWithTitle"><img src="pics/logoWithTitle.png"></div>
+			</div>
+			<div class="separator" ></div>
+		</div>
+		<div data-role="content">
+			<form id="weiter"  action="#" method="post">
+				<div class="formContainer ">
+					<div>
+						<label for="username" class="mylabel">Benutzername</label>
+						<input type="text" name="username" id="username" value=""/>
+					</div>
+					<div> 
+						<label for="password" class="mylabel">Passwort</label>
+						<input type="password" name="password" id="password" value="" />
+					</div>
+					<div>
+						<input type="checkbox" data-mini="true" name="anmeldeDatenMerken" id="anmeldeDatenMerken" value="1" checked="checked"/>
+						<label for="anmeldeDatenMerken">Anmeldedaten merken</label>
+					</div>
+					<div id="errorMessage" class="errorMessage mylabel"></div>
+				</div>
+				<input type="submit" data-theme='c' value="Anmelden" >
+			</form>
+			<div class="linkDiv"><a class="myLink" href="#popupPassReset" data-rel="popup">Passwort vergessen?</a></div>
+			<div data-role="popup" id="popupPassReset" class="ui-content" data-inline="true" data-position-to="window">
+				<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<span class="mylabel">Passwort zurücksetzen</span>
+				<span class="mylabelSmall">Passwort zurücksetzen funktioniert nur, falls Sie
+					eine E-Mail bei der Registrierung mit angegeben haben.
+					Wir verschicken an die folgende E-Mail-Adresse einen Link, mit dem das Passwort zurückgesetzt werden kann.
+				</span>
+				<input type="email" id="emailForReset" value="" placeholder="Ihre E-Mail Adresse"/>
+				<div id="errorEmailForReset" class="errorMessage mylabel"></div>
+				<div data-role='controlgroup' data-type="horizontal">
+					<a id="passReset" href="#" data-role="button">Senden</a>
+					<a href="#" data-rel="back" data-role="button">Abbrechen</a>
+				</div>
+			</div>
+			<div class="linkDiv"><a href="registrierung.html" class="myLink" data-ajax="false" >Neu hier?</a></div>
+		</div> 
+		<div data-role="footer" data-position="fixed" class="linkDiv" data-id="foot">
+			<div class="separator" ></div> 
+			<span>
+				<a href="teilnahmebedingungen.html" data-theme='c' class="mySmallLink" data-ajax="false">Teilnahmebedingungen</a>
+					|	
+				<a href="datenschutz.html" data-theme='c' class="mySmallLink" data-ajax="false">Datenschutz</a>
+					|	
+				<a href="impressum.html" data-theme='c' class="mySmallLink" data-ajax="false">Impressum</a>
+			</span>
+		</div>
+		<script>
+		$( document ).on( "pageinit","#anmeldung", function() {
+			
+			$("#passReset").click(function(event) {
+				if($("#emailForReset").val().length == 0) {
+					$("#errorEmailForReset").text("Bitte E-Mail angeben").show();
+					$("#emailForReset[class!='markErrorLocation']").addClass("markErrorLocation");
+					return false;
+				}
+				else {
+					$("#errorEmailForReset").hide();
+					$("#emailForReset[class='markErrorLocation']").removeClass("markErrorLocation");
+					$.ajax({
+						type: "POST",
+						url: "reset",
+						async: false,
+						data: "email="+$('#emailForReset').val(),
+						success: function(msg){
+							history.back();
+							$('#emailForReset').val(""); //emailfeld leeren
+				  		 },
+			  			error: function(xmlHttpRequest, textStatus, errorThrown) {
+			  				$("#errorEmailForReset").text(xmlHttpRequest.responseText).show();
+							$("#emailForReset[class!='markErrorLocation']").addClass("markErrorLocation");
+				  		}
+					});
+					return true;
+				}
+			});
+			
+			$( "#weiter" ).submit(function(event) {
+				
+				 //default submit-Verhalten ausschalten
+		        event.preventDefault();
+				
+				var error = checkInput();
+				
+				$( "#username" ).change(function() {
+					checkInput();
+				});
+				
+				$( "#password" ).change(function() {
+					checkInput();
+				});
+
+								
+				if(!error) {
+					$.ajax({
+						type: "POST",
+						url: "login",
+						async: false,
+						data: "username="+$('#username').val()+"&password="+$('#password').val()+"&anmeldeDatenMerken="+$('#anmeldeDatenMerken:checked').val(),
+						success: function(msg){
+									window.location.href = msg;
+									$("#username").val("");
+									$("#password").val("");
+							        error = false;
+						  		 },
+					  	error: function(xmlHttpRequest, textStatus, errorThrown) {
+							     	$("#errorMessage").hide().text(xmlHttpRequest.responseText).show();
+									$("#username[class!='markErrorLocation']").addClass("markErrorLocation");
+									$("#password[class!='markErrorLocation']").addClass("markErrorLocation");
+									error = true;
+						  		}
+					});
+				}
+				
+				if(error) {
+					$.mobile.activePage.focus(); //focus vom Button entfernen, damit er nicht mehr als aktiv markiert ist.
+				}
+				else {
+ 					
+				}
+				return !error;
+					
+			});
+			
+			toggleHeader($("[data-position='fixed']"));
+			
+		});
+		
+		/**
+			Prueft, ob Benutzername und Passwort eingegeben worden sind und gibt evt. 
+			eine Fehlermeldung aus.
+			@returns false, wenn Anmeldedaten vollstaendig, sonst true
+		*/
+		function checkInput() {
+			var error = false;
+			var nameLen = $("#username").val().length;
+			var passLen = $("#password").val().length;
+			
+			if ( nameLen == 0 && passLen == 0 ) {
+				
+				$("#errorMessage").text("Benutzername und Passwort fehlen.").show();
+				$("#username[class!='markErrorLocation']").addClass("markErrorLocation");
+				$("#password[class!='markErrorLocation']").addClass("markErrorLocation");	
+				error = true;
+			} 
+			else if(nameLen == 0) {
+				
+				$("#errorMessage").text("Benutzername fehlt.").show();
+				$("#username[class!='markErrorLocation']").addClass("markErrorLocation");
+				error = true;
+			}	
+			else if(passLen == 0) {
+				
+				$("#errorMessage").text("Passwort fehlt.").show();
+				$("#password[class!='markErrorLocation']").addClass("markErrorLocation");	
+				error = true;
+			}
+			else {
+				$("#errorMessage").hide();
+				error = false;
+			}
+			
+			if(nameLen > 0) {
+				$("#username[class='markErrorLocation']").removeClass("markErrorLocation");
+			}	
+			if(passLen > 0) {
+				$("#password[class='markErrorLocation']").removeClass("markErrorLocation");	
+			}
+			
+			return error;
+		}
+		</script>
+		</div>
+</body>
+</html>	
